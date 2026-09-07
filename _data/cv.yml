@@ -126,7 +126,7 @@ cv:
         publisher: Optoelectronics Letters
         releaseDate: 2024
 
-      - title: Review: Microbottle Resonators
+      - title: "Review: Microbottle Resonators"
         authors:
           - H. A. Zain et al.
         publisher: Micromachines
@@ -179,7 +179,7 @@ cv:
         issuer: British Standards Institution
         date: 2026-08-01
 
-      - name: ISO/IEC 22989:2023 - Fundamentals of AI
+      - name: "ISO/IEC 22989:2023 - Fundamentals of AI"
         issuer: British Standards Institution
         date: 2026-08-01
 
@@ -188,6 +188,7 @@ cv:
       - name: IEEE Women in Engineering
       - name: IEEE Photonics Society
       - name: IEEE Standards Committee Optical Sensors Cluster
+      - name: Malaysia Board of Technologists
 
     Academic Service:
       - name: Peer Reviewer
