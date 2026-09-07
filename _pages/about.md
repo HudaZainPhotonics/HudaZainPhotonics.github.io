@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Photonics Engineer (PhD) | Fiber-Optic and PIC Sensing Systems | FBG | DAS | ML-Driven Signal Processing
 
 profile:
   align: right
