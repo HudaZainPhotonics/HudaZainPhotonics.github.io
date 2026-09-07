@@ -29,8 +29,5 @@ latest_posts:
 
 I am an experimental photonics researcher focused on developing and validating fiber-optic and plasmonic sensing systems at both the device and system levels. My work integrates fiber sensors, including fiber Bragg gratings (FBGs), distributed acoustic sensing (DAS), and nanomaterial-functionalized microresonators, with machine-learning-assisted interrogation.
 
-I focus on improving the robustness, scalability, and real-world deployability of optical sensing technologies for energy and infrastructure, industrial processes, biomedical applications, and environmental monitoring. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I focus on improving the robustness, scalability, and real-world deployability of optical sensing technologies for energy and infrastructure, industrial processes, biomedical applications, and environmental monitoring. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
