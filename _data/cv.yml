@@ -1,1 +1,204 @@
 
+cv:
+  name: Huda Adnan Zain
+  label: Experimental Photonics Researcher and Educator
+  email: huda.zain@kfupm.edu.sa
+  location: Dhahran, Saudi Arabia
+  image: ""
+  summary: Experimental photonics researcher and educator focused on building and validating fiber-optic and plasmonic sensing systems at the device and system levels. My work integrates fiber Bragg gratings, distributed acoustic sensing, and nanomaterial-functionalized microresonators with machine-learning-assisted interrogation for energy, biomedical, and environmental applications.
+
+  social_networks:
+    - network: GitHub
+      username: HudaZainPhotonics
+    - network: LinkedIn
+      username: huda-z-076724317
+    - network: ORCID
+      username: 0000-0002-8151-4470
+    - network: Google Scholar
+      username: 30SoXSkAAAAJ
+
+  sections:
+    Education:
+      - institution: University of Malaya
+        location: Kuala Lumpur, Malaysia
+        area: Electrical Engineering (Photonics)
+        studyType: PhD
+        end_date: 2023
+
+      - institution: University of Malaya
+        location: Kuala Lumpur, Malaysia
+        area: Telecommunication Engineering
+        studyType: MSc
+        end_date: 2019
+
+      - institution: Sana'a University
+        location: Sana'a, Yemen
+        area: Electrical Engineering (Telecommunication and Electronics)
+        studyType: BSc
+        end_date: 2016
+
+    Experience:
+      - company: King Fahd University of Petroleum and Minerals (KFUPM)
+        position: Postdoctoral Fellow
+        location: Dhahran, Saudi Arabia
+        start_date: 2025
+        end_date: Present
+        highlights:
+          - Led the design and experimental validation of fiber-optic sensing systems, including FBG and distributed acoustic sensing platforms, with machine-learning-based signal interpretation.
+          - Led a successfully funded internal grant project, from proposal development and equipment selection through experimental execution, data analysis, publications, and patent-related activities.
+          - Initiated and contributed to joint projects with KFUPM research centers, including the Center for Integrative Petroleum Research and the Center for Aviation and Space Exploration.
+          - Supervised and mentored graduate and undergraduate researchers and contributed to STEM research outreach for high-school students.
+
+      - company: Universitas Airlangga
+        position: APD Postdoctoral Fellow
+        location: Indonesia
+        start_date: 2024
+        end_date: 2025
+        highlights:
+          - Developed and experimentally validated Au-graphene plasmonic sensing platforms under international collaborative grants.
+          - Coordinated cross-institutional experimental workflows and data exchange across Malaysian-Indonesian research teams.
+
+      - company: University of Malaya
+        position: Graduate Research Assistant
+        location: Kuala Lumpur, Malaysia
+        start_date: 2020
+        end_date: 2022
+        highlights:
+          - Authored a successful industry-funded proposal for the Petronas PRSB-UiTM Collaborative Research Project.
+          - Designed, fabricated, and experimentally characterized ZnO-, graphene-, and polymer-coated fiber sensors.
+
+    Teaching Experience:
+      - company: King Fahd University of Petroleum and Minerals (KFUPM)
+        position: Instructor, Introduction to Research (RES 100)
+        location: Dhahran, Saudi Arabia
+        start_date: 2025
+        end_date: Present
+        summary: Undergraduate research course covering research types and databases, scientific papers and proposals, research methods, literature review, and research presentation and dissemination.
+
+      - company: University of Malaya
+        position: Laboratory Instructor, Digital Systems Laboratory (KIE1001)
+        location: Kuala Lumpur, Malaysia
+        start_date: 2021
+        end_date: 2022
+        summary: Undergraduate laboratory instruction in breadboard implementation, combinational logic circuits, and sequential logic circuit design and analysis.
+
+    Funding and Projects:
+      - name: KFUPM Interdisciplinary Centers Grant (INCS2611)
+        summary: Proposal authorship, experimental planning, system development, and validation.
+
+      - name: KFUPM Interdisciplinary Centers Grant (INCS2505)
+        summary: Proposal authorship, experimental planning, system development, and validation.
+
+      - name: Petronas PRSB-UiTM Collaborative Research Project
+        summary: Proposal authorship and industry-aligned fiber-optic sensor development.
+
+      - name: INTI University Seed Fund Research Project
+        summary: Proposal authorship and experimental sensor design, fabrication, and characterization.
+
+    Publications:
+      - title: Deep Learning for Spectral Processing in Microbottle Resonator Humidity Sensors
+        authors:
+          - H. A. Zain et al.
+        publisher: IEEE Sensors Letters
+        releaseDate: 2026
+
+      - title: A Deep Learning-Based Fusion Framework for Temperature-Aware Relative Humidity Sensing Using Dual Fiber-Optic Sensors
+        authors:
+          - H. A. Zain et al.
+        publisher: IEEE Access
+        releaseDate: 2026
+
+      - title: HEC/PVDF-Coated Microsphere Humidity Sensor Using CNN-Based Barcoding
+        authors:
+          - H. A. Zain et al.
+        publisher: IEEE Photonics Technology Letters
+        releaseDate: 2025
+
+      - title: Deep Learning-Integrated Agarose-Coated Microloop Fiber Resonator
+        authors:
+          - H. A. Zain et al.
+        publisher: IEEE Sensors Journal
+        releaseDate: 2025
+
+      - title: Graphene Oxide-Coated Microbottle Resonators
+        authors:
+          - H. A. Zain et al.
+        publisher: Optoelectronics Letters
+        releaseDate: 2024
+
+      - title: Review: Microbottle Resonators
+        authors:
+          - H. A. Zain et al.
+        publisher: Micromachines
+        releaseDate: 2023
+
+      - title: Machine Learning Algorithms for SPR Bio-Detection
+        authors:
+          - H. A. Zain et al.
+        publisher: Journal of Physics: Conference Series
+        releaseDate: 2022
+
+      - title: Graphene-Gold Kretschmann SPR for Humidity Detection
+        authors:
+          - H. A. Zain et al.
+        publisher: IEEE Sensors Letters
+        releaseDate: 2022
+
+      - title: Graphene/PVA D-Shaped Fiber Sensor
+        authors:
+          - H. A. Zain et al.
+        publisher: Sensors and Actuators A
+        releaseDate: 2021
+
+    Skills:
+      - name: Fiber-Optic and Photonic Sensing
+        keywords: Fiber Bragg gratings, distributed acoustic sensing, surface plasmon resonance, microloop resonators, microbottle resonators
+
+      - name: Signal Processing and Automation
+        keywords: Machine-learning-assisted denoising, noise analysis, signal stability optimisation, Python, MATLAB, LabVIEW, automated data acquisition
+
+      - name: Modelling and Design
+        keywords: Ansys Lumerical, COMSOL Multiphysics, Zemax, GDSFactory
+
+      - name: Instrumentation and Fabrication
+        keywords: Tunable lasers, ASE sources, optical spectrum analysers, power meters, vibration generators, environmental control systems, fiber tapering, D-shaped fibers, microscopy
+
+      - name: Materials and Functionalisation
+        keywords: Graphene-gold interfaces, graphene oxide, ZnO nanorods, polymer coatings, hydrogel coatings, nanomaterial functionalisation
+
+    Certifications:
+      - name: Project Management and Planning Specialization
+        issuer: Johns Hopkins University
+        date: 2026-09-01
+
+      - name: Teaching in University Science Laboratories - Developing Best Practice
+        issuer: University of Amsterdam
+        date: 2026-09-01
+
+      - name: AI Management Essentials - Integrating ISO 42001 and ISO 23894
+        issuer: British Standards Institution
+        date: 2026-08-01
+
+      - name: ISO/IEC 22989:2023 - Fundamentals of AI
+        issuer: British Standards Institution
+        date: 2026-08-01
+
+    Professional Memberships:
+      - name: IEEE
+      - name: IEEE Women in Engineering
+      - name: IEEE Photonics Society
+      - name: IEEE Standards Committee Optical Sensors Cluster
+
+    Academic Service:
+      - name: Peer Reviewer
+        summary: Reviewer for IEEE Sensors Journal and Journal of Lightwave Technology, with eleven manuscripts reviewed in 2026.
+
+    Languages:
+      - name: Arabic
+        summary: Native
+
+      - name: English
+        summary: C2, fluent
+
+      - name: German
+        summary: Basic
