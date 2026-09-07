@@ -4,7 +4,7 @@ title: Laboratory & Technical Capabilities
 description: Experimental photonics, fiber-optic sensing, nanomaterials, laboratory automation, safety practice, and research delivery capabilities.
 permalink: /capabilities/
 nav: true
-nav_order: 5
+nav_order: 8
 ---
 
 ## Photonics Research Instrumentation
