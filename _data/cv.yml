@@ -3,19 +3,9 @@ cv:
   label: Experimental Photonics Researcher and Educator
   email: huda.zain(at)kfupm.edu.sa
   location: Dhahran, Saudi Arabia
-  image: ""
   summary: Experimental photonics researcher and educator focused on building and validating fiber-optic and plasmonic sensing systems at the device and system levels. My work integrates fiber Bragg gratings, distributed acoustic sensing, and nanomaterial-functionalized microresonators with machine-learning-assisted interrogation for energy, biomedical, and environmental applications.
 
-  social_networks:
-    - network: GitHub
-      username: HudaZainPhotonics
-    - network: LinkedIn
-      username: huda-z-076724317
-    - network: ORCID
-      username: 0000-0002-8151-4470
-    - network: Google Scholar
-      username: 30SoXSkAAAAJ
-
+  
   sections:
     Education:
       - institution: University of Malaya
