@@ -27,7 +27,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an experimental photonics researcher focused on developing and validating fiber-optic and plasmonic sensing systems at both the device and system levels. My work integrates fiber sensors, including fiber Bragg gratings (FBGs), distributed acoustic sensing (DAS), and nanomaterial-functionalized microresonators, with machine-learning-assisted interrogation.
+
+I focus on improving the robustness, scalability, and real-world deployability of optical sensing technologies for energy and infrastructure, industrial processes, biomedical applications, and environmental monitoring. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
