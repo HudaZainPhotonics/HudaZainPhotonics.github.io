@@ -11,9 +11,8 @@ nav_order: 5
 
 - Tunable and ASE laser sources
 - Optical spectrum analysers and optical power meters
-- Environmental control systems and vibration-testing setups
+- Environmental control systems(humidity, temperature) and vibration-testing setups
 - Microscopy and optical lens alignment
-- Experimental setup design, optical coupling, and measurement procedures
 
 ## Fiber-Optic Sensing and Fabrication
 
@@ -21,7 +20,6 @@ nav_order: 5
 - Microloop and microbottle resonators
 - Fiber Bragg grating (FBG) sensing
 - Distributed fiber-optic sensing
-- Fiber sensor fabrication, testing, and experimental validation
 
 ## Nanomaterials and Functional Coatings
 
@@ -36,7 +34,6 @@ nav_order: 5
 - Python-based instrument control and automated data analysis
 - LabVIEW and MATLAB
 - Machine-learning-assisted signal processing
-- Experimental data acquisition, processing, and interpretation
 
 ## Photonics Modelling and Design
 
@@ -49,27 +46,25 @@ nav_order: 5
 
 - Laser and guided-photonics safety
 - Safe handling of optical equipment and nanomaterials
-- Experimental documentation and equipment checks
-- Repeatable test procedures and experimental quality practices
+- Experienced with laboratory-quality principles relevant to ISO/IEC 17025, including equipment checks, traceable documentation, repeatable procedures, and reliable experimental records
+
 
 ## Research Delivery and Laboratory Leadership
 
-- Experimental planning and equipment selection
 - Grant proposal development and project coordination
 - Student mentoring and interdisciplinary collaboration
-- Data analysis, academic publications, and patent-related activities
 
 ## Professional Development and Certifications
 
-### Project Management and Research Delivery
+### Project Management and Research Delivery [Coursera]
 
-- [Project Management and Planning Specialization, Johns Hopkins University, September 2026](https://www.coursera.org/account/accomplishments/specialization/8R34FUBWZEPW)
-- [Project Execution and Control, Johns Hopkins University, September 2026](https://www.coursera.org/account/accomplishments/verify/RZ76V8HPZZWF)
-- [Advanced Project Management and Leadership, Johns Hopkins University, September 2026](https://www.coursera.org/account/accomplishments/verify/VLXWPTWILSM5)
-- [Fundamentals of Project Management, Johns Hopkins University, September 2026](https://www.coursera.org/account/accomplishments/verify/BD7ENS7H1TA6)
+- [Project Management and Planning Specialization, Johns Hopkins University, September 2026]
+- [Project Execution and Control, Johns Hopkins University, September 2026]
+- [Advanced Project Management and Leadership, Johns Hopkins University, September 2026]
+- [Fundamentals of Project Management, Johns Hopkins University, September 2026]
 
-### Laboratory Teaching and Responsible AI
+### Laboratory Teaching and Responsible AI [Coursera]
 
-- [Teaching in University Science Laboratories: Developing Best Practice, University of Amsterdam, September 2026](https://www.coursera.org/account/accomplishments/verify/61WNEYTOOI8M)
-- [AI Management Essentials: Integrating ISO 42001 and ISO 23894, British Standards Institution, August 2026](https://www.coursera.org/account/accomplishments/verify/2FVXOZ2OVGGW)
-- [ISO/IEC 22989:2023: Fundamentals of AI, British Standards Institution, August 2026](https://www.coursera.org/account/accomplishments/verify/MM4AOY53Y4A0)
+- [Teaching in University Science Laboratories: Developing Best Practice, University of Amsterdam, September 2026]
+- [AI Management Essentials: Integrating ISO 42001 and ISO 23894, British Standards Institution, August 2026]
+- [ISO/IEC 22989:2023: Fundamentals of AI, British Standards Institution, August 2026]
