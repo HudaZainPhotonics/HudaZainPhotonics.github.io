@@ -31,3 +31,6 @@ I am an experimental photonics researcher focused on developing and validating f
 
 I focus on improving the robustness, scalability, and real-world deployability of optical sensing technologies for energy and infrastructure, industrial processes, biomedical applications, and environmental monitoring. 
 
+For publications and citation information, visit my
+[Google Scholar profile](https://scholar.google.com/citations?user=30SoXSkAAAAJ&hl=en).
+
