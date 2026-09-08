@@ -5,7 +5,7 @@ description: Fiber-optic distributed acoustic sensing and machine learning for p
 img: assets/img/12.jpg  #img: assets/img/das.png
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 
 ## Overview
