@@ -4,7 +4,7 @@ title: Distributed Acoustic Sensing for Pipeline Monitoring
 description: Fiber-optic distributed acoustic sensing and machine learning for pipeline monitoring in harsh oil-and-gas environments.
 #img: assets/img/das.png
 importance: 1
-category: research
+category: work
 related_publications: true
 ---
 
