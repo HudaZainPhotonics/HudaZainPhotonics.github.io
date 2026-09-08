@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Laboratory & Technical Capabilities
+title: laboratory & technical capabilities
 description: Experimental photonics, fiber-optic sensing, nanomaterials, laboratory automation, safety practice, and research delivery capabilities.
 permalink: /capabilities/
 nav: true
