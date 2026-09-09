@@ -13,7 +13,7 @@ profile:
     <p>King Fahd University of Petroleum and Minerals</p>
     <p>Dhahran 31261, Saudi Arabia</p>
 
-selected_papers: false
+selected_papers: true
 social: false
 
 announcements:
@@ -29,9 +29,7 @@ latest_posts:
 
 I develop experimental photonic sensing systems that move from optical-device design to validated measurement platforms. My work combines fiber-optic sensors with intelligent interrogation to produce more dependable sensing in real operating conditions.
 
-## Research Direction
 
-I am interested in making photonic sensing practical beyond the laboratory: compact, reliable, and designed around the demands of the application.
 
 ## Research Focus Areas
 
