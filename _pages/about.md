@@ -27,28 +27,24 @@ latest_posts:
   limit: 3
 ---
 
-I am an experimental photonics researcher focused on developing and validating fiber-optic and plasmonic sensing systems at both the device and system levels. My work integrates fiber sensors, including fiber Bragg gratings (FBGs), distributed acoustic sensing (DAS), and nanomaterial-functionalized microresonators, with machine-learning-assisted interrogation.
-
-I focus on improving the robustness, scalability, and real-world deployability of optical sensing technologies for energy and infrastructure, industrial processes, biomedical applications, and environmental monitoring.
+I develop experimental photonic sensing systems that move from optical-device design to validated measurement platforms. My work combines fiber-optic sensors with intelligent interrogation to produce more dependable sensing in real operating conditions.
 
 ## Research Direction
 
-My research develops reliable and deployable photonic sensing systems for monitoring complex physical and biological environments. I combine sensor design, experimental validation, compact instrumentation, and data-driven signal interpretation to improve sensing robustness, scalability, and practical usability.
-
-My long-term goal is to translate photonic sensing advances into field-relevant tools for infrastructure, industrial, biomedical, and environmental monitoring.
+I am interested in making photonic sensing practical beyond the laboratory: compact, reliable, and designed around the demands of the application.
 
 ## Research Focus Areas
 
-### Fiber-Optic Sensing for Infrastructure and Industrial Monitoring
+### Fiber Sensing for Infrastructure and Industry
 
-I develop FBG- and DAS-based sensing systems for monitoring infrastructure and industrial environments, with emphasis on robust experimental validation, meaningful measurements, and practical deployment.
+FBG- and DAS-based systems for monitoring industrial assets and infrastructure.
 
-### Photonic and Plasmonic Sensors for Biomedical and Environmental Assessment
+### Photonic Sensors for Health and the Environment
 
-I design and validate compact photonic sensors, including fiber resonators and plasmonic interfaces, for sensitive measurement in biomedical and environmental applications.
+Fiber resonators and plasmonic interfaces for biomedical and environmental measurement.
 
-### Intelligent Interrogation and Signal Reliability
+### Intelligent Sensing Systems
 
-I use machine-learning-assisted spectral processing, sensor fusion, denoising, stability analysis, and automated workflows to make optical sensing systems more reliable and usable in real-world conditions.
+Signal processing, sensor fusion, automation, and machine learning for more stable and usable optical measurements.
 
 For publications and citation information, visit my [Google Scholar profile](https://scholar.google.com/citations?user=30SoXSkAAAAJ&hl=en).
