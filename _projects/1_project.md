@@ -13,17 +13,11 @@ This project develops a fiber-optic distributed acoustic sensing (DAS) approach 
 
 ## Funding
 
-**KFUPM Interdisciplinary Centers Grant (INCS2505)**
+KFUPM Interdisciplinary Centers Grant (INCS2505)
 
-## Research Need
+## My Role
 
-Pipeline-monitoring systems must distinguish meaningful events, such as leaks, blockages, drilling activity, and external disturbances, from routine environmental and operational noise. False and nuisance alarms remain a practical limitation for real-world distributed sensing systems.
-
-## Technical Approach
-
-The project combines distributed acoustic sensing with machine-learning-assisted signal processing.
-
-The current phase focuses on denoising experimental pipeline-model acoustic data using an adversarial autoencoder. The longer-term direction is semi-supervised event classification and predictive monitoring using optical-fiber backscatter measurements.
+Led This successfully funded internal grant project, delivering end-to-end experimental workflows from proposal development and equipment selection to experimental execution, data analysis, and dissemination through publications and patent-related activities.
 
 ## Experimental Platform
 
