@@ -1,81 +1,34 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://www.wikipedia.org/
-importance: 3
+title: Deep-Learning-Enabled Multimode-Fiber Specklegram Sensing
+description: Ongoing research on multimode-fiber specklegram sensing and machine-learning-assisted optical interrogation for controlled bending monitoring.
+img: assets/img/specklegram2.jpg
+importance: 2
 category: work
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This ongoing project investigates multimode-fiber speckle patterns as a compact, camera-based optical sensing platform.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The work combines experimental fiber-optic sensing with image-based processing and deep-learning-assisted interrogation. It focuses on evaluating the repeatability and robustness of sensing information obtained from controlled mechanical perturbations across separately acquired experimental measurements.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+## My Role
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+I supervised the undergraduate research student from **KFUPM Inbound Summer Research Program 2026** throughout the experimental and technical development of the project. My role included guidance on optical-fiber sensing principles, laboratory work and safety, optical alignment, experimental planning, data-organisation strategy, machine-learning evaluation design, and interpretation of the sensing results.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Programme and Support
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+The work was conducted through the **KFUPM Inbound Summer Research Program 2026**, with support from the Undergraduate Research Office and the Interdisciplinary Research Center for Communication Systems and Sensing at King Fahd University of Petroleum and Minerals (KFUPM) through project **INCS 2611**.
 
-{% raw %}
+## Research Direction
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+The longer-term goal is to develop robust and low-cost optical interrogation approaches. Future work will focus on improving experimental repeatability, calibrated continuous-curvature measurement, and real-time sensing applications.
+Ongoing and unpublished research. Detailed methods, quantitative results, and publication-related material are not currently posted.
 
-{% endraw %}
+## Outcomes
+
+The project resulted in a research paper currently being prepared for submission to the **KFUPM Journal of Undergraduate Research and Innovation (JURI)**.
+
+The work was also presented as a poster during the **KFUPM Inbound Summer Research Program 2026 research showcase**.
