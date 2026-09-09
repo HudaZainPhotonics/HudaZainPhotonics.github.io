@@ -16,11 +16,11 @@ The work combines experimental fiber-optic sensing with image-based processing a
 
 ## My Role
 
-I supervised the undergraduate research student from **KFUPM Inbound Summer Research Program 2026** throughout the experimental and technical development of the project. My role included guidance on optical-fiber sensing principles, laboratory work and safety, optical alignment, experimental planning, data-organisation strategy, machine-learning evaluation design, and interpretation of the sensing results.
+I supervised the undergraduate research student from KFUPM Inbound Summer Research Program 2026 throughout the experimental and technical development of the project. My role included guidance on optical-fiber sensing principles, laboratory work and safety, optical alignment, experimental planning, data-organisation strategy, machine-learning evaluation design, and interpretation of the sensing results.
 
 ## Programme and Support
 
-The work was conducted through the **KFUPM Inbound Summer Research Program 2026**, with support from the Undergraduate Research Office and the Interdisciplinary Research Center for Communication Systems and Sensing at King Fahd University of Petroleum and Minerals (KFUPM) through project **INCS 2611**.
+The work was conducted through the KFUPM Inbound Summer Research Program 2026, with support from the Undergraduate Research Office and the Interdisciplinary Research Center for Communication Systems and Sensing at King Fahd University of Petroleum and Minerals (KFUPM) through project INCS 2611.
 
 ## Research Direction
 
@@ -29,6 +29,6 @@ Ongoing and unpublished research. Detailed methods, quantitative results, and pu
 
 ## Outcomes
 
-The project resulted in a research paper currently being prepared for submission to the **KFUPM Journal of Undergraduate Research and Innovation (JURI)**.
+The project resulted in a research paper currently being prepared for submission to the KFUPM Journal of Undergraduate Research and Innovation (JURI).
 
-The work was also presented as a poster during the **KFUPM Inbound Summer Research Program 2026 research showcase**.
+The work was also presented as a poster during the KFUPM Inbound Summer Research Program 2026 research showcase.
