@@ -13,7 +13,7 @@ profile:
     <p>King Fahd University of Petroleum and Minerals</p>
     <p>Dhahran 31261, Saudi Arabia</p>
 
-selected_papers: true
+selected_papers: false
 social: false
 
 announcements:
