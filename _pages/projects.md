@@ -64,3 +64,11 @@ horizontal: false
   {% endif %}
 {% endif %}
 </div>
+
+
+Across these projects, I work on intelligent fiber-optic sensing approaches for reliable monitoring of critical infrastructure and complex environments. Much of my work comes back to a simple question: how can optical sensing systems stay accurate, robust, and useful outside tightly controlled laboratory conditions?
+I explore this by bringing together experimental photonics, practical optical interrogation, and data-driven signal processing across infrastructure, environmental, health, and smart-built-environment applications.
+
+My recent work includes six first- and corresponding-author journal publications in 2025–2026, including four papers in IEEE journals and letters. 
+Within collaborative and funded projects, I help shape research questions and contribute to experimental planning, sensing-platform design, data analysis, and publication. I have also helped develop successful proposals that secured industry funding, and conversations with sensing-technology and operations providers have helped keep the research grounded in practical deployment needs.
+Alongside this work, I mentor undergraduate and postgraduate researchers through laboratory work, safety practice, prototype development, and research communication. Together, these experiences connect rigorous photonics research with real-world sensing needs.
