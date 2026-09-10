@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Experimental Photonics Researcher | Fiber-Optic and Integrated Photonic Sensing | FBG, DAS, and Intelligent Signal Processing
 
