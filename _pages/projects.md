@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: 
+description: Research projects in fiber-optic sensing, distributed acoustic sensing, photonics, and machine-learning-assisted monitoring for infrastructure, health, and environmental applications.
 nav: true
 nav_order: 3
 display_categories: [photonics]
