@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About
+title: about
 permalink: /
 subtitle: Experimental Photonics Researcher | Fiber-Optic and Integrated Photonic Sensing | FBG, DAS, and Intelligent Signal Processing
 
@@ -27,15 +27,14 @@ latest_posts:
   limit: 3
 ---
 
+I am an experimental photonics researcher at the Interdisciplinary Research Center for Communication Systems and Sensing (IRC-CSS), King Fahd University of Petroleum and Minerals (KFUPM).
 
-I develop optical sensing systems that turn changes in light into useful measurements of physical, chemical, and environmental conditions.
-
-My work combines fiber-optic sensors and data-driven signal processing to build measurement platforms for industrial infrastructure, health, and environmental monitoring.
+I develop and validate fiber-optic and plasmonic sensing systems that turn changes in light into useful measurements of physical, chemical, and environmental conditions. My work combines experimental photonics with data-driven signal processing for industrial infrastructure, health, and environmental monitoring.
 
 ## Research Focus
 
 **Fiber-optic sensing for industry and infrastructure**  
-Fiber Bragg Gratings (FBG) and distributed acoustic sensing (DAS) systems for monitoring assets, processes, and operating conditions.
+Fiber Bragg gratings (FBG) and distributed acoustic sensing (DAS) systems for monitoring assets, processes, and operating conditions.
 
 **Photonic sensors for health and the environment**  
 Resonator- and plasmonic-based sensors for biomedical, chemical, and environmental measurement.
@@ -43,4 +42,6 @@ Resonator- and plasmonic-based sensors for biomedical, chemical, and environment
 **Smarter optical measurement systems**  
 Signal processing and machine learning that help optical sensors remain accurate and useful outside tightly controlled laboratory conditions.
 
-Explore my [projects](/projects/) for current research and prototypes, or visit my [Google Scholar profile](https://scholar.google.com/citations?user=30SoXSkAAAAJ&hl=en) for publications and citation information.
+Explore my [research projects](/projects/), [publications](/publications/), [laboratory and technical capabilities](/capabilities/), [undergraduate mentorship](/undergrad/), [postgraduate mentorship](/postgrad/), and [CV](/cv/). You can also visit my [Google Scholar profile](https://scholar.google.com/citations?user=30SoXSkAAAAJ&hl=en) for citation information.
+
+I enjoy talking about photonics and am always happy to connect over research ideas, shared interests, or potential collaborations. You can reach me at [huda.zain@kfupm.edu.sa](mailto:huda.zain@kfupm.edu.sa) or connect with me on [LinkedIn](https://www.linkedin.com/in/huda-z-076724317/).
