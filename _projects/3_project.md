@@ -4,7 +4,7 @@ title: Deep-Learning-Enabled Multimode-Fiber Specklegram Sensing
 description: Ongoing research on multimode-fiber specklegram sensing and machine-learning-assisted optical interrogation for controlled bending monitoring.
 img: assets/img/specklegram2.jpeg
 importance: 3
-category: photonics
+category: Undergraduate research and prototyping mentorship
 related_publications: false
 ---
 
