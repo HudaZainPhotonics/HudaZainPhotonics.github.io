@@ -5,7 +5,7 @@ permalink: /projects/
 description: Research projects in fiber-optic sensing, distributed acoustic sensing, photonics, and machine-learning-assisted monitoring for infrastructure, health, and environmental applications.
 nav: true
 nav_order: 3
-display_categories: [Photonics Research, Postgraduate research mentorship, Undergraduate research and prototypes]
+display_categories: [Photonics research, Postgraduate research mentorship, Undergraduate research and prototyping mentorship]
 horizontal: false
 ---
 
