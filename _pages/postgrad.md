@@ -1,6 +1,6 @@
 ---
 layout: page
-title: postgrad mentorship
+title: Postgrad Mentorship
 description: Postgraduate research mentorship in experimental photonics, optical-fiber fabrication, microresonators, plasmonic sensing, laboratory safety, and prototype development.
 permalink: /postgrad/
 nav: true
