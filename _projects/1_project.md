@@ -22,7 +22,7 @@ Led This successfully funded internal grant project, delivering end-to-end exper
 ## Experimental Platform
 
 A controlled laboratory pipeline-model platform is used to generate and analyse representative acoustic events. This enables repeatable evaluation of signal-processing methods before future field-scale deployment.
-## Industry engagement
+## Industry Engagement
 
 Discussions with a DAS-system manufacturer and a regional provider of DAS operation and maintenance services helped ground this work in practical deployment needs. These conversations highlighted the importance of signal quality, operational noise, false-alarm reduction, and maintainability, and helped shape the project’s research questions and experimental priorities.
 
