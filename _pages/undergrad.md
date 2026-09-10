@@ -1,6 +1,6 @@
 ---
 layout: page
-title: undergrad research mentorship
+title: Undergrad Research Mentorship
 description: Research and prototype mentorship for undergraduate researchers in photonics, sensing systems, experimental design, laboratory safety, and technical communication at KFUPM.
 permalink: /undergrad/
 nav: true
