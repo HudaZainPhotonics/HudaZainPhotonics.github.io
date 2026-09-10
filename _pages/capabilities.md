@@ -1,27 +1,31 @@
 ---
 layout: page
-title: Laboratory & Technical Capabilities
+title: laboratory & technical capabilities
 description: Experimental photonics, fiber-optic sensing, nanomaterials, laboratory automation, safety practice, and research delivery capabilities.
 permalink: /capabilities/
 nav: true
 nav_order: 8
 ---
 
-## Photonics Research Instrumentation
+My work combines experimental photonics, fiber-optic sensor fabrication, optical interrogation, and data-driven signal processing. I have hands-on experience developing, operating, and troubleshooting laboratory sensing platforms from optical alignment through measurement collection and analysis.
 
-- Tunable and ASE laser sources
-- Optical spectrum analysers and optical power meters
-- Environmental control systems(humidity, temperature) and vibration-testing setups
-- Microscopy and optical lens alignment
+## Photonics research instrumentation
 
-## Fiber-Optic Sensing and Fabrication
+- Tunable laser sources and amplified spontaneous emission (ASE) sources
+- Optical spectrum analysers, optical power meters, and microscopy systems
+- Environmental-control systems for humidity and temperature testing
+- Vibration-testing setups
+- Optical lens alignment and open-space optical experiments
 
-- Tapered and D-shaped optical fibers
+## Fiber-optic sensing and fabrication
+
+- Fiber tapering and D-shaped optical fibers
 - Microloop and microbottle resonators
 - Fiber Bragg grating (FBG) sensing
 - Distributed fiber-optic sensing
+- Optical-fiber splicing and experimental fibre handling
 
-## Nanomaterials and Functional Coatings
+## Nanomaterials and functional coatings
 
 - Graphene and graphene oxide
 - Graphene-gold interfaces
@@ -29,42 +33,45 @@ nav_order: 8
 - Polymer and hydrogel coatings
 - Sensor surface functionalisation and nanomaterial integration
 
-## Experiment Automation and Signal Processing
+## Experiment automation and signal processing
 
-- Python-based instrument control and automated data analysis
+- Python-based instrument control, automated data acquisition, and data analysis
 - LabVIEW and MATLAB
-- Machine-learning-assisted signal processing
+- Machine-learning-assisted signal processing for optical sensing
 
-## Photonics Modelling and Design
+## Photonic modelling and design
 
 - Ansys Lumerical
 - COMSOL Multiphysics
 - Zemax
 - GDSFactory
 
-## Laboratory Safety and Quality Practice
+## Laboratory safety and quality practice
 
 - Laser and guided-photonics safety
 - Safe handling of optical equipment and nanomaterials
-- Experienced with laboratory-quality principles relevant to ISO/IEC 17025, including equipment checks, traceable documentation, repeatable procedures, and reliable experimental records
+- Laboratory equipment checks, traceable documentation, repeatable procedures, and reliable experimental records
+- Working knowledge of laboratory-quality principles relevant to ISO/IEC 17025
 
-
-## Research Delivery and Laboratory Leadership
+## Research delivery and laboratory leadership
 
 - Grant proposal development and project coordination
-- Student mentoring and interdisciplinary collaboration
+- Experimental planning, equipment selection, and research delivery
+- Undergraduate and postgraduate mentoring
+- Interdisciplinary collaboration and technical communication
 
-## Professional Development and Certifications
+## Professional development and certifications
+The following online course certificates were completed through Coursera. The course provider is identified for each item.
 
-### Project Management and Research Delivery [Coursera]
+### Project management and research delivery
 
-- [Project Management and Planning Specialization, Johns Hopkins University, September 2026]
-- [Project Execution and Control, Johns Hopkins University, September 2026]
-- [Advanced Project Management and Leadership, Johns Hopkins University, September 2026]
-- [Fundamentals of Project Management, Johns Hopkins University, September 2026]
+- Project Management and Planning Specialization, Johns Hopkins University, September 2026
+- Project Execution and Control, Johns Hopkins University, September 2026
+- Advanced Project Management and Leadership, Johns Hopkins University, September 2026
+- Fundamentals of Project Management, Johns Hopkins University, September 2026
 
-### Laboratory Teaching and Responsible AI [Coursera]
+### Laboratory teaching and responsible AI
 
-- [Teaching in University Science Laboratories: Developing Best Practice, University of Amsterdam, September 2026]
-- [AI Management Essentials: Integrating ISO 42001 and ISO 23894, British Standards Institution, August 2026]
-- [ISO/IEC 22989:2023: Fundamentals of AI, British Standards Institution, August 2026]
+- Teaching in University Science Laboratories: Developing Best Practice, University of Amsterdam, September 2026
+- AI Management Essentials: Integrating ISO 42001 and ISO 23894, British Standards Institution, August 2026
+- ISO/IEC 22989:2023 Fundamentals of AI, British Standards Institution, August 2026
