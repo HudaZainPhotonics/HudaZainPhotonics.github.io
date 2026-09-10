@@ -4,7 +4,7 @@ title: Compact Fiber Bragg Grating Interrogator for Patient Assessment
 description: A compact, cost-effective fiber Bragg grating interrogation prototype for patient-assessment applications, developed in collaboration with Biomedical Engineering at KFUPM.
 img: assets/img/FBG master3.jpeg
 importance: 3
-category: photonics
+category: Postgraduate research mentorship
 related_publications: false
 ---
 
