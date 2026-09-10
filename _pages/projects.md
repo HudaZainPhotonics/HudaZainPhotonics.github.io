@@ -8,6 +8,8 @@ nav_order: 3
 display_categories: [Photonics research, Undergraduate research and prototyping mentorship]
 horizontal: false
 ---
+These projects develop experimental sensing platforms that combine photonic devices, optical interrogation, and data-driven signal processing. Across energy infrastructure, health, environmental monitoring, and smart-built-environment applications, the shared aim is to produce reliable optical measurements outside tightly controlled laboratory conditions.
+Where work is ongoing or unpublished, the project descriptions intentionally focus on the high-level research scope and development direction.
 
 <!-- pages/projects.md -->
 <div class="projects">
