@@ -27,22 +27,20 @@ latest_posts:
   limit: 3
 ---
 
-I develop experimental photonic sensing systems that move from optical-device design to validated measurement platforms. My work combines fiber-optic sensors with intelligent interrogation to produce more dependable sensing in real operating conditions.
 
+I develop optical sensing systems that turn changes in light into useful measurements of physical, chemical, and environmental conditions.
 
+My work combines fiber-optic sensors and data-driven signal processing to build measurement platforms for industrial infrastructure, health, and environmental monitoring.
 
-## Research Focus Areas
+## Research Focus
 
-### Fiber Sensing for Infrastructure and Industry
+**Fiber-optic sensing for industry and infrastructure**  
+Fiber Bragg Gratings (FBG) and distributed acoustic sensing (DAS) systems for monitoring assets, processes, and operating conditions.
 
-FBG- and DAS-based systems for monitoring industrial assets and infrastructure.
+**Photonic sensors for health and the environment**  
+Resonator- and plasmonic-based sensors for biomedical, chemical, and environmental measurement.
 
-### Photonic Sensors for Health and the Environment
+**Smarter optical measurement systems**  
+Signal processing and machine learning that help optical sensors remain accurate and useful outside tightly controlled laboratory conditions.
 
-Fiber resonators and plasmonic interfaces for biomedical and environmental measurement.
-
-### Intelligent Sensing Systems
-
-Signal processing, sensor fusion, automation, and machine learning for more stable and usable optical measurements.
-
-For publications and citation information, visit my [Google Scholar profile](https://scholar.google.com/citations?user=30SoXSkAAAAJ&hl=en).
+Explore my [projects](/projects/) for current research and prototypes, or visit my [Google Scholar profile](https://scholar.google.com/citations?user=30SoXSkAAAAJ&hl=en) for publications and citation information.
