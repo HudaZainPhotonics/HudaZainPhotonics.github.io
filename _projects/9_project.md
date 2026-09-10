@@ -4,7 +4,7 @@ title: Privacy-Preserving LiDAR Safety Monitoring for Cognitive Cities
 description: Ongoing prototype research on LiDAR-based safety monitoring for cognitive-city and smart-built-environment applications.
 img: assets/img/lidar res201.jpeg
 importance: 4
-category: photonics
+category: Undergraduate research and prototyping mentorship
 related_publications: false
 ---
 
