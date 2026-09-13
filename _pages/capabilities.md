@@ -58,18 +58,18 @@ I treat safety, repeatability, documentation, and equipment checks as part of ex
 
 I contribute to research delivery through project coordination, technical communication, interdisciplinary collaboration, and the mentoring of undergraduate and postgraduate researchers.
 
-## Professional development and certifications
+**Professional development and certifications**
 
 The following online courses support my work in research delivery, laboratory teaching, and responsible use of AI.
 
-### Project management and research delivery
+**Project management and research delivery**
 
 - Project Management and Planning Specialization, Johns Hopkins University, September 2026
 - Project Execution and Control, Johns Hopkins University, September 2026
 - Advanced Project Management and Leadership, Johns Hopkins University, September 2026
 - Fundamentals of Project Management, Johns Hopkins University, September 2026
 
-### Laboratory teaching and responsible AI
+**Laboratory teaching and responsible AI**
 
 - Teaching in University Science Laboratories: Developing Best Practice, University of Amsterdam, September 2026
 - AI Management Essentials: Integrating ISO 42001 and ISO 23894, British Standards Institution, August 2026
