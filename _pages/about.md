@@ -42,6 +42,10 @@ Resonator- and plasmonic-based sensors for biomedical, chemical, and environment
 **Smarter optical measurement systems**  
 Signal processing and machine learning that help optical sensors remain accurate and useful outside tightly controlled laboratory conditions.
 
+**Future Research Vision**
+
+Develop intelligent photonic sensing platforms that enable autonomous, distributed monitoring of critical infrastructure and human/environmental systems.
+
 Explore my [research projects](/projects/), [publications](/publications/), [laboratory and technical capabilities](/capabilities/), [undergraduate mentorship](/undergrad/), [postgraduate mentorship](/postgrad/), and [CV](/cv/). You can also visit my [Google Scholar profile](https://scholar.google.com/citations?user=30SoXSkAAAAJ&hl=en) for citation information.
 
 I enjoy talking about photonics and am always happy to connect over research ideas, shared interests, or potential collaborations. You can reach me at [huda.zain@kfupm.edu.sa](mailto:huda.zain@kfupm.edu.sa) or connect with me on [LinkedIn](https://www.linkedin.com/in/huda-z-076724317/).
