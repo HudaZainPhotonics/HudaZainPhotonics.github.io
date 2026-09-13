@@ -42,7 +42,7 @@ Resonator- and plasmonic-based sensors for biomedical, chemical, and environment
 **Smarter optical measurement systems**  
 Signal processing and machine learning that help optical sensors remain accurate and useful outside tightly controlled laboratory conditions.
 
-**Future Research Vision**
+**Future Research Direction**
 
 Develop intelligent photonic sensing platforms that enable autonomous, distributed monitoring of critical infrastructure and human/environmental systems.
 
