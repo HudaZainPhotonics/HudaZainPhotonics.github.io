@@ -7,61 +7,60 @@ nav: true
 nav_order: 8
 ---
 
-My work combines experimental photonics, fiber-optic sensor fabrication, optical interrogation, and data-driven signal processing. I have hands-on experience developing, operating, and troubleshooting laboratory sensing platforms from optical alignment through measurement collection and analysis.
+I work across the experimental photonics research process, from sensing-platform design and fabrication to optical interrogation, data analysis, validation, and research delivery.
 
-## Photonics research instrumentation
+## Design and plan
 
-- Tunable laser sources and amplified spontaneous emission (ASE) sources
-- Optical spectrum analysers, optical power meters, and microscopy systems
-- Environmental-control systems for humidity and temperature testing
-- Vibration-testing setups
-- Optical lens alignment and open-space optical experiments
+I use modelling tools and early-stage experimental planning to define sensing concepts, select suitable equipment, and turn research questions into workable laboratory studies.
 
-## Fiber-optic sensing and fabrication
+- Ansys Lumerical, COMSOL Multiphysics, Zemax, and GDSFactory
+- Optical-component selection and open-space optical-layout design
+- Experimental planning, prototype development, and research-project coordination
+- Grant proposal development and technical writing
 
-- Fiber tapering and D-shaped optical fibers
+## Build and prepare sensing platforms
+
+I prepare fiber-optic and photonic sensing platforms, including the fiber structures and functional materials.
+
+- Fiber tapering, D-shaping optical fibers, splicing, and experimental fiber handling
 - Microloop and microbottle resonators
-- Fiber Bragg grating (FBG) sensing
-- Distributed fiber-optic sensing
-- Optical-fiber splicing and experimental fibre handling
-
-## Nanomaterials and functional coatings
-
-- Graphene and graphene oxide
-- Graphene-gold interfaces
-- ZnO nanorods
+- Fiber Bragg grating and distributed fiber-optic sensing
+- Graphene, graphene oxide, graphene-gold interfaces, and ZnO nanorods coatings
 - Polymer and hydrogel coatings
-- Sensor surface functionalisation and nanomaterial integration
 
-## Experiment automation and signal processing
+## Interrogate and measure
+
+I operate and troubleshoot optical measurement setups, from alignment and source selection to controlled sensing experiments and measurement collection.
+
+- Tunable laser and amplified spontaneous emission sources
+- Optical spectrum analysers, optical power meters, and microscopy systems
+- Optical lens alignment and open-space optical experiments
+- Humidity, temperature, and vibration testing
+
+## Analyse and automate
+
+I use computational tools to organise measurement workflows, automate acquisition where appropriate, and extract useful information from optical-sensing data.
 
 - Python-based instrument control, automated data acquisition, and data analysis
-- LabVIEW and MATLAB
+- MATLAB and LabVIEW
 - Machine-learning-assisted signal processing for optical sensing
 
-## Photonic modelling and design
+## Validate and work safely
 
-- Ansys Lumerical
-- COMSOL Multiphysics
-- Zemax
-- GDSFactory
-
-## Laboratory safety and quality practice
+I treat safety, repeatability, documentation, and equipment checks as part of experimental research rather than as separate administrative steps.
 
 - Laser and guided-photonics safety
 - Safe handling of optical equipment and nanomaterials
-- Laboratory equipment checks, traceable documentation, repeatable procedures, and reliable experimental records
+- Equipment checks, traceable documentation, repeatable procedures, and reliable experimental records
 - Working knowledge of laboratory-quality principles relevant to ISO/IEC 17025
 
-## Research delivery and laboratory leadership
+## Deliver research and develop people
 
-- Grant proposal development and project coordination
-- Experimental planning, equipment selection, and research delivery
-- Undergraduate and postgraduate mentoring
-- Interdisciplinary collaboration and technical communication
+I contribute to research delivery through project coordination, technical communication, interdisciplinary collaboration, and the mentoring of undergraduate and postgraduate researchers.
 
 ## Professional development and certifications
-The following online course certificates were completed through Coursera. The course provider is identified for each item.
+
+The following online courses support my work in research delivery, laboratory teaching, and responsible use of AI.
 
 ### Project management and research delivery
 
