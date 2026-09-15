@@ -45,7 +45,7 @@ These demos are designed to connect fundamental photonics concepts with their en
 
   <div class="demo-card-preview">
     <img
-      src="{{ '/assets/img/demos/das-localization-preview.webp' | relative_url }}"
+      src="{{ '/assets/img/demos/das-localization-card-preview.webp' | relative_url }}"
       alt="Animated visualization of a localized disturbance moving along a DAS sensing fiber and its corresponding space-time response"
       loading="lazy"
     >
