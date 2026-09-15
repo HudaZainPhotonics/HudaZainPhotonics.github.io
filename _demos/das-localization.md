@@ -88,10 +88,12 @@ permalink: /demos/das-localization/
 
           <div class="das-fiber-line"></div>
 
+          
           <div
-            class="das-interrogator"
-            title="DAS interrogator">
-          </div>
+  class="das-interrogator"
+  title="DAS interrogator">
+  <span>DAS</span>
+</div>
 
           <div
             id="das-disturbance-marker"
