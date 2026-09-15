@@ -42,3 +42,8 @@ These demos are designed to connect fundamental photonics concepts with their en
 
 </div>
 
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/demos/demo-gallery.css' | relative_url }}"
+>
+
