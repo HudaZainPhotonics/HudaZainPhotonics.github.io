@@ -12,3 +12,33 @@ Interactive demonstrations for exploring concepts in fiber optics, optical sensi
 
 These demos are designed to connect fundamental photonics concepts with their engineering and sensing applications. Each demonstration includes an interactive model together with the governing physics, model assumptions, and key parameters.
 
+
+<div class="demo-grid">
+
+  <a class="demo-card" href="{{ '/demos/fbg-strain/' | relative_url }}">
+
+    <div class="demo-card-preview">
+      <div class="demo-card-placeholder">
+        Interactive preview
+      </div>
+    </div>
+
+    <div class="demo-card-body">
+
+      <h3>Fiber Bragg Grating Strain Sensor</h3>
+
+      <p>
+        Explore how axial strain changes the grating period and effective
+        refractive index, producing a measurable shift in the Bragg reflection.
+      </p>
+
+      <span class="demo-card-link">
+        Explore demo →
+      </span>
+
+    </div>
+
+  </a>
+
+</div>
+
