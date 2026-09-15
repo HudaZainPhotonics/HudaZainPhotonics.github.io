@@ -135,3 +135,8 @@ permalink: /demos/fbg-strain/
 
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <script src="{{ '/assets/js/demos/fbg-strain.js' | relative_url }}"></script>
+
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/demos/fbg-strain.css' | relative_url }}"
+>
