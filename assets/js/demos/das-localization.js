@@ -229,13 +229,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
         type: "heatmap",
 
-        zmin: -1,
-        zmax: 1,
+zmin: -1,
+zmax: 1,
+zmid: 0,
 
-        colorbar: {
-          title: "Normalized<br>response",
-          thickness: 14
-        },
+colorscale: [
+  [0.00, "#2166ac"],
+  [0.25, "#67a9cf"],
+  [0.50, "#ffffff"],
+  [0.75, "#ef8a62"],
+  [1.00, "#b2182b"]
+],
+
+colorbar: {
+  title: "Normalized<br>dynamic response",
+  thickness: 14
+},
 
         hovertemplate:
           "Distance: %{x:.0f} m" +
