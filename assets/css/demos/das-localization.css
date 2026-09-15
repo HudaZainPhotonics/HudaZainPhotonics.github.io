@@ -109,7 +109,7 @@
 .das-fiber-line {
   position: absolute;
 
-  left: 7%;
+  left: 9%;
   right: 4%;
   top: 36px;
 
@@ -125,15 +125,23 @@
   left: 0;
   top: 20px;
 
-  width: 32px;
+  width: 36px;
   height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border: 2px solid var(--global-text-color);
   border-radius: 5px;
 
   background: var(--global-bg-color);
-}
 
+  font-size: 0.68rem;
+  font-weight: 600;
+
+  z-index: 2;
+}
 .das-disturbance-marker {
   position: absolute;
 
@@ -162,7 +170,7 @@
   display: flex;
   justify-content: space-between;
 
-  padding-left: 7%;
+  padding-left: 9%;
   padding-right: 2%;
 
   font-size: 0.78rem;
