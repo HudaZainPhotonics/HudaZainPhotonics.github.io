@@ -41,6 +41,34 @@ These demos are designed to connect fundamental photonics concepts with their en
 
   </a>
 
+  <a class="demo-card" href="{{ '/demos/das-localization/' | relative_url }}">
+
+  <div class="demo-card-preview">
+    <img
+      src="{{ '/assets/img/demos/das-localization-preview.webp' | relative_url }}"
+      alt="Animated visualization of a localized disturbance moving along a DAS sensing fiber and its corresponding space-time response"
+      loading="lazy"
+    >
+  </div>
+
+  <div class="demo-card-body">
+
+    <h3>DAS: Locating an Acoustic Disturbance</h3>
+
+    <p>
+      Explore how optical return time identifies where a disturbance occurs
+      along a sensing fiber, while repeated measurements track its vibration
+      over time.
+    </p>
+
+    <span class="demo-card-link">
+      Explore demo →
+    </span>
+
+  </div>
+
+</a>
+
 </div>
 
 <link
