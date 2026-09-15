@@ -101,35 +101,117 @@ permalink: /demos/fbg-strain/
 
 
   <!-- Model information -->
-  <details class="fbg-model">
+ <details class="fbg-model">
 
-    <summary>Model &amp; assumptions</summary>
+  <summary>Model &amp; assumptions</summary>
 
-    <p>
-      The Bragg condition is
-      <strong>λ<sub>B</sub> = 2n<sub>eff</sub>Λ</strong>.
-      For uniform axial strain at constant temperature,
-      <strong>
-        Δλ<sub>B</sub> =
-        λ<sub>B,0</sub>(1 − p<sub>e</sub>)ε
-      </strong>.
-    </p>
+  <h4>Governing physics</h4>
 
-    <p>
-      The displayed grating period tracks the physical elongation of the
-      periodic structure. The Bragg-wavelength shift is not caused by this
-      geometrical change alone: axial strain also changes the effective
-      refractive index through the photoelastic effect.
-    </p>
+  <p>
+    A fiber Bragg grating reflects light near the Bragg wavelength
+  </p>
 
-    <p>
-      <strong>Model assumptions:</strong>
-      representative ideal uniform FBG; uniform axial tensile strain;
-      constant temperature; linear strain response; no chirp, strain gradient,
-      packaging effects, birefringence, or interrogator noise.
-    </p>
+  <p style="text-align:center;">
+    <strong>
+      λ<sub>B</sub> = 2n<sub>eff</sub>Λ
+    </strong>
+  </p>
 
-  </details>
+  <p>
+    where n<sub>eff</sub> is the effective refractive index of the guided mode
+    and Λ is the grating period.
+  </p>
+
+  <p>
+    For uniform axial strain at constant temperature, the Bragg-wavelength
+    shift is modeled as
+  </p>
+
+  <p style="text-align:center;">
+    <strong>
+      Δλ<sub>B</sub> =
+      λ<sub>B,0</sub>(1 − p<sub>e</sub>)ε
+    </strong>
+  </p>
+
+  <p>
+    where ε is the applied axial strain and p<sub>e</sub> is the effective
+    strain-optic coefficient. The wavelength shift therefore contains both
+    the geometrical change in grating period and the strain-induced change in
+    effective refractive index through the photoelastic effect.
+  </p>
+
+
+  <h4>Reflection spectrum</h4>
+
+  <p>
+    The displayed spectrum is calculated using the coupled-mode model for an
+    ideal uniform fiber Bragg grating. It is not an imposed Gaussian peak.
+    The sidelobes visible in the spectrum arise from the ideal uniform,
+    unapodized grating model.
+  </p>
+
+
+  <h4>Representative model parameters</h4>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>Reference Bragg wavelength</td>
+        <td>1550 nm</td>
+      </tr>
+      <tr>
+        <td>Effective strain-optic coefficient, p<sub>e</sub></td>
+        <td>0.2027</td>
+      </tr>
+      <tr>
+        <td>Strain sensitivity</td>
+        <td>1.236 pm/µε</td>
+      </tr>
+      <tr>
+        <td>Grating length</td>
+        <td>4 mm</td>
+      </tr>
+      <tr>
+        <td>Refractive-index modulation, Δn</td>
+        <td>1.5 × 10<sup>−4</sup></td>
+      </tr>
+      <tr>
+        <td>Modal-power factor, M<sub>p</sub></td>
+        <td>0.7372</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4>Assumptions</h4>
+
+  <p>
+    The demonstration represents an ideal uniform FBG subjected to uniform
+    axial tensile strain at constant temperature. The model assumes a linear
+    strain response and does not include temperature cross-sensitivity,
+    nonuniform strain, chirp, packaging or bonding effects, birefringence,
+    source noise, or interrogator limitations.
+  </p>
+
+
+  <h4>References</h4>
+
+  <p>
+    F. T. S. Yu and S. Yin, eds.,
+    <em>Fiber Optic Sensors</em>,
+    Marcel Dekker, 2002.
+    See the sections on uniform fiber Bragg gratings, coupled-mode
+    reflectivity, and FBG strain sensing.
+  </p>
+
+  <p>
+    E. Udd and W. B. Spillman Jr., eds.,
+    <em>Fiber Optic Sensors: An Introduction for Engineers and Scientists</em>,
+    2nd ed., Wiley, 2011.
+  </p>
+
+</details>
 
 </div>
 
