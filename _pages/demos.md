@@ -6,7 +6,6 @@ nav: true
 nav_order: 12
 ---
 
-# Photonics Teaching Demos
 
 Interactive demonstrations for exploring concepts in fiber optics, optical sensing, plasmonics, and integrated photonics.
 
