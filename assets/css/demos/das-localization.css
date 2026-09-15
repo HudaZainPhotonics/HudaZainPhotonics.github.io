@@ -273,3 +273,15 @@
     height: 250px;
   }
 }
+
+.das-disturbance-marker span {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  white-space: nowrap;
+  font-size: 0.68rem;
+  font-weight: 500;
+}
