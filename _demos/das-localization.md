@@ -96,9 +96,10 @@ permalink: /demos/das-localization/
 </div>
 
           <div
-            id="das-disturbance-marker"
-            class="das-disturbance-marker">
-          </div>
+  id="das-disturbance-marker"
+  class="das-disturbance-marker">
+  <span>disturbance</span>
+</div>
 
         </div>
 
