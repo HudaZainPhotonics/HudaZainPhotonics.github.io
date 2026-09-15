@@ -211,6 +211,9 @@ collections:
     output: true
   teachings:
     output: true
+  demos:
+    output: true
+    permalink: /demos/:name/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
