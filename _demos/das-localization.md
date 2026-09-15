@@ -266,3 +266,8 @@ permalink: /demos/das-localization/
 
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <script src="{{ '/assets/js/demos/das-localization.js' | relative_url }}"></script>
+
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/demos/das-localization.css' | relative_url }}"
+>
