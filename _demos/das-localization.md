@@ -126,12 +126,11 @@ permalink: /demos/das-localization/
 
       <div id="das-heatmap"></div>
 
-      <p class="das-caption">
-        <strong>How to read this map:</strong>
-        the neutral background means no modeled dynamic disturbance.
-        The colored vertical band marks the fiber region experiencing the
-        localized vibration; alternating color represents the response
-        changing through slow time.
+    <p class="das-caption">
+  <strong>How to read this map:</strong>
+  white indicates zero modeled dynamic response. The colored vertical band
+  marks the fiber region experiencing the localized disturbance; blue and red
+  indicate opposite signs of the oscillating response.
       </p>
 
       <p class="das-caption">
