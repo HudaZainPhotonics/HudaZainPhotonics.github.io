@@ -1,0 +1,267 @@
+/* =========================================================
+   DAS Disturbance Localization Demo
+   ========================================================= */
+
+.das-demo {
+  width: 1120px;
+  max-width: calc(100vw - 3rem);
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Main dashboard */
+
+.das-demo-grid {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+
+/* Shared panels */
+
+.das-panel {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 14px;
+  padding: 1.4rem;
+}
+
+.das-controls {
+  background: var(--global-bg-color);
+}
+
+/* Sliders */
+
+#das-location-slider,
+#das-frequency-slider {
+  width: 100%;
+  margin: 0.8rem 0 0.35rem;
+}
+
+.das-main-value {
+  margin-bottom: 1.35rem;
+
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.das-unit {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+/* Numerical outputs */
+
+.das-readouts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+  margin-top: 0.3rem;
+}
+
+.das-readout {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+
+.das-readout span {
+  display: block;
+  margin-bottom: 0.35rem;
+
+  font-size: 0.78rem;
+  line-height: 1.25;
+  opacity: 0.75;
+}
+
+.das-readout strong {
+  display: block;
+
+  font-size: 1.05rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+/* Fiber schematic */
+
+.das-fiber-section {
+  margin-top: 1.6rem;
+}
+
+.das-fiber-section h3 {
+  margin-bottom: 0.4rem;
+}
+
+.das-fiber {
+  position: relative;
+
+  width: 100%;
+  height: 76px;
+
+  margin-top: 0.5rem;
+}
+
+.das-fiber-line {
+  position: absolute;
+
+  left: 7%;
+  right: 4%;
+  top: 36px;
+
+  height: 8px;
+
+  border-radius: 5px;
+  background: var(--global-divider-color);
+}
+
+.das-interrogator {
+  position: absolute;
+
+  left: 0;
+  top: 20px;
+
+  width: 32px;
+  height: 32px;
+
+  border: 2px solid var(--global-text-color);
+  border-radius: 5px;
+
+  background: var(--global-bg-color);
+}
+
+.das-disturbance-marker {
+  position: absolute;
+
+  top: 14px;
+
+  width: 3px;
+  height: 48px;
+
+  background: var(--global-text-color);
+  transform: translateX(-50%);
+}
+
+.das-disturbance-marker::after {
+  content: "▲";
+
+  position: absolute;
+  top: 42px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: 14px;
+}
+
+.das-fiber-labels {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 7%;
+  padding-right: 2%;
+
+  font-size: 0.78rem;
+  opacity: 0.7;
+}
+
+.das-small-note {
+  margin: 0.7rem 0 0;
+
+  text-align: center;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  opacity: 0.72;
+}
+
+/* Heatmap */
+
+.das-map-panel {
+  min-width: 0;
+}
+
+.das-observation {
+  margin: 0 0 0.3rem;
+
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+#das-heatmap {
+  width: 100%;
+  height: 430px;
+}
+
+.das-caption {
+  margin: 0.35rem 0 0;
+
+  font-size: 0.82rem;
+  line-height: 1.45;
+  opacity: 0.72;
+}
+
+/* Slow-time trace */
+
+.das-trace-panel {
+  margin-top: 1.5rem;
+}
+
+#das-time-trace {
+  width: 100%;
+  height: 270px;
+}
+
+/* Model */
+
+.das-model {
+  margin-top: 1.8rem;
+  padding-top: 1rem;
+
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.das-model summary {
+  cursor: pointer;
+  padding: 0.25rem 0;
+
+  font-weight: 600;
+}
+
+.das-model[open] summary {
+  margin-bottom: 0.8rem;
+}
+
+.das-model table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.das-model td {
+  padding: 0.55rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.das-model td:last-child {
+  text-align: right;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .das-demo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #das-heatmap {
+    height: 380px;
+  }
+
+  #das-time-trace {
+    height: 250px;
+  }
+}
