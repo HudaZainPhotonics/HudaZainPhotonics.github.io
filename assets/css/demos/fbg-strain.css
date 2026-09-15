@@ -2,14 +2,18 @@
    FBG Strain Sensor Demo
    ========================================================= */
 
+
 .fbg-demo {
-  width: 100%;
+  width: min(1120px, calc(100vw - 3rem));
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Main dashboard */
+
 .fbg-demo-grid {
   display: grid;
-  grid-template-columns: minmax(280px, 0.8fr) minmax(500px, 1.7fr);
+  grid-template-columns: minmax(340px, 0.9fr) minmax(560px, 1.5fr);
   gap: 1.5rem;
   align-items: start;
   margin-top: 1.5rem;
