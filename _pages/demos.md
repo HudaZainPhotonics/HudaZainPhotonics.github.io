@@ -18,10 +18,12 @@ These demos are designed to connect fundamental photonics concepts with their en
   <a class="demo-card" href="{{ '/demos/fbg-strain/' | relative_url }}">
 
     <div class="demo-card-preview">
-      <div class="demo-card-placeholder">
-        Interactive preview
-      </div>
-    </div>
+  <img
+    src="{{ '/assets/img/demos/fbg-strain-preview.webp' | relative_url }}"
+    alt="Animated reflection spectrum of a fiber Bragg grating shifting under axial strain"
+    loading="lazy"
+  >
+</div>
 
     <div class="demo-card-body">
 
