@@ -18,10 +18,10 @@ These demos are designed to connect fundamental photonics concepts with their en
 
     <div class="demo-card-preview">
   <img
-    src="{{ '/assets/img/demos/fbg-strain-preview.webp' | relative_url }}"
-    alt="Animated reflection spectrum of a fiber Bragg grating shifting under axial strain"
-    loading="lazy"
-  >
+  src="{{ '/assets/img/demos/fbg-module-preview.webp' | relative_url }}"
+  alt="Teaching schematic showing FBG wavelength-encoded strain sensing, measurement performance, and railway-bridge monitoring application."
+  loading="lazy"
+>
 </div>
 
     <div class="demo-card-body">
