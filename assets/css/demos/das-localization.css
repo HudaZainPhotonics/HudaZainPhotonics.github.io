@@ -1,5 +1,5 @@
 /* =========================================================
-   DAS Disturbance Localization Demo
+   DAS Interactive Teaching Module
    ========================================================= */
 
 .das-demo {
@@ -11,33 +11,150 @@
   transform: translateX(-50%);
 }
 
-/* Main dashboard */
 
-.das-demo-grid {
+/* =========================================================
+   Module navigation
+   ========================================================= */
+
+.das-module-nav {
   display: grid;
-  grid-template-columns: 360px minmax(0, 1fr);
-  gap: 1.5rem;
-  align-items: start;
-  margin-top: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+
+  margin: 1.6rem 0 2.4rem;
 }
 
-/* Shared panels */
+.das-module-nav a {
+  display: block;
+
+  padding: 0.9rem 1rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.das-module-nav a:hover {
+  border-color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.das-module-nav span {
+  display: block;
+
+  margin-bottom: 0.15rem;
+
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.das-module-nav strong {
+  display: block;
+
+  font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   Module parts
+   ========================================================= */
+
+.das-module-part {
+  scroll-margin-top: 2rem;
+}
+
+.das-module-part + .das-module-part {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.das-part-heading {
+  margin-bottom: 1.5rem;
+}
+
+.das-part-number {
+  display: block;
+
+  margin-bottom: 0.25rem;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  opacity: 0.65;
+}
+
+.das-part-heading h2 {
+  margin: 0 0 0.25rem;
+}
+
+.das-part-heading h3 {
+  margin: 0 0 0.6rem;
+
+  font-size: 1.15rem;
+}
+
+.das-part-heading p {
+  max-width: 850px;
+
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+.das-part-transition {
+  max-width: 900px;
+
+  margin: 2.2rem auto 0;
+  padding: 0.25rem 0 0.25rem 1rem;
+
+  border-left: 3px solid var(--global-divider-color);
+}
+
+.das-part-transition p {
+  margin: 0.35rem 0 0;
+}
+
+
+/* =========================================================
+   Shared panels
+   ========================================================= */
 
 .das-panel {
   border: 1px solid var(--global-divider-color);
   border-radius: 14px;
+
   padding: 1.4rem;
 }
 
-.das-controls {
+.das-controls,
+.das-tradeoff-controls,
+.das-application-controls {
   background: var(--global-bg-color);
 }
 
-/* Sliders */
+
+/* =========================================================
+   Shared sliders and values
+   ========================================================= */
 
 #das-location-slider,
-#das-frequency-slider {
+#das-frequency-slider,
+#das-resolution-slider,
+#das-cost-resolution-slider,
+#das-range-slider,
+#das-temporal-prf-slider,
+#das-temporal-frequency-slider,
+#das-application-range-slider,
+#das-application-resolution-slider,
+#das-application-frequency-slider {
   width: 100%;
+
   margin: 0.8rem 0 0.35rem;
 }
 
@@ -52,30 +169,38 @@
 .das-unit {
   font-size: 1rem;
   font-weight: 400;
+
   opacity: 0.75;
 }
 
-/* Numerical outputs */
+
+/* =========================================================
+   Shared numerical outputs
+   ========================================================= */
 
 .das-readouts {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.7rem;
+
   margin-top: 0.3rem;
 }
 
 .das-readout {
   border: 1px solid var(--global-divider-color);
   border-radius: 10px;
+
   padding: 0.8rem;
 }
 
 .das-readout span {
   display: block;
+
   margin-bottom: 0.35rem;
 
   font-size: 0.78rem;
   line-height: 1.25;
+
   opacity: 0.75;
 }
 
@@ -86,6 +211,54 @@
   line-height: 1.3;
   font-weight: 600;
 }
+
+
+/* =========================================================
+   Shared text
+   ========================================================= */
+
+.das-observation {
+  margin: 0 0 0.3rem;
+
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.das-caption {
+  margin: 0.35rem 0 0;
+
+  font-size: 0.82rem;
+  line-height: 1.45;
+
+  opacity: 0.72;
+}
+
+.das-small-note {
+  margin: 0.7rem 0 0;
+
+  font-size: 0.82rem;
+  line-height: 1.45;
+
+  opacity: 0.72;
+}
+
+
+/* =========================================================
+   PART 1 — Disturbance Localization
+   ========================================================= */
+
+/* Main dashboard */
+
+.das-demo-grid {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 1.5rem;
+
+  align-items: start;
+
+  margin-top: 1.5rem;
+}
+
 
 /* Fiber schematic */
 
@@ -142,6 +315,7 @@
 
   z-index: 2;
 }
+
 .das-disturbance-marker {
   position: absolute;
 
@@ -151,6 +325,7 @@
   height: 48px;
 
   background: var(--global-text-color);
+
   transform: translateX(-50%);
 }
 
@@ -158,12 +333,27 @@
   content: "▲";
 
   position: absolute;
+
   top: 42px;
   left: 50%;
 
   transform: translateX(-50%);
 
   font-size: 14px;
+}
+
+.das-disturbance-marker span {
+  position: absolute;
+
+  top: 50px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  white-space: nowrap;
+
+  font-size: 0.68rem;
+  font-weight: 500;
 }
 
 .das-fiber-labels {
@@ -174,17 +364,14 @@
   padding-right: 2%;
 
   font-size: 0.78rem;
+
   opacity: 0.7;
 }
 
-.das-small-note {
-  margin: 0.7rem 0 0;
-
+.das-fiber-section .das-small-note {
   text-align: center;
-  font-size: 0.82rem;
-  line-height: 1.45;
-  opacity: 0.72;
 }
+
 
 /* Heatmap */
 
@@ -192,25 +379,11 @@
   min-width: 0;
 }
 
-.das-observation {
-  margin: 0 0 0.3rem;
-
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
-
 #das-heatmap {
   width: 100%;
   height: 430px;
 }
 
-.das-caption {
-  margin: 0.35rem 0 0;
-
-  font-size: 0.82rem;
-  line-height: 1.45;
-  opacity: 0.72;
-}
 
 /* Slow-time trace */
 
@@ -223,10 +396,866 @@
   height: 270px;
 }
 
-/* Model */
+
+/* =========================================================
+   PART 2 — Shared trade-off layout
+   ========================================================= */
+
+.das-tradeoff-section {
+  margin-top: 2.8rem;
+}
+
+.das-tradeoff-section + .das-tradeoff-section {
+  padding-top: 2.4rem;
+
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.das-subdemo-heading {
+  display: flex;
+  gap: 0.8rem;
+
+  align-items: flex-start;
+
+  margin-bottom: 1rem;
+}
+
+.das-subdemo-letter {
+  flex: 0 0 auto;
+
+  min-width: 30px;
+  height: 30px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 50%;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.das-subdemo-heading h3 {
+  margin: 0 0 0.15rem;
+}
+
+.das-subdemo-heading p {
+  margin: 0;
+
+  opacity: 0.8;
+}
+
+.das-tradeoff-grid {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 1.5rem;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   PART 2A — Spatial Resolution
+   ========================================================= */
+
+#das-resolution-plot {
+  width: 100%;
+  height: 365px;
+}
+
+
+/* =========================================================
+   PART 2B — Cost of Finer Spatial Resolution
+   ========================================================= */
+
+.das-cost-figure h4 {
+  margin-top: 0;
+}
+
+.das-cost-forward-trip {
+  position: relative;
+
+  height: 112px;
+
+  margin: 0.3rem 0.3rem 0.6rem 54px;
+}
+
+.das-cost-fiber {
+  position: absolute;
+
+  left: 0;
+  right: 2%;
+  top: 48px;
+
+  height: 8px;
+
+  border-radius: 5px;
+  background: var(--global-divider-color);
+}
+
+.das-cost-interrogator {
+  position: absolute;
+
+  left: -52px;
+  top: 31px;
+
+  width: 42px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--global-text-color);
+  border-radius: 6px;
+
+  background: var(--global-bg-color);
+
+  font-size: 0.68rem;
+  font-weight: 700;
+
+  z-index: 3;
+}
+
+.das-cost-launch-pulse {
+  position: absolute;
+
+  top: 27px;
+
+  height: 48px;
+
+  border: 2px solid var(--global-text-color);
+
+  background: var(--global-divider-color);
+
+  opacity: 0.75;
+}
+
+.das-cost-pulse-interval {
+  position: absolute;
+
+  top: 82px;
+
+  padding-top: 3px;
+
+  border-top: 1px solid var(--global-text-color);
+
+  text-align: center;
+
+  font-size: 0.7rem;
+
+  opacity: 0.72;
+}
+
+.das-cost-forward-direction {
+  position: absolute;
+
+  right: 2%;
+  top: 16px;
+
+  font-size: 0.75rem;
+
+  opacity: 0.72;
+}
+
+.das-cost-divider {
+  margin: 1.2rem 0 1.4rem;
+
+  border-top: 1px solid var(--global-divider-color);
+}
+
+
+/* Return trip */
+
+.das-cost-return-composite {
+  position: relative;
+
+  min-height: 205px;
+
+  margin: 0.3rem 0.3rem 0.5rem 54px;
+}
+
+.das-cost-return-fiber {
+  position: absolute;
+
+  left: 235px;
+  right: 2%;
+  top: 78px;
+
+  height: 8px;
+
+  border-radius: 5px;
+  background: var(--global-divider-color);
+}
+
+.das-cost-return-signal {
+  position: absolute;
+
+  border: 2px solid var(--global-text-color);
+
+  background: var(--global-divider-color);
+}
+
+.das-cost-return-direction {
+  position: absolute;
+
+  right: 2%;
+  top: 42px;
+
+  font-size: 0.75rem;
+
+  opacity: 0.72;
+}
+
+.das-cost-return-label {
+  position: absolute;
+
+  top: 103px;
+
+  white-space: nowrap;
+
+  font-size: 0.68rem;
+
+  opacity: 0.72;
+}
+
+
+/* Receiver inset */
+
+.das-cost-receiver {
+  position: absolute;
+
+  left: -52px;
+  top: 18px;
+
+  width: 270px;
+  height: 160px;
+
+  padding: 10px;
+
+  border: 2px solid var(--global-text-color);
+  border-radius: 9px;
+
+  background: var(--global-bg-color);
+}
+
+.das-cost-receiver::after {
+  content: "";
+
+  position: absolute;
+
+  right: -18px;
+  top: 57px;
+
+  width: 18px;
+
+  border-top: 2px solid var(--global-text-color);
+}
+
+.das-cost-receiver-name {
+  margin-bottom: 5px;
+
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.das-cost-receiver-screen {
+  position: relative;
+
+  height: 112px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+}
+
+.das-cost-screen-note {
+  position: absolute;
+
+  left: 6px;
+  top: 4px;
+
+  font-size: 0.58rem;
+
+  opacity: 0.7;
+
+  z-index: 4;
+}
+
+.das-cost-bandwidth-window {
+  position: absolute;
+
+  top: 24px;
+  bottom: 15px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  border: 2px dashed var(--global-text-color);
+
+  background: var(--global-bg-color);
+
+  opacity: 0.75;
+
+  z-index: 2;
+}
+
+.das-cost-bandwidth-label {
+  position: absolute;
+
+  top: 7px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  white-space: nowrap;
+
+  font-size: 0.57rem;
+}
+
+.das-cost-screen-baseline {
+  position: absolute;
+
+  left: 5%;
+  right: 4%;
+  top: 70px;
+
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.das-cost-captured-pulse {
+  position: absolute;
+
+  top: 41px;
+
+  height: 50px;
+
+  color: var(--global-text-color);
+
+  z-index: 3;
+}
+
+.das-cost-captured-pulse svg {
+  width: 100%;
+  height: 100%;
+
+  overflow: visible;
+}
+
+.das-cost-noise-dot {
+  position: absolute;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: var(--global-text-color);
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   PART 2C — Sensing Range
+   ========================================================= */
+
+.das-range-fiber {
+  position: relative;
+
+  height: 74px;
+
+  margin: 0.8rem 0.5rem 0.5rem 48px;
+}
+
+.das-range-interrogator {
+  position: absolute;
+
+  left: -48px;
+  top: 20px;
+
+  width: 38px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--global-text-color);
+  border-radius: 5px;
+
+  background: var(--global-bg-color);
+
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.das-range-fiber-background,
+.das-range-fiber-active {
+  position: absolute;
+
+  left: 0;
+  top: 32px;
+
+  height: 8px;
+
+  border-radius: 5px;
+}
+
+.das-range-fiber-background {
+  right: 0;
+
+  background: var(--global-divider-color);
+
+  opacity: 0.55;
+}
+
+.das-range-fiber-active {
+  background: var(--global-text-color);
+
+  opacity: 0.65;
+}
+
+.das-range-end {
+  position: absolute;
+
+  top: 18px;
+
+  width: 2px;
+  height: 36px;
+
+  background: var(--global-text-color);
+
+  transform: translateX(-50%);
+}
+
+.das-range-label {
+  position: absolute;
+
+  top: 0;
+
+  transform: translateX(-50%);
+
+  white-space: nowrap;
+
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+
+
+/* Waiting window */
+
+.das-range-wait-track {
+  position: relative;
+
+  height: 28px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 7px;
+}
+
+.das-range-wait-fill {
+  height: 100%;
+
+  background: var(--global-divider-color);
+
+  opacity: 0.65;
+}
+
+.das-range-wait-marker {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  width: 2px;
+
+  background: var(--global-text-color);
+}
+
+.das-range-axis {
+  position: relative;
+
+  height: 45px;
+
+  margin-top: 7px;
+}
+
+.das-range-axis-line {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  top: 5px;
+
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.das-range-tick {
+  position: absolute;
+
+  top: 1px;
+
+  height: 10px;
+
+  border-left: 1px solid var(--global-divider-color);
+}
+
+.das-range-tick span {
+  position: absolute;
+
+  top: 12px;
+  left: 0;
+
+  transform: translateX(-50%);
+
+  font-size: 0.7rem;
+
+  opacity: 0.72;
+}
+
+.das-range-axis-unit {
+  position: absolute;
+
+  right: 0;
+  top: 29px;
+
+  font-size: 0.7rem;
+
+  opacity: 0.72;
+}
+
+
+/* =========================================================
+   PART 2D — Temporal Bandwidth
+   ========================================================= */
+
+#das-temporal-plot {
+  width: 100%;
+  height: 420px;
+}
+
+
+/* =========================================================
+   PART 3 — Pipeline Application Exercise
+   ========================================================= */
+
+.das-application-panel {
+  padding: 1.5rem;
+}
+
+
+/* Pipeline schematic */
+
+.das-application-pipeline {
+  position: relative;
+
+  height: 150px;
+
+  margin: 1rem 1.2rem 1.6rem 62px;
+}
+
+.das-application-pipe {
+  position: absolute;
+
+  left: 0;
+  right: 2%;
+  top: 64px;
+
+  height: 28px;
+
+  border: 2px solid var(--global-divider-color);
+  border-radius: 14px;
+
+  background: linear-gradient(
+    to bottom,
+    var(--global-bg-color) 0%,
+    var(--global-divider-color) 48%,
+    var(--global-divider-color) 52%,
+    var(--global-bg-color) 100%
+  );
+}
+
+.das-application-pipe::before {
+  content: "";
+
+  position: absolute;
+
+  left: 2%;
+  right: 2%;
+  top: 5px;
+
+  height: 4px;
+
+  border-radius: 3px;
+
+  background: var(--global-bg-color);
+
+  opacity: 0.65;
+}
+
+.das-application-flange {
+  position: absolute;
+
+  top: 58px;
+
+  width: 10px;
+  height: 40px;
+
+  border: 2px solid var(--global-text-color);
+  border-radius: 3px;
+
+  background: var(--global-divider-color);
+}
+
+.das-application-pipe-label {
+  position: absolute;
+
+  left: 50%;
+  top: 101px;
+
+  transform: translateX(-50%);
+
+  white-space: nowrap;
+
+  font-size: 0.7rem;
+
+  opacity: 0.72;
+}
+
+.das-application-fiber-background {
+  position: absolute;
+
+  left: 0;
+  right: 2%;
+  top: 50px;
+
+  height: 4px;
+
+  border-radius: 3px;
+
+  background: var(--global-divider-color);
+}
+
+.das-application-fiber-active {
+  position: absolute;
+
+  left: 0;
+  top: 50px;
+
+  height: 4px;
+
+  border-radius: 3px;
+
+  background: var(--global-text-color);
+}
+
+.das-application-interrogator {
+  position: absolute;
+
+  left: -56px;
+  top: 39px;
+
+  width: 44px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--global-text-color);
+  border-radius: 6px;
+
+  background: var(--global-bg-color);
+
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.das-application-range-end {
+  position: absolute;
+
+  top: 18px;
+
+  width: 2px;
+  height: 32px;
+
+  background: var(--global-text-color);
+}
+
+.das-application-range-label {
+  position: absolute;
+
+  top: 108px;
+
+  transform: translateX(-50%);
+
+  white-space: nowrap;
+
+  font-size: 0.76rem;
+
+  opacity: 0.72;
+}
+
+.das-application-event {
+  position: absolute;
+
+  left: 70%;
+  top: 16px;
+
+  font-size: 1.7rem;
+}
+
+.das-application-frequency-label {
+  position: absolute;
+
+  left: 70%;
+  top: 1px;
+
+  transform: translateX(-50%);
+
+  white-space: nowrap;
+
+  font-size: 0.73rem;
+
+  opacity: 0.72;
+}
+
+
+/* Application controls/calculations */
+
+.das-application-grid {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 1.5rem;
+
+  align-items: start;
+}
+
+.das-application-feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.7rem;
+
+  margin-top: 1.2rem;
+}
+
+.das-application-feedback {
+  padding: 0.8rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+}
+
+.das-application-feedback > span {
+  display: block;
+
+  margin-bottom: 0.35rem;
+
+  font-size: 0.7rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  opacity: 0.65;
+}
+
+.das-application-feedback strong {
+  display: block;
+
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.das-application-feedback p {
+  margin: 0.45rem 0 0;
+
+  font-size: 0.78rem;
+  line-height: 1.45;
+
+  opacity: 0.72;
+}
+
+.das-application-iteration {
+  margin-top: 0.9rem;
+  padding: 0.85rem;
+
+  border: 1px dashed var(--global-divider-color);
+  border-radius: 10px;
+
+  background: var(--global-bg-color);
+}
+
+.das-application-iteration > strong {
+  display: block;
+}
+
+
+/* Validation */
+
+.das-application-validation {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.das-validation-flow {
+  max-width: 720px;
+
+  margin: 1.2rem auto 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.das-validation-box {
+  width: min(100%, 620px);
+
+  padding: 0.75rem 1rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.das-validation-arrow {
+  padding: 0.25rem 0;
+
+  opacity: 0.6;
+}
+
+.das-application-conclusion {
+  max-width: 850px;
+
+  margin: 2rem auto 1rem;
+
+  text-align: center;
+}
+
+.das-application-conclusion > strong {
+  font-size: 1.05rem;
+}
+
+.das-application-conclusion p {
+  margin: 0.45rem 0 0;
+}
+
+
+/* =========================================================
+   Model & assumptions
+   ========================================================= */
 
 .das-model {
-  margin-top: 1.8rem;
+  margin-top: 3rem;
   padding-top: 1rem;
 
   border-top: 1px solid var(--global-divider-color);
@@ -234,6 +1263,7 @@
 
 .das-model summary {
   cursor: pointer;
+
   padding: 0.25rem 0;
 
   font-weight: 600;
@@ -245,11 +1275,13 @@
 
 .das-model table {
   width: 100%;
+
   border-collapse: collapse;
 }
 
 .das-model td {
   padding: 0.55rem;
+
   border-bottom: 1px solid var(--global-divider-color);
 }
 
@@ -257,11 +1289,20 @@
   text-align: right;
 }
 
-/* Responsive */
+
+/* =========================================================
+   Responsive layout
+   ========================================================= */
 
 @media (max-width: 900px) {
 
-  .das-demo-grid {
+  .das-demo-grid,
+  .das-tradeoff-grid,
+  .das-application-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .das-application-feedback-grid {
     grid-template-columns: 1fr;
   }
 
@@ -272,97 +1313,66 @@
   #das-time-trace {
     height: 250px;
   }
+
+  #das-resolution-plot {
+    height: 340px;
+  }
+
+  #das-temporal-plot {
+    height: 380px;
+  }
 }
 
-.das-disturbance-marker span {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-
-  transform: translateX(-50%);
-
-  white-space: nowrap;
-  font-size: 0.68rem;
-  font-weight: 500;
-}
-
-/* =========================================================
-   DAS module navigation
-   ========================================================= */
-
-.das-module-nav {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.8rem;
-  margin: 1.6rem 0 2.4rem;
-}
-
-.das-module-nav a {
-  display: block;
-  padding: 0.9rem 1rem;
-
-  border: 1px solid var(--global-divider-color);
-  border-radius: 10px;
-
-  color: var(--global-text-color);
-  text-decoration: none;
-}
-
-.das-module-nav a:hover {
-  border-color: var(--global-theme-color);
-  text-decoration: none;
-}
-
-.das-module-nav span {
-  display: block;
-  margin-bottom: 0.15rem;
-
-  font-size: 0.75rem;
-  opacity: 0.7;
-}
-
-.das-module-nav strong {
-  display: block;
-  font-size: 0.95rem;
-}
-
-/* Part headings */
-
-.das-module-part {
-  scroll-margin-top: 2rem;
-}
-
-.das-part-heading {
-  margin-bottom: 1.5rem;
-}
-
-.das-part-number {
-  display: block;
-  margin-bottom: 0.25rem;
-
-  font-size: 0.78rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  opacity: 0.65;
-}
-
-.das-part-heading h2 {
-  margin: 0 0 0.25rem;
-}
-
-.das-part-heading h3 {
-  margin: 0 0 0.6rem;
-  font-size: 1.15rem;
-}
-
-.das-part-heading p {
-  margin-bottom: 0;
-  max-width: 850px;
-}
 
 @media (max-width: 800px) {
+
   .das-module-nav {
     grid-template-columns: 1fr;
+  }
+
+  .das-module-part + .das-module-part {
+    margin-top: 2.7rem;
+  }
+
+  .das-cost-return-composite {
+    min-height: 255px;
+  }
+
+  .das-cost-return-fiber {
+    left: 220px;
+  }
+
+  .das-cost-receiver {
+    width: 250px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .das-demo {
+    max-width: calc(100vw - 1.5rem);
+  }
+
+  .das-panel {
+    padding: 1rem;
+  }
+
+  .das-readouts {
+    grid-template-columns: 1fr;
+  }
+
+  .das-subdemo-heading {
+    gap: 0.6rem;
+  }
+
+  .das-application-pipeline {
+    margin-left: 56px;
+    margin-right: 0;
+  }
+
+  .das-application-range-label,
+  .das-application-frequency-label {
+    font-size: 0.65rem;
   }
 }
