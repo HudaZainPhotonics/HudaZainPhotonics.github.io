@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "DAS: Locating an Acoustic Disturbance"
+title: "Distributed Acoustic Sensing (DAS)"
 permalink: /demos/das-localization/
 ---
 
