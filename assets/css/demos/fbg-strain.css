@@ -1,5 +1,5 @@
 /* =========================================================
-   FBG Strain Sensor Demo
+   FBG Measurement & Design Teaching Module
    ========================================================= */
 
 .fbg-demo {
@@ -11,46 +11,196 @@
   transform: translateX(-50%);
 }
 
-/* Main dashboard */
 
-.fbg-demo-grid {
-  display: grid;
-  grid-template-columns: 360px minmax(0, 1fr);
-  gap: 1.5rem;
-  align-items: start;
-  margin-top: 1.5rem;
+/* =========================================================
+   Intro and module sections
+   ========================================================= */
+
+.fbg-intro {
+  max-width: 980px;
+  margin-bottom: 1.8rem;
+}
+
+.fbg-module-section {
+  margin-top: 2.4rem;
+  scroll-margin-top: 2rem;
+}
+
+.fbg-module-section + .fbg-module-section {
+  padding-top: 2rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.fbg-section-heading {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+
+  margin-bottom: 1.3rem;
+}
+
+.fbg-section-number {
+  flex: 0 0 auto;
+
+  width: 2rem;
+  height: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 50%;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.fbg-section-heading h2 {
+  margin: 0 0 0.2rem;
+}
+
+.fbg-section-heading h3 {
+  margin: 0.1rem 0 0.45rem;
+  font-size: 1.15rem;
+}
+
+.fbg-section-heading p {
+  max-width: 900px;
+  margin: 0;
 }
 
 
-/* Shared panels */
+/* =========================================================
+   Shared panels
+   ========================================================= */
+
 .fbg-panel {
   border: 1px solid var(--global-divider-color);
   border-radius: 14px;
   padding: 1.4rem;
 }
 
+.fbg-panel h3:first-child {
+  margin-top: 0;
+}
+
+.fbg-caption,
+.fbg-small-note {
+  font-size: 0.82rem;
+  line-height: 1.45;
+  opacity: 0.72;
+}
+
+.fbg-caption {
+  margin: 0.35rem 0 0;
+}
+
+.fbg-small-note {
+  margin: 0.55rem 0 0;
+}
+
+.fbg-observation {
+  margin: 0 0 0.6rem;
+
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.fbg-equation {
+  margin: 0.8rem 0;
+  text-align: center;
+}
+
+
+/* =========================================================
+   Section 1 — wavelength-encoded sensing
+   ========================================================= */
+
+.fbg-demo-grid {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+}
+
 .fbg-controls {
   background: var(--global-bg-color);
 }
 
-/* Slider */
-#fbg-strain-slider {
+
+/* Sliders */
+
+.fbg-demo input[type="range"] {
   width: 100%;
-  margin: 0.8rem 0 0.4rem;
+  margin: 0.8rem 0 0.35rem;
 }
 
 .fbg-strain-value {
   margin-bottom: 1.2rem;
+
   font-size: 1.8rem;
+  line-height: 1.2;
   font-weight: 700;
 }
 
 .fbg-unit {
   font-size: 1rem;
   font-weight: 400;
+  opacity: 0.75;
 }
 
+
+/* Reference-wavelength comparison */
+
+.fbg-design-compare {
+  margin: 0.9rem 0 1rem;
+  padding: 0.85rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+}
+
+.fbg-design-compare > strong {
+  display: block;
+  margin-bottom: 0.55rem;
+
+  font-size: 0.82rem;
+}
+
+.fbg-wavelength-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+}
+
+.fbg-wavelength-buttons button {
+  padding: 0.5rem 0.25rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 7px;
+
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+
+  font: inherit;
+  font-size: 0.78rem;
+
+  cursor: pointer;
+}
+
+.fbg-wavelength-buttons button:hover {
+  border-color: var(--global-theme-color);
+}
+
+.fbg-wavelength-buttons button.active {
+  border-color: var(--global-text-color);
+  font-weight: 700;
+}
+
+
 /* Numerical outputs */
+
 .fbg-readouts {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -58,9 +208,10 @@
 }
 
 .fbg-readout {
+  padding: 0.8rem;
+
   border: 1px solid var(--global-divider-color);
   border-radius: 10px;
-  padding: 0.8rem;
 }
 
 .fbg-readout span {
@@ -80,13 +231,16 @@
   font-weight: 600;
 }
 
-/* FBG schematic */
+
+/* FBG physical schematic */
+
 .fbg-grating-section {
   margin-top: 1.5rem;
 }
 
 .fbg-fiber {
   position: relative;
+
   height: 72px;
   margin-top: 0.8rem;
   overflow: hidden;
@@ -97,18 +251,20 @@
 
 .fbg-core {
   position: absolute;
+
   top: 29px;
   left: 5%;
   right: 5%;
 
   height: 14px;
-  border-radius: 7px;
 
+  border-radius: 7px;
   background: var(--global-divider-color);
 }
 
 .fbg-grating {
   position: absolute;
+
   top: 23px;
   left: 30%;
   right: 30%;
@@ -124,6 +280,7 @@
 
 .fbg-grating-plane {
   display: block;
+
   width: 2px;
   height: 26px;
 
@@ -133,6 +290,7 @@
 
 .fbg-grating-explanation {
   margin-top: 0.7rem;
+
   text-align: center;
   font-size: 0.85rem;
 }
@@ -145,37 +303,817 @@
   opacity: 0.75;
 }
 
-/* Spectrum */
+
+/* Main spectrum */
+
 .fbg-spectrum-panel {
   min-width: 0;
 }
 
-
+.fbg-spectrum-wrap {
+  position: relative;
+}
 
 #fbg-spectrum {
   width: 100%;
-  height: 430px;
+  height: 470px;
 }
 
-.fbg-observation {
-  margin-top: 0;
-  margin-bottom: 0.25rem;
 
-  font-size: 0.95rem;
-  line-height: 1.4;
+/* Calibration inset */
+
+.fbg-calibration-inset {
+  position: absolute;
+
+  top: 0.3rem;
+  right: 0.5rem;
+
+  width: 250px;
+  height: 175px;
+
+  padding: 0.55rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+
+  background: var(--global-bg-color);
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  z-index: 4;
 }
 
-.fbg-caption {
-  margin: 0.3rem 0 0;
+.fbg-calibration-inset > strong {
+  display: block;
+
+  font-size: 0.72rem;
+  line-height: 1.25;
+}
+
+#fbg-calibration {
+  width: 100%;
+  height: 115px;
+}
+
+.fbg-calibration-value {
+  font-size: 0.7rem;
+  line-height: 1.25;
+  opacity: 0.8;
+}
+
+
+/* Measurement chain */
+
+.fbg-measurement-chain {
+  max-width: 850px;
+
+  margin: 1.4rem auto 0;
+  padding-top: 1rem;
+
+  border-top: 1px solid var(--global-divider-color);
+
+  text-align: center;
+}
+
+.fbg-measurement-chain p {
+  margin: 0.35rem 0 0;
 
   font-size: 0.82rem;
-  line-height: 1.45;
   opacity: 0.72;
 }
 
-/* Model section */
+
+/* =========================================================
+   Section 2 — measurement error
+   ========================================================= */
+
+.fbg-error-module {
+  background: var(--global-bg-color);
+}
+
+.fbg-error-control-row {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+
+  margin-top: 0.8rem;
+}
+
+.fbg-question-control {
+  padding: 1rem;
+
+  border-radius: 10px;
+  background: rgba(127, 127, 127, 0.045);
+}
+
+.fbg-question-control > strong {
+  display: block;
+}
+
+.fbg-error-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.55rem;
+}
+
+.fbg-error-box {
+  padding: 0.7rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 9px;
+
+  text-align: center;
+  font-size: 0.78rem;
+}
+
+.fbg-error-box strong {
+  display: block;
+  margin-top: 0.2rem;
+
+  font-size: 0.95rem;
+}
+
+.fbg-error-result {
+  grid-column: 1 / -1;
+
+  padding: 0.75rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 9px;
+}
+
+.fbg-error-result span {
+  display: block;
+
+  font-size: 0.75rem;
+  opacity: 0.72;
+}
+
+.fbg-error-result strong {
+  display: block;
+  margin-top: 0.15rem;
+
+  font-size: 1.25rem;
+}
+
+#fbg-error-plot {
+  width: 100%;
+  height: 520px;
+
+  margin-top: 0.7rem;
+}
+
+
+/* =========================================================
+   Section 3 — measurement resolution
+   ========================================================= */
+
+.fbg-resolution-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  margin-bottom: 1.1rem;
+}
+
+.fbg-resolution-monitors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.fbg-pseudo-monitor {
+  min-width: 0;
+
+  padding: 0.9rem;
+
+  border: 2px solid var(--global-divider-color);
+  border-radius: 12px;
+}
+
+.fbg-pseudo-monitor > strong {
+  display: block;
+}
+
+.fbg-pseudo-monitor > span {
+  display: block;
+
+  margin-top: 0.1rem;
+
+  font-size: 0.75rem;
+  opacity: 0.72;
+}
+
+.fbg-pseudo-monitor > p {
+  margin: 0.15rem 0 0;
+
+  text-align: center;
+  font-size: 0.82rem;
+  opacity: 0.75;
+}
+
+#fbg-resolution-reference,
+#fbg-resolution-capture {
+  width: 100%;
+  height: 320px;
+}
+
+
+/* Resolution decision */
+
+.fbg-resolution-decision {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1.2fr;
+  gap: 0.7rem;
+  align-items: center;
+
+  max-width: 900px;
+
+  margin: 1rem auto 0;
+}
+
+.fbg-resolution-decision > div {
+  padding: 0.7rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 9px;
+
+  text-align: center;
+}
+
+.fbg-resolution-decision span {
+  display: block;
+
+  margin-bottom: 0.15rem;
+
+  font-size: 0.72rem;
+  opacity: 0.72;
+}
+
+.fbg-resolution-equation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 900px;
+
+  margin: 0.9rem auto 0;
+  padding: 0.75rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 9px;
+
+  font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   Section 4 — railway bridge application
+   ========================================================= */
+
+.fbg-application-module {
+  overflow: hidden;
+}
+
+
+/* Bridge schematic */
+
+.fbg-bridge-schematic {
+  position: relative;
+
+  height: 205px;
+
+  margin: 0 0 1.2rem;
+}
+
+
+/* Train */
+
+.fbg-bridge-train-label {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: 0.68rem;
+  font-weight: 600;
+  opacity: 0.72;
+}
+
+.fbg-bridge-train {
+  position: absolute;
+
+  top: 23px;
+  left: 35%;
+
+  width: 300px;
+  height: 42px;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.fbg-train-car {
+  position: relative;
+
+  width: 88px;
+  height: 34px;
+
+  border: 2px solid var(--global-text-color);
+  border-radius: 5px 5px 2px 2px;
+
+  background: var(--global-bg-color);
+}
+
+.fbg-train-loco {
+  width: 100px;
+  border-radius: 5px 15px 2px 2px;
+}
+
+.fbg-train-window {
+  position: absolute;
+  top: 7px;
+
+  width: 16px;
+  height: 10px;
+
+  border: 1px solid var(--global-text-color);
+  border-radius: 2px;
+
+  background: rgba(127, 127, 127, 0.06);
+}
+
+.fbg-train-window.w1 {
+  left: 12px;
+}
+
+.fbg-train-window.w2 {
+  left: 38px;
+}
+
+.fbg-train-window.w3 {
+  left: 64px;
+}
+
+.fbg-train-wheel {
+  position: absolute;
+
+  bottom: -8px;
+
+  width: 12px;
+  height: 12px;
+
+  border: 2px solid var(--global-text-color);
+  border-radius: 50%;
+
+  background: var(--global-bg-color);
+}
+
+.fbg-train-wheel.a {
+  left: 15px;
+}
+
+.fbg-train-wheel.b {
+  right: 15px;
+}
+
+.fbg-train-coupler {
+  position: absolute;
+
+  top: 21px;
+  right: -7px;
+
+  width: 8px;
+
+  border-top: 2px solid var(--global-text-color);
+}
+
+
+/* Bridge */
+
+.fbg-bridge-rail {
+  position: absolute;
+
+  top: 65px;
+  left: 7%;
+  right: 7%;
+
+  border-top: 4px solid var(--global-text-color);
+
+  opacity: 0.75;
+}
+
+.fbg-bridge-deck {
+  position: absolute;
+
+  top: 77px;
+  left: 5%;
+  right: 5%;
+
+  height: 22px;
+
+  border: 2px solid var(--global-divider-color);
+  border-radius: 5px;
+
+  background: rgba(127, 127, 127, 0.035);
+}
+
+.fbg-bridge-pier {
+  position: absolute;
+
+  top: 99px;
+
+  width: 24px;
+  height: 58px;
+
+  border-radius: 2px;
+
+  background: var(--global-divider-color);
+}
+
+.fbg-bridge-pier.one {
+  left: 25%;
+}
+
+.fbg-bridge-pier.two {
+  right: 25%;
+}
+
+
+/* Bridge sensor topology */
+
+.fbg-bridge-sensor-topology {
+  position: absolute;
+
+  top: 105px;
+  left: 39%;
+  right: 9%;
+
+  height: 78px;
+}
+
+.fbg-bridge-bond-patch {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 120px;
+  height: 13px;
+
+  border: 1px solid var(--global-text-color);
+  border-radius: 3px;
+
+  background: rgba(127, 127, 127, 0.04);
+}
+
+.fbg-mini-grating {
+  position: absolute;
+
+  top: 4px;
+  left: 24px;
+  right: 24px;
+
+  border-top: 3px solid var(--global-text-color);
+}
+
+.fbg-bridge-bond-label {
+  position: absolute;
+
+  top: 17px;
+  left: -12px;
+
+  white-space: nowrap;
+
+  font-size: 0.65rem;
+  opacity: 0.72;
+}
+
+.fbg-bridge-temp-housing {
+  position: absolute;
+
+  top: 45px;
+  left: 0;
+
+  width: 120px;
+  height: 20px;
+
+  border: 1px dashed var(--global-text-color);
+  border-radius: 5px;
+
+  background: var(--global-bg-color);
+
+  opacity: 0.78;
+}
+
+.fbg-bridge-temp-housing .fbg-mini-grating {
+  top: 7px;
+}
+
+.fbg-bridge-temp-label {
+  position: absolute;
+
+  top: 67px;
+  left: -25px;
+
+  white-space: nowrap;
+
+  font-size: 0.62rem;
+  opacity: 0.72;
+}
+
+
+/* Optical path */
+
+.fbg-bridge-optical-path {
+  position: absolute;
+
+  top: 6px;
+  left: 120px;
+  right: 0;
+
+  border-top: 3px solid var(--global-divider-color);
+}
+
+.fbg-bridge-optical-drop {
+  position: absolute;
+
+  top: 6px;
+  left: 117px;
+
+  height: 49px;
+
+  border-left: 3px solid var(--global-divider-color);
+}
+
+.fbg-bridge-optical-return {
+  position: absolute;
+
+  top: 55px;
+  left: 117px;
+  right: 0;
+
+  border-top: 3px solid var(--global-divider-color);
+}
+
+.fbg-bridge-path-label {
+  position: absolute;
+
+  top: 27px;
+  right: 12%;
+
+  padding: 0 0.2rem;
+
+  background: var(--global-bg-color);
+
+  font-size: 0.61rem;
+  opacity: 0.65;
+}
+
+.fbg-bridge-interrogator {
+  position: absolute;
+
+  top: 91px;
+  right: 1%;
+
+  width: 78px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--global-text-color);
+  border-radius: 7px;
+
+  background: var(--global-bg-color);
+
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+
+/* Application controls */
+
+.fbg-application-control-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+
+  margin: 1rem 0;
+}
+
+.fbg-application-control-strip .fbg-question-control {
+  min-height: 125px;
+}
+
+
+/* Application figures */
+
+.fbg-application-main-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  margin-top: 1rem;
+}
+
+.fbg-application-figure {
+  min-width: 0;
+
+  padding: 0.9rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 11px;
+}
+
+.fbg-application-figure > strong {
+  display: block;
+}
+
+.fbg-bridge-spectrum-wrap {
+  position: relative;
+}
+
+#fbg-bridge-spectrum {
+  width: 100%;
+  height: 390px;
+}
+
+#fbg-bridge-error-plot {
+  width: 100%;
+  height: 390px;
+}
+
+
+/* Floating wavelength-readout monitor */
+
+.fbg-bridge-readout-inset {
+  position: absolute;
+
+  top: 4px;
+  right: 10px;
+
+  width: 225px;
+  height: 168px;
+
+  padding: 0.55rem;
+
+  border: 1px solid rgba(127, 127, 127, 0.45);
+  border-radius: 9px;
+
+  background: color-mix(
+    in srgb,
+    var(--global-bg-color) 86%,
+    transparent
+  );
+
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.06);
+
+  z-index: 5;
+}
+
+.fbg-bridge-readout-inset > strong {
+  display: block;
+
+  font-size: 0.72rem;
+}
+
+.fbg-bridge-readout-inset > span {
+  display: block;
+
+  margin-top: 0.1rem;
+
+  font-size: 0.65rem;
+  opacity: 0.72;
+}
+
+#fbg-bridge-readout-plot {
+  width: 100%;
+  height: 108px;
+}
+
+
+/* Application feedback */
+
+.fbg-application-feedback {
+  margin-top: 1rem;
+  padding: 0.9rem;
+
+  border: 1px dashed var(--global-divider-color);
+  border-radius: 10px;
+}
+
+.fbg-application-feedback > strong {
+  display: block;
+}
+
+.fbg-application-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 0.9rem;
+}
+
+.fbg-application-flow div {
+  padding: 0.5rem 0.65rem;
+
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.fbg-application-flow span {
+  opacity: 0.6;
+}
+
+
+/* Application conclusion */
+
+.fbg-application-conclusion {
+  max-width: 900px;
+
+  margin: 1.2rem auto 0;
+  padding-top: 1rem;
+
+  border-top: 1px solid var(--global-divider-color);
+
+  text-align: center;
+}
+
+
+/* Temperature compensation note */
+
+.fbg-temperature-compensation-note {
+  margin-top: 1.3rem;
+  padding: 0.9rem 1rem;
+
+  border-left: 3px solid var(--global-divider-color);
+  border-radius: 0 9px 9px 0;
+
+  background: rgba(127, 127, 127, 0.045);
+}
+
+.fbg-temperature-compensation-note h4 {
+  margin: 0 0 0.55rem;
+}
+
+.fbg-temperature-compensation-note p {
+  margin: 0.5rem 0;
+
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   Final takeaway
+   ========================================================= */
+
+.fbg-final-takeaway {
+  max-width: 920px;
+
+  margin: 2rem auto 0;
+  padding-top: 1.2rem;
+
+  border-top: 1px solid var(--global-divider-color);
+
+  text-align: center;
+}
+
+.fbg-final-takeaway > strong {
+  display: block;
+
+  font-size: 1rem;
+}
+
+.fbg-final-takeaway p {
+  margin: 0.8rem 0 0;
+
+  text-align: left;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   Model, assumptions & references
+   ========================================================= */
+
 .fbg-model {
-  margin-top: 1.8rem;
+  margin-top: 2rem;
   padding-top: 1rem;
 
   border-top: 1px solid var(--global-divider-color);
@@ -183,21 +1121,156 @@
 
 .fbg-model summary {
   cursor: pointer;
+
+  padding: 0.3rem 0;
+
   font-weight: 600;
-  padding: 0.25rem 0;
 }
 
 .fbg-model[open] summary {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
 }
 
-/* Responsive layout */
-@media (max-width: 900px) {
-  .fbg-demo-grid {
+.fbg-model table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.fbg-model td {
+  padding: 0.55rem;
+
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.fbg-model td:last-child {
+  text-align: right;
+}
+
+
+/* =========================================================
+   Responsive layout
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .fbg-application-main-panels {
     grid-template-columns: 1fr;
   }
 
+  .fbg-bridge-readout-inset {
+    width: 215px;
+  }
+}
+
+
+@media (max-width: 900px) {
+
+  .fbg-demo-grid,
+  .fbg-error-control-row,
+  .fbg-resolution-monitors {
+    grid-template-columns: 1fr;
+  }
+
+  .fbg-error-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fbg-application-control-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .fbg-bridge-train {
+    left: 28%;
+  }
+
   #fbg-spectrum {
-    height: 380px;
+    height: 420px;
+  }
+
+  #fbg-error-plot {
+    height: 480px;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .fbg-demo {
+    max-width: calc(100vw - 1.5rem);
+  }
+
+  .fbg-section-heading {
+    gap: 0.6rem;
+  }
+
+  .fbg-section-number {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .fbg-wavelength-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .fbg-readouts {
+    grid-template-columns: 1fr;
+  }
+
+  .fbg-resolution-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .fbg-resolution-decision {
+    grid-template-columns: 1fr;
+  }
+
+  .fbg-resolution-equation {
+    flex-direction: column;
+  }
+
+  .fbg-error-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .fbg-bridge-schematic {
+    height: 245px;
+    overflow-x: auto;
+  }
+
+  .fbg-bridge-train {
+    left: 18%;
+  }
+
+  .fbg-bridge-sensor-topology {
+    left: 30%;
+  }
+
+  .fbg-bridge-readout-inset {
+    position: relative;
+
+    top: auto;
+    right: auto;
+
+    width: 100%;
+    height: 190px;
+
+    margin-top: 0.5rem;
+  }
+
+  #fbg-bridge-readout-plot {
+    height: 130px;
+  }
+
+  #fbg-bridge-spectrum,
+  #fbg-bridge-error-plot {
+    height: 350px;
+  }
+
+  .fbg-application-flow {
+    flex-direction: column;
+  }
+
+  .fbg-application-flow span {
+    transform: rotate(90deg);
   }
 }
