@@ -41,7 +41,7 @@ These demos are designed to connect fundamental photonics concepts with their en
 
   </a>
 
-  <a class="demo-card" href="{{ '/demos/das-localization/' | relative_url }}">
+  <a class="demo-card" href="{{ 'das-module-preview.webp' | relative_url }}">
 
   <div class="demo-card-preview">
     <img
