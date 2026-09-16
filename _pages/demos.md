@@ -45,7 +45,7 @@ These demos are designed to connect fundamental photonics concepts with their en
 
   <div class="demo-card-preview">
     <img
-      src="{{ '/assets/img/demos/das-module-preview.webp' | relative_url }}" 
+      src="{{ '/assets/img/demos/das-module-preview.webp' | relative_url }}"  
       alt: "Animated DAS teaching schematic showing disturbance localization, measurement design trade-offs, and application-driven system design."
       loading="lazy"
     >
