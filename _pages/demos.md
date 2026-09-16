@@ -41,22 +41,24 @@ These demos are designed to connect fundamental photonics concepts with their en
 
   </a>
 
-  <a class="demo-card" href="{{ 'das-module-preview.webp' | relative_url }}">
+ <a class="demo-card" href="{{ '/demos/das-localization/' | relative_url }}">
 
   <div class="demo-card-preview">
     <img
-      src="{{ '/assets/img/demos/das-module-preview.webp' | relative_url }}"  
-      alt: "Animated DAS teaching schematic showing disturbance localization, measurement design trade-offs, and application-driven system design."
+      src="{{ '/assets/img/demos/das-module-preview.webp' | relative_url }}"
+      alt="Animated DAS teaching schematic showing disturbance localization, measurement design trade-offs, and application-driven system design."
       loading="lazy"
     >
   </div>
 
   <div class="demo-card-body">
 
-    <h3>DAS: Locating an Acoustic Disturbance</h3>
+    <h3>Distributed Acoustic Sensing (DAS)</h3>
 
     <p>
-      Explore how DAS localizes disturbances, how spatial and temporal design trade-offs shape the measurement, and how application requirements guide system design.
+      Explore how DAS localizes disturbances, how spatial and temporal design
+      trade-offs shape the measurement, and how application requirements guide
+      system design.
     </p>
 
     <span class="demo-card-link">
