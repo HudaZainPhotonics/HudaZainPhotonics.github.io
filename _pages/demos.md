@@ -56,9 +56,7 @@ These demos are designed to connect fundamental photonics concepts with their en
     <h3>DAS: Locating an Acoustic Disturbance</h3>
 
     <p>
-      Explore how optical return time identifies where a disturbance occurs
-      along a sensing fiber, while repeated measurements track its vibration
-      over time.
+      Explore how DAS localizes disturbances, how spatial and temporal design trade-offs shape the measurement, and how application requirements guide system design.
     </p>
 
     <span class="demo-card-link">
