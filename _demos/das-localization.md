@@ -7,10 +7,44 @@ permalink: /demos/das-localization/
 <div class="das-demo">
 
   <p class="das-intro">
-    Explore how distributed acoustic sensing uses optical return time to locate
-    a time-varying disturbance along an optical fiber, while repeated
-    interrogations track how that disturbance changes with time.
-  </p>
+  Explore how distributed acoustic sensing uses repeated optical interrogations
+  to locate disturbances along an optical fiber, then investigate how system
+  design choices affect the spatial and temporal information that can be recovered.
+</p>
+
+<div class="das-module-nav">
+
+  <a href="#das-part-1">
+    <span>Part 1</span>
+    <strong>How DAS Measures</strong>
+  </a>
+
+  <a href="#das-part-2">
+    <span>Part 2</span>
+    <strong>Designing the Measurement</strong>
+  </a>
+
+  <a href="#das-part-3">
+    <span>Part 3</span>
+    <strong>Designing for an Application</strong>
+  </a>
+
+</div>
+
+<section id="das-part-1" class="das-module-part">
+
+  <div class="das-part-heading">
+    <span class="das-part-number">Part 1</span>
+
+    <h2>How DAS Measures</h2>
+
+    <h3>Disturbance Localization</h3>
+
+    <p>
+      How can repeated optical interrogations reveal where a disturbance occurs
+      along a sensing fiber and how that disturbance varies with time?
+    </p>
+  </div>
 
   <div class="das-demo-grid">
 
@@ -157,7 +191,7 @@ permalink: /demos/das-localization/
 
   </div>
 
-
+</section>
   <!-- Model -->
   <details class="das-model">
 
