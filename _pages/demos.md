@@ -69,6 +69,33 @@ These demos are designed to connect fundamental photonics concepts with their en
 
 </a>
 
+<a class="demo-card" href="{{ '/demos/spr-sensing/' | relative_url }}">
+
+  <div class="demo-card-preview">
+    <img
+      src="{{ '/assets/img/demos/spr-module-preview.webp' | relative_url }}"
+      alt="Interactive SPR teaching demo showing Kretschmann excitation, interrogation methods, sensor-design trade-offs, and affinity-biosensing kinetics."
+      loading="lazy"
+    >
+  </div>
+
+  <div class="demo-card-body">
+
+    <h3>Surface Plasmon Resonance (SPR) Sensor</h3>
+
+    <p>
+      Explore SPR excitation, compare angular, wavelength, and intensity interrogation,
+      investigate sensing range and sampling resolution, and connect the optical response
+      to an affinity-biosensing application.
+    </p>
+
+    <span class="demo-card-link">
+      Explore demo →
+    </span>
+
+  </div>
+
+</a>
 </div>
 
 <link
