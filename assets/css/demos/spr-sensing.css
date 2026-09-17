@@ -33,8 +33,8 @@
 .spr-analyte-label{position:absolute;left:65px;top:338px;font-size:12px;color:var(--muted)}
 .spr-interface{position:absolute;left:55px;top:273px;width:275px;height:2px;background:#697078}
 .spr-beam{position:absolute;height:3px;background:var(--beam);transform-origin:0 50%;border-radius:2px}
-.spr-beam.spr-in{left:190px;top:263px;width:125px}
-.spr-beam.spr-out{left:190px;top:263px;width:125px}
+.spr-beam.in{left:190px;top:263px;width:125px}
+.spr-beam.out{left:190px;top:263px;width:125px}
 .spr-beam-dot{position:absolute;left:184px;top:257px;width:12px;height:12px;border-radius:50%;background:var(--beam)}
 .spr-angle-label{position:absolute;left:199px;top:225px;font-size:13px;font-weight:700}
 .spr-sp-wave{position:absolute;left:195px;top:281px;width:112px;height:22px;opacity:.15;transition:opacity .12s}
@@ -124,7 +124,7 @@
 .receptor:before,.receptor:after{content:"";position:absolute;top:0;width:4px;height:20px;background:var(--text)}
 .receptor:before{left:-6px;transform:rotate(-32deg);transform-origin:bottom}
 .receptor:after{right:-6px;transform:rotate(32deg);transform-origin:bottom}
-.spr-analyte-dot{position:absolute;width:13px;height:13px;border-radius:50%;background:var(--beam);transition:all .2s}
+.analyte-dot{position:absolute;width:13px;height:13px;border-radius:50%;background:var(--beam);transition:all .2s}
 .spr-bio-label{position:absolute;font-size:10px;color:var(--muted)}
 .spr-application-plot{width:100%;height:300px}
 .spr-application-controls{margin-top:14px;padding:12px;background:var(--soft);border-radius:9px}
@@ -148,7 +148,7 @@
 .kinetics-receptor:before,.kinetics-receptor:after{content:"";position:absolute;top:0;width:4px;height:19px;background:var(--text)}
 .kinetics-receptor:before{left:-6px;transform:rotate(-32deg);transform-origin:bottom}
 .kinetics-receptor:after{right:-6px;transform:rotate(32deg);transform-origin:bottom}
-.spr-kinetics-dot{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--beam);transition:all .15s}
+.kinetics-dot{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--beam);transition:all .15s}
 .spr-kinetics-mechanism{font-size:24px;text-align:center;margin:22px 0 18px}
 .spr-kinetics-phase{text-align:center;padding:8px;border-radius:8px;background:var(--soft);font-weight:600}
 .spr-kinetics-plot{width:100%;height:300px}
@@ -248,4 +248,83 @@
   .spr-demo .spr-kinetics-values {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* =========================================================
+   V44 dynamic-element compatibility aliases
+   The scientific/application JS intentionally remains unchanged.
+   These aliases restore styling for elements created at runtime.
+   ========================================================= */
+
+.spr-demo .receptor {
+  position:absolute;
+  bottom:77px;
+  width:4px;
+  height:43px;
+  background:var(--text);
+  opacity:.62;
+}
+.spr-demo .receptor:before,
+.spr-demo .receptor:after {
+  content:"";
+  position:absolute;
+  top:0;
+  width:4px;
+  height:20px;
+  background:var(--text);
+}
+.spr-demo .receptor:before {
+  left:-6px;
+  transform:rotate(-32deg);
+  transform-origin:bottom;
+}
+.spr-demo .receptor:after {
+  right:-6px;
+  transform:rotate(32deg);
+  transform-origin:bottom;
+}
+.spr-demo .analyte-dot {
+  position:absolute;
+  width:13px;
+  height:13px;
+  border-radius:50%;
+  background:var(--beam);
+  transition:all .2s;
+}
+
+.spr-demo .kinetics-receptor {
+  position:absolute;
+  bottom:70px;
+  width:4px;
+  height:40px;
+  background:var(--text);
+  opacity:.62;
+}
+.spr-demo .kinetics-receptor:before,
+.spr-demo .kinetics-receptor:after {
+  content:"";
+  position:absolute;
+  top:0;
+  width:4px;
+  height:19px;
+  background:var(--text);
+}
+.spr-demo .kinetics-receptor:before {
+  left:-6px;
+  transform:rotate(-32deg);
+  transform-origin:bottom;
+}
+.spr-demo .kinetics-receptor:after {
+  right:-6px;
+  transform:rotate(32deg);
+  transform-origin:bottom;
+}
+.spr-demo .kinetics-dot {
+  position:absolute;
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:var(--beam);
+  transition:all .15s;
 }
