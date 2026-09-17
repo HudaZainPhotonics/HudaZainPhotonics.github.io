@@ -140,23 +140,7 @@ cv:
       - name: Laboratory Instrumentation
         keywords: Tunable lasers, ASE sources, optical spectrum analysers, optical power meters, vibration testing, microscopy, fiber tapering
 
-    Certificates:
-      - name: Project Management and Planning Specialization
-        issuer: Johns Hopkins University [Coursera]
-        date: 2026-09-01
-
-      - name: Teaching in University Science Laboratories - Developing Best Practice
-        issuer: University of Amsterdam [Coursera]
-        date: 2026-09-01
-
-      - name: AI Management Essentials - Integrating ISO 42001 and ISO 23894
-        issuer: British Standards Institution [Coursera]
-        date: 2026-08-01
-
-      - name: "ISO/IEC 22989:2023 - Fundamentals of AI"
-        issuer: British Standards Institution [Coursera]
-        date: 2026-08-01
-
+   
     Languages:
       - name: Arabic
         summary: Native
