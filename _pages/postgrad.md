@@ -19,8 +19,6 @@ At the University of Malaya, I mentored Master’s students working with fiber-t
 
 The mentorship included laboratory safety, correct equipment operation, optical alignment, experimental planning, measurement collection, and troubleshooting during fiber-optic experiments.
 
-I also mentored PhD researchers working on D-shaped fiber fabrication and microresonator sensing platforms, including guidance on fiber-tapering and fusion-splicing equipment.
+I also mentored PhD researchers working on D-shaped fiber fabrication and microresonator sensing platforms, including guidance on fiber-shaping and fusion-splicing equipment.
 
-In 2022, I mentored a PhD researcher developing and operating a surface-plasmon-resonance sensing setup based on the Kretschmann configuration.
-
-The mentorship covered optical-component selection, open-space optical alignment, safe laser and optical-equipment operation, experimental design, and the practical challenges of building a stable SPR measurement platform.
+In 2022, I mentored a PhD researcher developing and operating a surface-plasmon-resonance sensing setup based on the Kretschmann configuration. The mentorship covered optical-component selection, open-space optical alignment, safe laser and optical-equipment operation, experimental design, and the practical challenges of building a stable SPR measurement platform.
