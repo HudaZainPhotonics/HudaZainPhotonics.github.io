@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research Direction
-description:
+description: Research direction in intelligent photonic sensing, connecting optical sensors, interrogation, signal processing, and machine learning for robust real-world measurement.
 permalink: /Research_direction/
 nav: true
 nav_order: 11
