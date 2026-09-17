@@ -1,0 +1,573 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Surface Plasmon Resonance (SPR) Sensor | Huda Zain | Photonics Researcher </title> <meta name="author" content="Huda Zain"> <meta name="description" content="Experimental photonics researcher developing fiber-optic and plasmonic sensing systems for reliable, scalable real-world monitoring. "> <meta name="keywords" content="photonics, fiber-optic sensing, distributed acoustic sensing, DAS, fiber Bragg gratings, FBG, optical sensors, machine learning, infrastructure monitoring"> <meta property="og:site_name" content="Huda Zain | Photonics Researcher"> <meta property="og:type" content="website"> <meta property="og:title" content="Huda Zain | Photonics Researcher | Surface Plasmon Resonance (SPR) Sensor"> <meta property="og:url" content="https://hudazainphotonics.github.io/demos/spr-sensing/"> <meta property="og:description" content="Experimental photonics researcher developing fiber-optic and plasmonic sensing systems for reliable, scalable real-world monitoring. "> <meta property="og:image" content="https://hudazainphotonics.github.io/assets/img/prof_pic.jpg"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Surface Plasmon Resonance (SPR) Sensor"> <meta name="twitter:description" content="Experimental photonics researcher developing fiber-optic and plasmonic sensing systems for reliable, scalable real-world monitoring. "> <meta name="twitter:image" content="https://hudazainphotonics.github.io/assets/img/prof_pic.jpg"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Huda Zain"
+        },
+        "url": "https://hudazainphotonics.github.io/demos/spr-sensing/",
+        "@type": "WebSite",
+        "description": "Experimental photonics researcher developing fiber-optic and plasmonic sensing systems for reliable, scalable real-world monitoring.
+",
+        "headline": "Surface Plasmon Resonance (SPR) Sensor",
+        
+        "name": "Huda Zain",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://hudazainphotonics.github.io/demos/spr-sensing/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Huda Zain | Photonics Researcher </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">Projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/capabilities/">Lab &amp; Tech. Capabilities </a> </li> <li class="nav-item "> <a class="nav-link" href="/undergrad/">Undergrad Research Mentorship </a> </li> <li class="nav-item "> <a class="nav-link" href="/postgrad/">Postgrad Mentorship </a> </li> <li class="nav-item "> <a class="nav-link" href="/Research_direction/">Research Direction </a> </li> <li class="nav-item active"> <a class="nav-link" href="/demos/">Photonics Teaching Demos <span class="sr-only">(current)</span> </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Surface Plasmon Resonance (SPR) Sensor</h1> <p class="post-description"></p> </header> <article> <div class="spr-demo"> <div id="spr-physics"></div> <p class="intro"> Explore a Kretschmann SPR configuration. Change the incidence angle to scan the optical response; change the analyte refractive index to move the resonance condition itself. </p> <nav class="section-nav" aria-label="Demo sections"> <a href="#spr-physics"><strong>1. SPR Physics</strong><span>Excitation and the Kretschmann response</span></a> <a href="#interrogation"><strong>2. Interrogation</strong><span>Angle, wavelength, and intensity</span></a> <a href="#sensor-design"><strong>3. Sensor Design</strong><span>Range, sensitivity, and resolution</span></a> <a href="#application"><strong>4. Application</strong><span>Affinity biosensing and binding kinetics</span></a> </nav> <div class="grid"> <div class="panel"> <h3>Kretschmann setup</h3> <p class="caption">TM-polarized monochromatic light · BK7 / Au / analyte</p> <div class="setup"> <div class="prism"></div> <div class="prism-label">BK7 prism<br><span style="font-weight:400">n = 1.51</span> </div> <div class="gold"></div> <div class="gold-label">Au film · 50 nm</div> <div class="analyte"></div> <div class="analyte-label">analyte · <span id="schematicRI">n = 1.328</span> </div> <div class="interface"></div> <div id="beamIn" class="beam in"></div> <div id="beamOut" class="beam out"></div> <div class="beam-dot"></div> <div id="angleLabel" class="angle-label">θ = 66.0°</div> <div id="spWave" class="sp-wave"> <svg viewbox="0 0 120 22" preserveaspectratio="none"> <path d="M0 11 C8 0 16 22 24 11 S40 0 48 11 S64 22 72 11 S88 0 96 11 S112 22 120 11" fill="none" stroke="#49799b" stroke-width="3"></path> </svg> </div> <div class="sp-label">surface-plasmon coupling (schematic)</div> <div class="setup-note"> The coupling indicator is qualitative. Reflectivity on the right is calculated from the multilayer Fresnel model. </div> </div> </div> <div class="panel plot-wrap"> <h3>Angular reflectivity</h3> <p class="caption"><strong>Optical observable:</strong> reflected power, R  ·  Faint dashed: reference at n = 1.328 RIU</p> <div id="sprPlot"></div> <div class="readouts"> <div class="readout"> <span>Selected angle</span><strong id="selectedAngle">66.000°</strong> </div> <div class="readout"> <span>Reflectivity at selected angle</span><strong id="selectedR">—</strong> </div> <div class="readout"> <span>Resonance angle</span><strong id="resAngle">—</strong> </div> </div> </div> </div> <div class="controls"> <div class="control"> <strong>Incident angle, θ</strong> <input id="angle" type="range" min="60" max="75" step="0.02" value="66"> <div class="value"> <span id="angleValue">66.00</span>°</div> </div> <div class="control"> <strong>Analyte refractive index</strong> <input id="ri" type="range" min="1.328" max="1.350" step="0.001" value="1.328"> <div class="value"> <span id="riValue">1.328</span> <small>RIU</small> </div> </div> <label class="check"><input id="showTE" type="checkbox"> Show TE comparison</label> </div> <div class="lesson"> <strong>Changing angle scans the resonance. Changing refractive index moves the resonance.</strong> <p>The faint reference curve remains fixed at n = 1.328 RIU so the resonance-angle shift can be seen directly. The reflectivity minimum of the selected curve is used as the numerical resonance-angle marker.</p> </div> <section class="interrogation" id="interrogation"> <h2>2. How Should We Interrogate the Resonance?</h2> <p class="caption">For each method, compare the optical SPR response with the corresponding refractive-index calibration. Sensitivity is the local slope of that calibration.</p> <nav class="jumpbar"> <a href="#angular-method">Angular</a> <a href="#wavelength-method">Wavelength</a> <a href="#intensity-method">Intensity</a> </nav> <section class="method" id="angular-method"> <h3>Angular interrogation</h3> <p class="caption">Sensor output: resonance angle, θ<sub>SPR</sub>, at a fixed wavelength.</p> <div class="method-grid"> <div class="figurebox"> <strong>Five RI states: angular SPR response, R versus angle</strong> <div id="angResponse" class="methodplot"></div> </div> <div class="figurebox"> <strong>Extract each dip minimum: θ<sub>SPR</sub> versus refractive index</strong> <div id="angCalibration" class="methodplot"></div> </div> </div> <div class="method-control"> <strong>Analyte refractive index</strong> <input id="angRI" type="range" min="1.328" max="1.344" step="0.004" value="1.344"> <strong id="angRIValue">1.344 RIU</strong> </div> <div class="method-values"> <div> <span>Δn from reference</span><strong id="angDn">—</strong> </div> <div> <span>ΔθSPR</span><strong id="angDtheta">—</strong> </div> <div> <span>Angular sensitivity, Sθ = ΔθSPR / Δn</span><strong id="angSens">—</strong> </div> </div> <p class="method-note"> The n = 1.328 RIU response remains the dashed reference. As the selected RI increases, only intermediate states up to that value are revealed. The minimum of each revealed angular dip becomes the corresponding θSPR calibration point on the right. The displayed angular sensitivity is the slope between the reference and selected calibration points, Sθ = ΔθSPR / Δn. </p> </section> <section class="method" id="wavelength-method"> <h3>Wavelength interrogation</h3> <p class="caption">Sensor output: resonance wavelength, λ<sub>SPR</sub>, at a fixed incidence angle.</p> <div class="method-grid"> <div class="figurebox"> <strong>Five RI states: spectral SPR response, R versus wavelength</strong><div id="waveResponse" class="methodplot"></div> </div> <div class="figurebox"> <strong>Extract each dip minimum: λ<sub>SPR</sub> versus refractive index</strong><div id="waveCalibration" class="methodplot"></div> </div> </div> <div class="method-control"> <strong>Analyte refractive index</strong> <input id="waveRI" type="range" min="1.328" max="1.344" step="0.004" value="1.344"> <strong id="waveRIValue">1.344 RIU</strong> </div> <div class="method-control"> <strong>Fixed incidence angle</strong> <input id="waveAngle" type="range" min="62" max="72" step="0.02" value="66"> <strong id="waveAngleValue">66.00°</strong> </div> <div class="method-values"> <div> <span>Δn from reference</span><strong id="waveDn">—</strong> </div> <div> <span>ΔλSPR</span><strong id="waveDlambda">—</strong> </div> <div> <span>Wavelength sensitivity, Sλ = ΔλSPR / Δn</span><strong id="waveSens">—</strong> </div> </div> <p class="method-note"> At fixed incidence angle, wavelength interrogation scans the optical spectrum and tracks the wavelength of strongest SPR coupling. The n = 1.328 RIU spectrum remains the dashed reference. As the selected RI increases, only the intermediate states up to that value are revealed; the same revealed states build the calibration on the right. The displayed wavelength sensitivity is the slope between the reference and selected calibration points, Sλ = ΔλSPR / Δn. </p> </section> <section class="method" id="intensity-method"> <h3>Intensity interrogation</h3> <p class="caption">Sensor output: reflectivity at one fixed operating angle, R(θ<sub>op</sub>).</p> <div class="method-grid"> <div class="figurebox"> <strong>Five RI states: angular SPR response, R versus angle</strong><div id="intResponse" class="methodplot"></div> </div> <div class="figurebox"> <strong>Sample each revealed curve at fixed θ<sub>op</sub>: R versus refractive index</strong><div id="intCalibration" class="methodplot"></div> </div> </div> <div class="method-control"> <strong>Analyte refractive index</strong> <input id="intRI" type="range" min="1.328" max="1.344" step="0.004" value="1.344"> <strong id="intRIValue">1.344 RIU</strong> </div> <div class="method-control"> <strong>Operating angle</strong> <input id="intOp" type="range" min="60" max="75" step="0.02" value="66"> <strong id="intOpValue">66.00°</strong> <div style="margin-top:5px;font-size:12px;color:var(--muted)"> Operating region: <strong id="intRegion" style="color:var(--text)">—</strong> </div> </div> <div class="method-values"> <div> <span>Intensity span, ΔR</span><strong id="intDr">—</strong> </div> <div> <span>Local intensity sensitivity, SI</span> <strong id="intSens">—</strong> <small id="intSensAt" style="display:block;margin-top:4px;color:var(--muted);font-size:10px">—</small> </div> <div> <span>Calibration behavior</span> <strong id="intBehavior">—</strong> <small style="display:block;margin-top:4px;color:var(--muted);font-size:10px">over revealed RI states</small> </div> </div> <p class="method-note">The n = 1.328 RIU curve remains the dashed reference. As the selected RI increases, only intermediate states up to that value are revealed. The dots where θop intersects those curves are the same points used to build the R-versus-n calibration on the right. Intensity sensitivity is calculated from neighboring visible calibration points; the readout also flags whether the revealed calibration is monotonic or non-monotonic.</p> </section> <div class="compare-strip">Same SPR interaction → angular, intensity, or wavelength readout → different calibration and sensitivity.</div> </section> <section class="sensor-design" id="sensor-design"> <div class="design-banner"> <h2>3. Sensor Design and Trade-offs</h2> <p class="caption"> Sensitivity is only part of sensor performance. The resonance must remain within the interrogation window, and the measurement system must be able to distinguish its movement. </p> </div> <div class="design-subsection"> <h3>Sensing range</h3> <p class="caption"> Follow the same progressive RI states used above. The dashed reference and faint intermediate resonances show how the dip moves relative to a finite instrument window. </p> <div class="design-controls"> <strong>Analyte refractive index</strong> <input id="designRI" type="range" min="1.328" max="1.360" step="0.004" value="1.360"> <strong id="designRIValue">1.360 RIU</strong> </div> <div class="design-grid"> <div class="design-card"> <h3>Angular interrogation</h3> <p class="caption">Finite angular scan window: 64–70°.</p> <div id="designAngularRange" class="designplot"></div> <div class="design-values"> <div> <span>Selected θSPR</span><strong id="designTheta">—</strong> </div> <div> <span>Scan window</span><strong>64–70°</strong> </div> <div> <span>Status</span><strong id="designThetaStatus">—</strong> </div> </div> </div> <div class="design-card"> <h3>Wavelength interrogation</h3> <p class="caption">Finite spectral window: 700–900 nm.</p> <div id="designWaveRange" class="designplot"></div> <div class="design-values"> <div> <span>Selected λSPR</span><strong id="designLambda">—</strong> </div> <div> <span>Spectral window</span><strong>700–900 nm</strong> </div> <div> <span>Status</span><strong id="designLambdaStatus">—</strong> </div> </div> </div> </div> </div> <div class="design-subsection"> <h3>Measurement resolution</h3> <p class="caption"> The first plot shows the continuous physical response. The second samples that response on a finite angular or spectral grid and identifies the sampled minimum. The third shows how those finite-grid resonance estimates affect the calibration. Noise and instrumental broadening are not included. </p> <div class="resolution-stack"> <h3>Angular resolution</h3> <p class="caption">Can an angular interrogator distinguish the RI-induced resonance shift?</p> <div class="resolution-grid"> <div class="resolution-figure"> <strong>Ideal angular response</strong> <div id="angularIdealPlot" class="resolution-plot"></div> </div> <div class="resolution-figure"> <strong>Resolved by the instrument</strong> <div id="angularResolvedPlot" class="resolution-plot"></div> </div> <div class="resolution-figure"> <strong>Consequence: RI measurement error</strong> <div id="angularConsequencePlot" class="resolution-plot"></div> </div> </div> <div class="design-controls"> <strong>RI change from 1.328 RIU</strong> <input id="angularDeltaN" type="range" min="0" max="0.004" step="0.0001" value="0.0040"> <strong id="angularDeltaNValue">+0.0005 RIU</strong> <br><br> <strong>Angular sampling resolution, δθ</strong> <input id="angularRes" type="range" min="0.01" max="1.00" step="0.01" value="0.20"> <strong id="angularResValue">0.20°</strong> </div> <div class="design-values"> <div> <span>True RI change</span><strong id="actualDTheta">—</strong> </div> <div> <span>Measured RI change</span><strong id="reportedDTheta">—</strong> </div> <div> <span>RI measurement error</span><strong id="angularResolvedStatus">—</strong> </div> </div> </div> <div class="resolution-stack"> <h3>Wavelength resolution</h3> <p class="caption">Can a spectral interrogator distinguish the RI-induced resonance shift?</p> <div class="resolution-grid"> <div class="resolution-figure"> <strong>Ideal spectral response</strong> <div id="waveIdealPlot" class="resolution-plot"></div> </div> <div class="resolution-figure"> <strong>Resolved by the instrument</strong> <div id="waveResolvedPlot" class="resolution-plot"></div> </div> <div class="resolution-figure"> <strong>Consequence: RI measurement error</strong> <div id="waveConsequencePlot" class="resolution-plot"></div> </div> </div> <div class="design-controls"> <strong>RI change from 1.328 RIU</strong> <input id="waveDeltaN" type="range" min="0" max="0.004" step="0.0001" value="0.0040"> <strong id="waveDeltaNValue">+0.0005 RIU</strong> <br><br> <strong>Spectral sampling resolution, δλ</strong> <input id="waveRes" type="range" min="0.1" max="20.0" step="0.1" value="5.0"> <strong id="waveResValue">5.0 nm</strong> </div> <div class="design-values"> <div> <span>True RI change</span><strong id="actualDLambda">—</strong> </div> <div> <span>Measured RI change</span><strong id="reportedDLambda">—</strong> </div> <div> <span>RI measurement error</span><strong id="waveResolvedStatus">—</strong> </div> </div> </div> </div> <div class="design-takeaway"> <strong>Sensitivity determines how far the resonance moves. Range determines whether it remains measurable. Resolution determines whether nearby resonance positions can be distinguished.</strong> </div> </section> <section class="application-section" id="application"> <div class="application-banner"> <h2>4. Designing for an Application</h2> <h3 style="margin:8px 0 4px">4.1 Analyte Binding Effect on SPR in a Protein Affinity Biosensor</h3> <p class="caption"> Example: an SPR affinity biosensor for a protein target. Follow the measurement chain from molecular recognition to an optical resonance shift and finally to a time-dependent sensor response. </p> </div> <div class="application-grid"> <div class="application-card"> <h3>1. Molecular binding</h3> <p class="caption">A functionalized Au surface uses immobilized biorecognition elements to selectively bind the target analyte.</p> <div id="bioSurface" class="bio-surface"> <div class="bio-liquid"></div> <div class="bio-gold"></div> <div class="bio-label" style="left:9%;top:34px">sample / analyte</div> <div class="bio-label" style="left:9%;bottom:42px">Au sensing surface</div> </div> <p class="caption" style="margin-top:8px"><strong>Binding → local surface Δn</strong></p> </div> <div class="application-card"> <h3>2. Optical resonance shift</h3> <p class="caption">The local refractive-index change shifts the angular SPR resonance.</p> <div id="bioAnglePlot" class="application-plot"></div> <p class="caption" style="margin-top:8px"><strong>Δn → Δθ<sub>SPR</sub></strong></p> </div> <div class="application-card"> <h3>3. Binding response</h3> <p class="caption">The measured resonance shift evolves during association and dissociation.</p> <div id="sensorgramPlot" class="application-plot"></div> <p class="caption" style="margin-top:8px"><strong>Δθ<sub>SPR</sub>(t) → sensorgram</strong></p> </div> </div> <div class="application-controls"> <strong>Process / time</strong> <input id="bioTime" type="range" min="0" max="360" step="2" value="250"> <strong id="bioTimeValue">250 s</strong> <div style="margin-top:6px;font-size:11px;color:var(--muted)"> <strong id="bioPhaseValue" style="color:var(--text)">Dissociation — buffer flowing</strong> </div> </div> <div class="application-values"> <div> <span>Current surface occupancy</span><strong id="bioOccupancy">—</strong> </div> <div> <span>Current surface Δn</span><strong id="bioDn">—</strong> </div> <div> <span>Current angular shift</span><strong id="bioDtheta">—</strong> </div> </div> <p class="application-note"> Teaching model: idealized 1:1 binding kinetics with an illustrative linear mapping from surface occupancy to local refractive-index change. The model does not include mass transport, nonspecific adsorption, matrix effects, temperature drift, regeneration, or assay-specific surface chemistry. </p> <div class="kinetics-section" id="binding-kinetics"> <h2 style="margin-top:0">4.2 Binding Kinetics</h2> <p class="caption"> Explore how analyte concentration, association rate, and dissociation rate shape receptor occupancy and the SPR sensorgram. </p> <div class="kinetics-grid"> <div class="kinetics-card"> <h3>1. Molecular binding state</h3> <p class="caption">The surface view follows the selected time on the sensorgram.</p> <div id="kineticsSurface" class="kinetics-surface"> <div class="kinetics-liquid"></div> <div class="kinetics-gold"></div> </div> <div class="kinetics-phase" id="kineticsPhase">baseline</div> </div> <div class="kinetics-card"> <h3>2. 1:1 binding model</h3> <p class="caption">Association forms AR; dissociation returns the complex to free analyte and receptor.</p> <div class="kinetics-mechanism"> A + R ⇌ AR </div> <div style="text-align:center;font-size:12px;line-height:1.7"> <strong>Association:</strong> k<sub>a</sub>[A](R − AR)<br> <strong>Dissociation:</strong> k<sub>d</sub>AR<br><br> <strong>K<sub>D</sub> = k<sub>d</sub> / k<sub>a</sub></strong> </div> <div style="margin-top:22px;font-size:12px;color:var(--muted);text-align:center"> BUFFER → ANALYTE → BUFFER </div> </div> <div class="kinetics-card"> <h3>3. Sensorgram</h3> <p class="caption">The marker and molecular surface move together through baseline, association, and dissociation.</p> <div id="kineticsPlot" class="kinetics-plot"></div> </div> </div> <div class="kinetics-controls"> <strong>Selected time</strong> <input id="kineticsTime" type="range" min="0" max="360" step="2" value="250"> <strong id="kineticsTimeValue">250 s</strong> <br><br><strong>Analyte concentration, [A]</strong> <input id="kineticsConcentration" type="range" min="5" max="100" step="5" value="50"> <strong id="kineticsConcentrationValue">50 nM</strong> <br><br><strong>Association rate constant, k<sub>a</sub></strong> <input id="kineticsKa" type="range" min="0.5" max="5.0" step="0.1" value="2.0"> <strong id="kineticsKaValue">2.0 × 10⁵ M⁻¹ s⁻¹</strong> <br><br><strong>Dissociation rate constant, k<sub>d</sub></strong> <input id="kineticsKd" type="range" min="0.5" max="10.0" step="0.1" value="2.0"> <strong id="kineticsKdValue">2.0 × 10⁻³ s⁻¹</strong> </div> <div class="kinetics-values"> <div> <span>Current phase</span><strong id="kineticsPhaseReadout">—</strong> </div> <div> <span>Current occupancy</span><strong id="kineticsOccupancy">—</strong> </div> <div> <span>Equilibrium K<sub>D</sub></span><strong id="kineticsKD">—</strong> </div> <div> <span>Current Δθ<sub>SPR</sub></span><strong id="kineticsResponse">—</strong> </div> </div> <p class="application-note"> Teaching model: idealized 1:1 kinetics with constant analyte concentration during association and zero analyte concentration during dissociation. Mass transport and rebinding are not included. </p> </div> </section> <details class="model"> <summary>Model &amp; assumptions</summary> <p> The prototype uses a three-layer prism–metal–dielectric Fresnel calculation for the Kretschmann configuration. For each polarization the complex multilayer reflection coefficient is calculated and the displayed reflectivity is R = |r|². </p> <p class="eq"><strong> r<sub>pmd</sub> = (r<sub>pm</sub> + r<sub>md</sub>e<sup>2ik<sub>mx</sub>q</sup>) / (1 + r<sub>pm</sub>r<sub>md</sub>e<sup>2ik<sub>mx</sub>q</sup>) </strong></p> <ul> <li>Wavelength: 800 nm.</li> <li>Prism refractive index: 1.51.</li> <li>Gold permittivity at 800 nm: −25 + 1.44i, following the representative Homola configuration.</li> <li>Gold thickness: 50 nm.</li> <li>Analyte is modeled as a lossless semi-infinite dielectric.</li> <li>Plane-wave illumination and ideal planar layers are assumed.</li> <li>The surface-plasmon animation is qualitative; it is not a field-amplitude calculation.</li> <li> <strong>Wavelength interrogation:</strong> BK7 prism dispersion is calculated with the supplied Sellmeier equation. Gold optical constants are obtained by linear interpolation of the supplied Rakić et al. (1998) <em>n,k</em> table and converted using ε=(n+ik)². The analyte refractive index is treated as nondispersive over the simulated spectral window.</li> </ul> <p> References: J. Homola, ed., <em>Surface Plasmon Resonance Based Sensors</em>, Springer, 2006, especially the chapters on electromagnetic theory and SPR sensors; and A. D. Rakić, A. B. Djurišić, J. M. Elazar, and M. L. Majewski, “Optical properties of metallic films for vertical-cavity optoelectronic devices,” <em>Applied Optics</em>, 37, 5271–5283 (1998), for the Au optical-constant model/data. The BK7 wavelength dependence uses the Sellmeier coefficients specified for this teaching demo. </p> </details> </div> <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script> <script src="/assets/js/demos/spr-sensing.js"></script> <link rel="stylesheet" href="/assets/css/demos/spr-sensing.css"> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Huda Zain. © 2026 Huda Zain. Experimental Photonics Researcher, KFUPM. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "About",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "Publications",
+          description: "My publications in reversed chronological order. Recent work includes six journal publications in 2025–2026 for which I am both first and corresponding author, including four papers in IEEE journals and letters.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "These projects develop experimental sensing platforms that combine photonic devices, optical interrogation, and data-driven signal processing. Across energy infrastructure, health, environmental monitoring, and smart-built-environment applications, the shared aim is to produce reliable optical measurements outside tightly controlled laboratory conditions. Where work is ongoing or unpublished, the project descriptions intentionally focus on the high-level research scope and development direction.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-teaching",
+          title: "Teaching",
+          description: "Teaching statement and courses taught.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-lab-amp-tech-capabilities",
+          title: "Lab & Tech. Capabilities",
+          description: "Experimental photonics, fiber-optic sensing, nanomaterials, laboratory automation, safety practice, and research delivery capabilities.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/capabilities/";
+          },
+        },{id: "nav-undergrad-research-mentorship",
+          title: "Undergrad Research Mentorship",
+          description: "Research and prototype mentorship for undergraduate researchers in photonics, sensing systems, experimental design, laboratory safety, and technical communication at KFUPM.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/undergrad/";
+          },
+        },{id: "nav-postgrad-mentorship",
+          title: "Postgrad Mentorship",
+          description: "Postgraduate research mentorship in experimental photonics, optical-fiber fabrication, microresonators, plasmonic sensing, laboratory safety, and prototype development.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/postgrad/";
+          },
+        },{id: "nav-research-direction",
+          title: "Research Direction",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/Research_direction/";
+          },
+        },{id: "nav-photonics-teaching-demos",
+          title: "Photonics Teaching Demos",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/demos/";
+          },
+        },{id: "post-a-post-with-marimo-snippets",
+        
+          title: "a post with marimo snippets",
+        
+        description: "running Python in the browser with marimo",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/marimo/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
+        
+          title: "a post with plotly.js",
+        
+        description: "this is what included plotly.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/plotly/";
+          
+        },
+      },{id: "post-a-post-with-image-galleries",
+        
+          title: "a post with image galleries",
+        
+        description: "this is what included image galleries could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/photo-gallery/";
+          
+        },
+      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        
+          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+          
+        },
+      },{id: "post-a-post-with-tabs",
+        
+          title: "a post with tabs",
+        
+        description: "this is what included tabs in a post could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/tabs/";
+          
+        },
+      },{id: "post-a-post-with-typograms",
+        
+          title: "a post with typograms",
+        
+        description: "this is what included typograms code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/typograms/";
+          
+        },
+      },{id: "post-a-post-that-can-be-cited",
+        
+          title: "a post that can be cited",
+        
+        description: "this is what a post that can be cited looks like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post-citation/";
+          
+        },
+      },{id: "post-a-post-with-pseudo-code",
+        
+          title: "a post with pseudo code",
+        
+        description: "this is what included pseudo code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/pseudocode/";
+          
+        },
+      },{id: "post-a-post-with-code-diff",
+        
+          title: "a post with code diff",
+        
+        description: "this is how you can display code diffs",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/code-diff/";
+          
+        },
+      },{id: "post-a-post-with-advanced-image-components",
+        
+          title: "a post with advanced image components",
+        
+        description: "this is what advanced image components could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/advanced-images/";
+          
+        },
+      },{id: "post-a-post-with-vega-lite",
+        
+          title: "a post with vega lite",
+        
+        description: "this is what included vega lite code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/vega-lite/";
+          
+        },
+      },{id: "post-a-post-with-geojson",
+        
+          title: "a post with geojson",
+        
+        description: "this is what included geojson code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/geojson-map/";
+          
+        },
+      },{id: "post-a-post-with-echarts",
+        
+          title: "a post with echarts",
+        
+        description: "this is what included echarts code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/echarts/";
+          
+        },
+      },{id: "post-a-post-with-chart-js",
+        
+          title: "a post with chart.js",
+        
+        description: "this is what included chart.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/chartjs/";
+          
+        },
+      },{id: "post-a-post-with-tikzjax",
+        
+          title: "a post with TikZJax",
+        
+        description: "this is what included TikZ code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/tikzjax/";
+          
+        },
+      },{id: "post-a-post-with-bibliography",
+        
+          title: "a post with bibliography",
+        
+        description: "an example of a blog post with bibliography",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/post-bibliography/";
+          
+        },
+      },{id: "post-a-post-with-jupyter-notebook",
+        
+          title: "a post with jupyter notebook",
+        
+        description: "an example of a blog post with jupyter notebook",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/jupyter-notebook/";
+          
+        },
+      },{id: "post-a-post-with-custom-blockquotes",
+        
+          title: "a post with custom blockquotes",
+        
+        description: "an example of a blog post with custom blockquotes",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/custom-blockquotes/";
+          
+        },
+      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
+        
+          title: "a post with table of contents on a sidebar",
+        
+        description: "an example of a blog post with table of contents on a sidebar",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/sidebar-table-of-contents/";
+          
+        },
+      },{id: "post-a-post-with-audios",
+        
+          title: "a post with audios",
+        
+        description: "this is what included audios could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/audios/";
+          
+        },
+      },{id: "post-a-post-with-videos",
+        
+          title: "a post with videos",
+        
+        description: "this is what included videos could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/videos/";
+          
+        },
+      },{id: "post-displaying-beautiful-interactive-tables",
+        
+          title: "displaying beautiful interactive tables",
+        
+        description: "an example of how to use interactive tables in al-folio",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/tables/";
+          
+        },
+      },{id: "post-a-post-with-table-of-contents",
+        
+          title: "a post with table of contents",
+        
+        description: "an example of a blog post with table of contents",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/table-of-contents/";
+          
+        },
+      },{id: "post-a-post-with-giscus-comments",
+        
+          title: "a post with giscus comments",
+        
+        description: "an example of a blog post with giscus comments",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/giscus-comments/";
+          
+        },
+      },{id: "post-یک-نوشتهٔ-راست-چین",
+        
+          title: "یک نوشتهٔ راست‌چین",
+        
+        description: "نمونه‌ای از پشتیبانی زبان‌های راست‌چین",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/rtl/";
+          
+        },
+      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+        
+          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+          
+        },
+      },{id: "post-a-post-with-redirect",
+        
+          title: "a post with redirect",
+        
+        description: "you can also redirect to assets like pdf",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/assets/pdf/example_pdf.pdf";
+          
+        },
+      },{id: "post-a-post-with-diagrams",
+        
+          title: "a post with diagrams",
+        
+        description: "an example of a blog post with diagrams",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/diagrams/";
+          
+        },
+      },{id: "post-a-distill-style-blog-post",
+        
+          title: "a distill-style blog post",
+        
+        description: "an example of a distill-style blog post and main elements",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/distill/";
+          
+        },
+      },{id: "post-a-post-with-twitter",
+        
+          title: "a post with twitter",
+        
+        description: "an example of a blog post with twitter",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/twitter/";
+          
+        },
+      },{id: "post-a-post-with-disqus-comments",
+        
+          title: "a post with disqus comments",
+        
+        description: "an example of a blog post with disqus comments",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2015/disqus-comments/";
+          
+        },
+      },{id: "post-a-post-with-math",
+        
+          title: "a post with math",
+        
+        description: "an example of a blog post with some math",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2015/math/";
+          
+        },
+      },{id: "post-a-post-with-code",
+        
+          title: "a post with code",
+        
+        description: "an example of a blog post with some code",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2015/code/";
+          
+        },
+      },{id: "post-a-post-with-images",
+        
+          title: "a post with images",
+        
+        description: "this is what included images could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2015/images/";
+          
+        },
+      },{id: "post-a-post-with-formatting-and-links",
+        
+          title: "a post with formatting and links",
+        
+        description: "march & april, looking forward to summer",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2015/formatting-and-links/";
+          
+        },
+      },{id: "demos-distributed-acoustic-sensing-das",
+          title: 'Distributed Acoustic Sensing (DAS)',
+          description: "",
+          section: "Demos",handler: () => {
+              window.location.href = "/demos/das-localization/";
+            },},{id: "demos-fiber-bragg-grating-strain-sensor",
+          title: 'Fiber Bragg Grating Strain Sensor',
+          description: "",
+          section: "Demos",handler: () => {
+              window.location.href = "/demos/fbg-strain/";
+            },},{id: "demos-surface-plasmon-resonance-spr-sensor",
+          title: 'Surface Plasmon Resonance (SPR) Sensor',
+          description: "",
+          section: "Demos",handler: () => {
+              window.location.href = "/demos/spr-sensing/";
+            },},{id: "news-a-simple-inline-announcement",
+          title: 'A simple inline announcement.',
+          description: "",
+          section: "News",},{id: "news-a-long-announcement-with-details",
+          title: 'A long announcement with details',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
+            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+          title: 'A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">',
+          description: "",
+          section: "News",},{id: "projects-distributed-acoustic-sensing-for-pipeline-monitoring",
+          title: 'Distributed Acoustic Sensing for Pipeline Monitoring',
+          description: "Fiber-optic distributed acoustic sensing and machine learning for pipeline monitoring in harsh oil-and-gas environments.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_project/";
+            },},{id: "projects-compact-fiber-bragg-grating-interrogator-for-patient-assessment",
+          title: 'Compact Fiber Bragg Grating Interrogator for Patient Assessment',
+          description: "A compact, cost-effective fiber Bragg grating interrogation prototype for patient-assessment applications, developed in collaboration with Biomedical Engineering at KFUPM.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
+            },},{id: "projects-deep-learning-enabled-multimode-fiber-specklegram-sensing",
+          title: 'Deep-Learning-Enabled Multimode-Fiber Specklegram Sensing',
+          description: "Ongoing research on multimode-fiber specklegram sensing and machine-learning-assisted optical interrogation for controlled bending monitoring.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
+            },},{id: "projects-privacy-preserving-lidar-safety-monitoring-for-cognitive-cities",
+          title: 'Privacy-Preserving LiDAR Safety Monitoring for Cognitive Cities',
+          description: "Ongoing prototype research on LiDAR-based safety monitoring for cognitive-city and smart-built-environment applications.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_project/";
+            },},{id: "teachings-digital-systems-laboratory",
+          title: 'Digital Systems Laboratory',
+          description: "A practical electrical engineering laboratory course covering basic electrical components, breadboard prototyping, digital logic circuits, circuit analysis, electronic circuits, and prototype development.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/Digital-Systems-Laboratory/";
+            },},{id: "teachings-introduction-to-research-res-100",
+          title: 'Introduction to Research (RES-100)',
+          description: "A one-credit introductory research course covering research types and databases, scientific reading and writing, research methods, literature reviews, critical thinking, time management, and research dissemination.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/Introduction-to-Research/";
+            },},{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
