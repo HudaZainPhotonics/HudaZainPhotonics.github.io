@@ -60,7 +60,7 @@ I contribute to research delivery through project coordination, technical commun
 
 **Professional development and certifications**
 
-The following online courses support my work in research delivery, laboratory teaching, and responsible use of AI.
+The following online courses [Coursera] support my work in research delivery, laboratory teaching, and responsible use of AI.
 
 **Project management and research delivery**
 
