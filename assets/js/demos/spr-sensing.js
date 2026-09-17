@@ -1448,3 +1448,45 @@ kineticsConcentration.addEventListener("input",updateKinetics);
 kineticsKa.addEventListener("input",updateKinetics);
 kineticsKd.addEventListener("input",updateKinetics);
 update();
+/* =========================================================
+   SPR — POST-LAYOUT PLOTLY REFLOW
+   al-folio may finalize the demo width after Plotly's
+   initial render. Re-measure plots once layout has settled.
+   ========================================================= */
+
+(function () {
+  function resizeSprPlots() {
+    if (typeof Plotly === "undefined") return;
+
+    document
+      .querySelectorAll(".spr-demo .js-plotly-plot")
+      .forEach(function (plot) {
+        try {
+          Plotly.Plots.resize(plot);
+        } catch (e) {
+          console.warn("SPR plot resize skipped:", e);
+        }
+      });
+  }
+
+  function stagedResize() {
+    // First: after the browser completes the current layout.
+    requestAnimationFrame(function () {
+      requestAnimationFrame(resizeSprPlots);
+    });
+
+    // Then catch fonts / Bootstrap / al-folio layout settling.
+    setTimeout(resizeSprPlots, 100);
+    setTimeout(resizeSprPlots, 300);
+    setTimeout(resizeSprPlots, 700);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", stagedResize);
+  } else {
+    stagedResize();
+  }
+
+  window.addEventListener("load", stagedResize);
+  window.addEventListener("resize", resizeSprPlots);
+})();
