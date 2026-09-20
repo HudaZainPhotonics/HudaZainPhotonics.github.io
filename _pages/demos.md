@@ -96,6 +96,34 @@ These demos are designed to connect fundamental photonics concepts with their en
   </div>
 
 </a>
+
+<a class="demo-card" href="{{ '/demos/das-pipeline-decision/' | relative_url }}">
+
+  <div class="demo-card-preview">
+    <img
+      src="{{ '/assets/img/demos/das-pipeline-decision-preview.webp' | relative_url }}"
+      alt="Interactive DAS pipeline-monitoring teaching demo showing detection thresholds, feature extraction, three-dimensional event classification, and intelligent deployment trade-offs."
+      loading="lazy"
+    >
+  </div>
+
+  <div class="demo-card-body">
+
+    <h3>DAS Pipeline Monitoring: From Detection to Decision</h3>
+
+    <p>
+      Follow a pipeline disturbance from DAS measurement through filtering, detection,
+      event interpretation, feature-space classification, and deployment of intelligent
+      processing.
+    </p>
+
+    <span class="demo-card-link">
+      Explore demo →
+    </span>
+
+  </div>
+
+</a>
 </div>
 
 <link
