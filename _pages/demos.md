@@ -109,7 +109,7 @@ These demos are designed to connect fundamental photonics concepts with their en
 
   <div class="demo-card-body">
 
-    <h3>DAS Pipeline Monitoring: From Detection to Decision</h3>
+    <h3>DAS Pipeline Detection and Intelligent Decisions</h3>
 
     <p>
       Follow a pipeline disturbance from DAS measurement through filtering, detection,
