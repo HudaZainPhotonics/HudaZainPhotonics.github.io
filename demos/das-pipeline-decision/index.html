@@ -1,0 +1,578 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> DAS Pipeline Monitoring: From Detection to Decision | Huda Zain | Photonics Researcher </title> <meta name="author" content="Huda Zain"> <meta name="description" content="Experimental photonics researcher developing fiber-optic and plasmonic sensing systems for reliable, scalable real-world monitoring. "> <meta name="keywords" content="photonics, fiber-optic sensing, distributed acoustic sensing, DAS, fiber Bragg gratings, FBG, optical sensors, machine learning, infrastructure monitoring"> <meta property="og:site_name" content="Huda Zain | Photonics Researcher"> <meta property="og:type" content="website"> <meta property="og:title" content="Huda Zain | Photonics Researcher | DAS Pipeline Monitoring: From Detection to Decision"> <meta property="og:url" content="https://hudazainphotonics.github.io/demos/das-pipeline-decision/"> <meta property="og:description" content="Experimental photonics researcher developing fiber-optic and plasmonic sensing systems for reliable, scalable real-world monitoring. "> <meta property="og:image" content="https://hudazainphotonics.github.io/assets/img/prof_pic.jpg"> <meta property="og:locale" content="en"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="DAS Pipeline Monitoring: From Detection to Decision"> <meta name="twitter:description" content="Experimental photonics researcher developing fiber-optic and plasmonic sensing systems for reliable, scalable real-world monitoring. "> <meta name="twitter:image" content="https://hudazainphotonics.github.io/assets/img/prof_pic.jpg"> <script type="application/ld+json">
+    {
+        "author":
+        {
+            "@type": "Person",
+            "name": "Huda Zain"
+        },
+        "url": "https://hudazainphotonics.github.io/demos/das-pipeline-decision/",
+        "@type": "WebSite",
+        "description": "Experimental photonics researcher developing fiber-optic and plasmonic sensing systems for reliable, scalable real-world monitoring.
+",
+        "headline": "DAS Pipeline Monitoring: From Detection to Decision",
+        
+        "name": "Huda Zain",
+        "@context": "https://schema.org"
+    }
+  </script> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://hudazainphotonics.github.io/demos/das-pipeline-decision/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Huda Zain | Photonics Researcher </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">Projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/capabilities/">Lab &amp; Tech. Capabilities </a> </li> <li class="nav-item "> <a class="nav-link" href="/undergrad/">Undergrad Research Mentorship </a> </li> <li class="nav-item "> <a class="nav-link" href="/postgrad/">Postgrad Mentorship </a> </li> <li class="nav-item "> <a class="nav-link" href="/Research_direction/">Research Direction </a> </li> <li class="nav-item active"> <a class="nav-link" href="/demos/">Photonics Teaching Demos <span class="sr-only">(current)</span> </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">DAS Pipeline Monitoring: From Detection to Decision</h1> <p class="post-description"></p> </header> <article> <div class="das-decision-demo"> <p class="lead">Part 1 follows one mechanical disturbance from the pipeline environment into repeated distributed acoustic sensing measurements.</p> <nav class="tabs" aria-label="Demo parts"> <a class="tab active" href="#part1"><small>Part 1</small><strong>Event → Measurement</strong></a> <a class="tab" href="#part2"><small>Part 2</small><strong>Signal + Interference</strong></a> <a class="tab" href="#part3"><small>Part 3</small><strong>Detection → Alarm</strong></a> <a class="tab" href="#part4"><small>Part 4</small><strong>Detection → Interpretation</strong></a> <a class="tab" href="#part5"><small>Part 5</small><strong>How Much Intelligence?</strong></a> </nav> <section class="part" id="part1"> <div class="kicker">PART 1</div> <h2>From a Physical Event to a DAS Measurement</h2> <p class="question">How does one mechanical disturbance become the distance × time data displayed by a DAS system?</p> <div class="dashboard"> <div class="card"> <h3>1. Physical environment</h3> <svg id="scene" class="scene" viewbox="0 0 390 430" aria-label="Buried steel pipeline with parallel sensing fiber"> <defs> <lineargradient id="steel" x1="0" x2="1"> <stop offset="0" stop-color="#555d62"></stop> <stop offset=".12" stop-color="#9da5aa"></stop> <stop offset=".32" stop-color="#e8ecee"></stop> <stop offset=".52" stop-color="#f8f9f9"></stop> <stop offset=".72" stop-color="#c6ccd0"></stop> <stop offset=".9" stop-color="#858d92"></stop> <stop offset="1" stop-color="#50585d"></stop> </lineargradient> <lineargradient id="joint" x1="0" x2="1"> <stop offset="0" stop-color="#454c50"></stop><stop offset=".5" stop-color="#8e969b"></stop><stop offset="1" stop-color="#454c50"></stop> </lineargradient> </defs> <rect width="390" height="430" fill="#d9c7a6"></rect> <rect x="151" y="28" width="94" height="374" rx="47" fill="#4e565b"></rect> <rect x="162" y="38" width="72" height="354" rx="36" fill="url(#steel)"></rect> <g> <rect x="148" y="112" width="100" height="13" rx="4" fill="url(#joint)"></rect> <rect x="148" y="211" width="100" height="13" rx="4" fill="url(#joint)"></rect> <rect x="148" y="310" width="100" height="13" rx="4" fill="url(#joint)"></rect> <line x1="157" y1="116" x2="239" y2="116" stroke="#d8dde0" stroke-width="2" opacity=".65"></line> <line x1="157" y1="215" x2="239" y2="215" stroke="#d8dde0" stroke-width="2" opacity=".65"></line> <line x1="157" y1="314" x2="239" y2="314" stroke="#d8dde0" stroke-width="2" opacity=".65"></line> </g> <text x="198" y="419" text-anchor="middle" font-size="15" font-weight="600" fill="#3f464a">buried steel pipeline</text> <line x1="101" y1="35" x2="101" y2="395" stroke="#d59c35" stroke-width="7"></line> <line x1="101" y1="35" x2="101" y2="395" stroke="#f1c363" stroke-width="2"></line> <text x="101" y="21" text-anchor="middle" font-size="14" font-weight="600" fill="#6f5421">sensing fiber</text> <g id="event"> <circle cx="42" cy="180" r="10" fill="#c65d4b"></circle> <text x="42" y="151" text-anchor="middle" font-size="14" font-weight="600" fill="#25292d">disturbance</text> <path id="waveA" d="M55 168 Q69 180 55 192" fill="none" stroke="#c65d4b" stroke-width="2.5"></path> <path id="waveB" d="M63 158 Q84 180 63 202" fill="none" stroke="#c65d4b" stroke-width="2.5"></path> <path id="waveC" d="M72 148 Q101 180 72 212" fill="none" stroke="#c65d4b" stroke-width="2.5"></path> </g> <g id="gauge"> <rect id="gaugeRect" x="91" y="168" width="20" height="24" rx="3" fill="#0076a8" opacity=".24"></rect> <line id="gaugeLine" x1="121" y1="168" x2="121" y2="192" stroke="#0076a8" stroke-width="4"></line> <line id="capL" x1="115" y1="168" x2="127" y2="168" stroke="#0076a8" stroke-width="3"></line> <line id="capR" x1="115" y1="192" x2="127" y2="192" stroke="#0076a8" stroke-width="3"></line> <text id="gaugeText" x="132" y="185" font-size="14" font-weight="600" fill="#0076a8">Lg</text> </g> <line x1="316" y1="35" x2="316" y2="395" stroke="#555" stroke-width="1.5"></line> <path d="M311 385 L316 397 L321 385" fill="#555"></path> <text x="330" y="49" font-size="13" font-weight="600" fill="#444">0 m</text> <text x="330" y="397" font-size="13" font-weight="600" fill="#444">1000 m</text> <text x="345" y="215" transform="rotate(90 345 215)" text-anchor="middle" font-size="14" font-weight="600" fill="#444">Distance, x</text> </svg> <div class="control"> <label>Event location <strong id="locOut">420 m</strong></label><input id="loc" type="range" min="80" max="920" step="10" value="420"> </div> <div class="control"> <label>Fiber-environment coupling <strong id="coupleOut">0.75</strong></label><input id="couple" type="range" min="15" max="100" value="75"> </div> <div class="control"> <label>Gauge length <strong id="gaugeOut">20 m</strong></label><input id="gaugeLen" type="range" min="4" max="80" step="2" value="20"> </div> </div> <div class="rightstack"> <div class="card" style="padding:9px 14px"> <div class="control" style="margin:0"> <label>Number of traces acquired <strong id="traceOut">10 of 10</strong></label><input id="traceCount" type="range" min="1" max="10" step="1" value="10"> </div> </div> <div class="card"> <h3>2. Successive DAS traces</h3> <p class="muted" style="font-size:.82rem;margin-top:-3px"><strong>Fast time → distance.</strong> Trace-to-trace progression → <strong>slow time.</strong></p> <svg id="traceStack" class="trace-svg" viewbox="0 0 600 310" aria-label="Pseudo-3D stack of DAS traces"></svg> </div> <div class="card"> <h3>3. Why DAS data are spatiotemporal</h3> <p class="muted" style="font-size:.82rem">Each trace measures the fiber in <strong>space</strong>. Repeating the measurement through <strong>slow time</strong> produces the spatiotemporal DAS dataset <em>S</em>(<em>x</em>,<em>t</em>).</p> <svg id="map" class="map-svg" viewbox="0 0 1080 330" aria-label="DAS distance versus slow time map"></svg> </div> </div> </div> <div class="model"> <strong>Teaching model.</strong> A localized dynamic strain field is generated around the event position. Coupling scales how strongly the disturbance reaches the fiber. The finite gauge length spatially averages that field. Ten successive synthetic interrogations form one distance × slow-time dataset. This is not a pipeline-soil acoustic propagation model.</div> <div class="note"> <strong>Core idea:</strong> one probe pulse gives a distributed trace along the fiber. Repeating the interrogation produces slow-time evolution. The familiar DAS distance-time image is another view of that same stack of traces.</div> </section> <section class="part" id="part2" style="margin-top:34px"> <div class="kicker">PART 2</div> <h2>Signal, Noise, and Non-Target Disturbances</h2> <p class="question">A DAS system records vibration. How much of that measurement actually belongs to the event we care about?</p> <div class="p2-grid"> <div class="card"> <h3>1. What is happening around the pipeline?</h3> <svg id="p2scene" class="p2-scene" viewbox="0 0 500 270" aria-label="Pipeline environment with digging, vehicle, and background noise"> <defs> <lineargradient id="p2steel" x1="0" x2="1"> <stop offset="0" stop-color="#555d62"></stop><stop offset=".18" stop-color="#aeb5b9"></stop> <stop offset=".48" stop-color="#edf0f1"></stop><stop offset=".78" stop-color="#a9b0b4"></stop><stop offset="1" stop-color="#535b60"></stop> </lineargradient> </defs> <rect width="500" height="270" fill="#eef4f6"></rect> <rect y="88" width="500" height="182" fill="#d9c7a6"></rect> <line x1="0" y1="88" x2="500" y2="88" stroke="#aa9676" stroke-width="2"></line> <g transform="translate(78 22)"> <rect x="0" y="34" width="42" height="20" rx="4" fill="#d8a338"></rect> <circle cx="9" cy="58" r="7" fill="#4f565a"></circle><circle cx="34" cy="58" r="7" fill="#4f565a"></circle> <rect x="8" y="18" width="24" height="20" rx="3" fill="#e1b24b"></rect> <line x1="28" y1="21" x2="50" y2="2" stroke="#c65d4b" stroke-width="5"></line> <line x1="50" y1="2" x2="61" y2="32" stroke="#c65d4b" stroke-width="5"></line> <path d="M56 31 l13 0 l-6 9 z" fill="#c65d4b"></path> <text x="28" y="-7" text-anchor="middle" font-size="14" font-weight="600">digging</text> <text x="28" y="77" text-anchor="middle" font-size="11" font-weight="600" fill="#b04d3e">TARGET</text> </g> <g transform="translate(335 34)"> <rect x="0" y="18" width="88" height="30" rx="7" fill="#7f888d"></rect> <path d="M18 18 l13 -18 h35 l15 18" fill="#aeb5b9"></path> <rect x="35" y="4" width="26" height="13" rx="2" fill="#dce3e6"></rect> <circle cx="18" cy="52" r="10" fill="#444b4f"></circle><circle cx="70" cy="52" r="10" fill="#444b4f"></circle> <circle cx="18" cy="52" r="4" fill="#b9c0c4"></circle><circle cx="70" cy="52" r="4" fill="#b9c0c4"></circle> <text x="44" y="-9" text-anchor="middle" font-size="14" font-weight="600">passing vehicle</text> <text x="44" y="76" text-anchor="middle" font-size="11" font-weight="600" fill="#8b6928">NON-TARGET</text> </g> <line x1="55" y1="151" x2="445" y2="151" stroke="#d59c35" stroke-width="6"></line> <line x1="55" y1="151" x2="445" y2="151" stroke="#f1c363" stroke-width="2"></line> <text x="60" y="140" font-size="13" font-weight="600" fill="#6f5421">sensing fiber</text> <rect x="70" y="191" width="360" height="52" rx="26" fill="#525a5f"></rect> <rect x="80" y="201" width="340" height="32" rx="16" fill="url(#p2steel)"></rect> <g stroke="#4c5458" stroke-width="6"> <line x1="170" y1="193" x2="170" y2="241"></line><line x1="285" y1="193" x2="285" y2="241"></line> </g> <g stroke="#dce0e2" stroke-width="2" opacity=".65"> <line x1="174" y1="199" x2="174" y2="235"></line><line x1="289" y1="199" x2="289" y2="235"></line> </g> <text x="250" y="262" text-anchor="middle" font-size="13" font-weight="600" fill="#41484c">buried steel pipeline</text> <g id="p2noise" opacity=".65"> <path d="M18 128 q10 -12 20 0 t20 0 t20 0" fill="none" stroke="#858b90" stroke-width="2"></path> <path d="M420 128 q10 -12 20 0 t20 0 t20 0" fill="none" stroke="#858b90" stroke-width="2"></path> </g> </svg> <div class="control"> <label>Target strength <strong id="p2targetOut">0.75</strong></label><input id="p2target" type="range" min="10" max="100" value="75"> </div> <div class="control"> <label>Passing vehicle strength <strong id="p2vehicleOut">0.60</strong></label><input id="p2vehicle" type="range" min="0" max="100" value="60"> </div> <div class="control"> <label>Noise level <strong id="p2noiseOut">0.25</strong></label><input id="p2noiseLevel" type="range" min="0" max="80" value="25"> </div> </div> <div class="card"> <h3>2. What does one DAS channel contain?</h3> <p class="muted" style="font-size:.82rem">The recorded signal is a superposition. A passing vehicle is a genuine physical disturbance, not simply “noise.”</p> <svg id="p2components" class="p2-plot" viewbox="0 0 650 355"></svg> <div class="p2-equation"> <span>Measured DAS</span><b>=</b><span class="target-txt">target</span><b>+</b><span class="vehicle-txt">non-target</span><b>+</b><span>noise</span> </div> </div> </div> <div class="card" style="margin-top:14px"> <div class="p2-filter-head"> <div> <h3>3. When is simple filtering enough?</h3> <p class="muted" style="font-size:.82rem;margin:.2rem 0">Move the overlap control from spectrally separated to overlapping. The same simple band-pass filter becomes less able to reject the unwanted disturbance without affecting the target.</p> </div> <div class="p2-overlap"> <label>Spectral overlap <strong id="p2sepOut">moderate</strong></label> <input id="p2sep" type="range" min="0" max="100" value="55"> <div> <span>separated</span><span>overlapping</span> </div> </div> </div> <div class="p2-filter-grid"> <div> <h4>Time domain</h4> <svg id="p2filter" class="p2-filterplot" viewbox="0 0 720 300"></svg> </div> <div> <h4>Approximate frequency-domain view</h4> <svg id="p2spectrum" class="p2-spectrum" viewbox="0 0 430 300"></svg> </div> </div> <div class="p2-metrics"> <div class="p2-snrbox"> <div class="p2-snrtitle">SNR improvement</div> <svg id="p2snrBars" viewbox="0 0 520 105"></svg> </div> <div class="readout"> <span>Target retained</span><strong id="p2retained">—</strong> </div> <div class="readout"> <span>Simple filter</span><strong id="p2filterState">—</strong> </div> </div> </div> <div class="model"> <strong>Why focus on spectral overlap?</strong> It is one clear example of a fixed filter reaching its limit. Real DAS measurements can also contain time-varying or structured interference, changing coupling conditions, and weak target signals. Those cases are important, but are not simulated in this section.</div> <div class="note"> <strong>Core idea:</strong> simple filtering can work well when target and unwanted components occupy distinguishable frequency regions. As their spectra overlap, rejecting the unwanted component without also attenuating or distorting useful target information becomes harder.</div> </section> <section class="part" id="part3" style="margin-top:34px"> <div class="kicker">PART 3</div> <h2>From Detection to Alarm</h2> <p class="question">A processed signal is available. Where should the system place the detection threshold?</p> <div class="p3-layout"> <div class="card p3-left"> <h3>One threshold, four physically different cases</h3> <p class="muted" style="font-size:.82rem;margin:.2rem 0">Each event window is reduced to a scalar <strong>detection metric</strong>. Repeated instances vary, so some instances can cross the threshold while others do not.</p> <div class="p3-controlgrid"> <div class="p3-threshold"> <label>Detection threshold <strong id="p3thOut">0.52</strong></label> <input id="p3th" type="range" min="15" max="90" value="52"> <div> <span>more sensitive</span><span>more selective</span> </div> </div> <div class="p3-threshold"> <label>Repeated instances <strong id="p3instOut">10 per event type</strong></label> <input id="p3inst" type="range" min="1" max="20" value="10"> <div> <span>1 instance</span><span>20 instances</span> </div> </div> </div> <svg id="p3plot" class="p3-plot" viewbox="0 0 1060 440" aria-label="Tilted pseudo-3D repeated event detection metrics and threshold"></svg> <div id="p3cards" class="p3-cards"></div> <p class="muted" style="font-size:.76rem;margin:.7rem 0 0"><strong>Teaching model:</strong> repeated instances are deterministic synthetic examples. The oblique depth direction represents repeated trials, not time.</p> </div> <div class="p3-rightstack"> <div class="card"> <h3>Detection decision matrix</h3> <p class="muted" style="font-size:.8rem;margin:.2rem 0 .7rem">The threshold creates a binary decision. Whether that decision is correct depends on whether the event is actually a target.</p> <div class="p3-decisionmatrix"> <div class="p3-corner"></div> <div class="p3-colhead">NOT DETECTED</div> <div class="p3-colhead">DETECTED</div> <div class="p3-rowhead">TARGET</div> <div class="p3-cell p3-bad"> <strong>False negative</strong><span>Target response falls below threshold</span><b id="p3FN">—</b> </div> <div class="p3-cell p3-good"> <strong>Target detected</strong><span>Target response crosses threshold</span><b id="p3TP">—</b> </div> <div class="p3-rowhead">NON-TARGET</div> <div class="p3-cell p3-good"> <strong>Non-target rejected</strong><span>Response stays below threshold</span><b id="p3TN">—</b> </div> <div class="p3-cell p3-bad"> <strong>False positive</strong><span>Non-target response crosses threshold</span><b id="p3FP">—</b> </div> </div> <p class="muted" style="font-size:.75rem;margin:.7rem 0 0">Counts come from the repeated synthetic instances shown at left.</p> </div> <div class="card p3-problem"> <h3>Move the threshold: what changes?</h3> <div class="p3-tradeoff"> <div> <span>Lower threshold</span><strong>FNP ↓</strong><strong>FPP ↑</strong> </div> <div> <span>Higher threshold</span><strong>FNP ↑</strong><strong>FPP ↓</strong> </div> </div> <div class="p3-harder"> <strong>Threshold tuning does not identify the event.</strong> <p>A passing vehicle can produce a genuine DAS response above threshold. Detection answers whether a response is large enough; interpretation must determine what produced it.</p> <div class="p3-transition">Detection: <b>Did something happen?</b><span>→</span> Interpretation: <b>What happened?</b> </div> </div> </div> </div> </div> <div class="card p3-metrics-full"> <div class="p3-metrics-teaching"> <h4>From the decision matrix to performance metrics</h4> <p class="muted" style="font-size:.76rem;margin:.2rem 0 .65rem">The values below use the <strong>same TP, TN, FP and FN counts shown in the decision matrix above</strong>. Move the threshold or change the number of repeated instances and every calculation updates.</p> <div class="p3-livecounts"> <div> <span>TP</span><strong id="p3TPcopy">—</strong><small>target detected</small> </div> <div> <span>FN</span><strong id="p3FNcopy">—</strong><small>target missed</small> </div> <div> <span>FP</span><strong id="p3FPcopy">—</strong><small>non-target detected</small> </div> <div> <span>TN</span><strong id="p3TNcopy">—</strong><small>non-target rejected</small> </div> </div> <div class="p3-metric-list"> <div class="p3-metricrow"> <div class="p3-metricname">False-negative probability <b>FNP</b> </div> <div class="p3-eq"><span class="frac"><span>FN</span><span>TP + FN</span></span></div> <div class="p3-sub" id="p3FNPsub">—</div> <div class="p3-answer" id="p3FNPbig">—</div> </div> <div class="p3-metricrow"> <div class="p3-metricname">False-positive probability <b>FPP</b> </div> <div class="p3-eq"><span class="frac"><span>FP</span><span>FP + TN</span></span></div> <div class="p3-sub" id="p3FPPsub">—</div> <div class="p3-answer" id="p3FPPbig">—</div> </div> <div class="p3-metricrow"> <div class="p3-metricname">Accuracy</div> <div class="p3-eq"><span class="frac"><span>TP + TN</span><span>TP + TN + FP + FN</span></span></div> <div class="p3-sub" id="p3ACCsub">—</div> <div class="p3-answer" id="p3ACC">—</div> </div> <div class="p3-metricrow"> <div class="p3-metricname">Precision</div> <div class="p3-eq"><span class="frac"><span>TP</span><span>TP + FP</span></span></div> <div class="p3-sub" id="p3PRECsub">—</div> <div class="p3-answer" id="p3PREC">—</div> </div> <div class="p3-metricrow"> <div class="p3-metricname">Recall <b>(TPR)</b> </div> <div class="p3-eq"><span class="frac"><span>TP</span><span>TP + FN</span></span></div> <div class="p3-sub" id="p3RECsub">—</div> <div class="p3-answer" id="p3REC">—</div> </div> <div class="p3-metricrow"> <div class="p3-metricname">Specificity <b>(TNR)</b> </div> <div class="p3-eq"><span class="frac"><span>TN</span><span>TN + FP</span></span></div> <div class="p3-sub" id="p3SPECsub">—</div> <div class="p3-answer" id="p3SPEC">—</div> </div> <div class="p3-metricrow"> <div class="p3-metricname">F1 score</div> <div class="p3-eq p3-f1eq">2 × <span class="frac"><span>Precision × Recall</span><span>Precision + Recall</span></span> </div> <div class="p3-sub" id="p3F1sub">—</div> <div class="p3-answer" id="p3F1">—</div> </div> </div> </div> </div> <div class="note"> <strong>Core idea:</strong> lowering the threshold tends to reduce missed targets but increases non-target detections; raising it tends to do the opposite. Thresholding does not determine event identity.</div> </section> <section class="part" id="part4" style="margin-top:34px"> <div class="kicker">PART 4</div> <h2>From Detection to Interpretation</h2> <p class="question">The threshold says that something happened. What information can help us decide what happened?</p> <div class="p4-top"> <div class="card"> <h3>1. Same detection level, different events</h3> <p class="muted" style="font-size:.82rem">All three examples have already crossed the detection threshold. Their overall detection level is intentionally similar, so amplitude alone is not enough to identify the event.</p> <div class="p4-eventbuttons"> <button data-p4="excavation" class="active">Mechanical excavation</button> <button data-p4="manual">Manual digging</button> <button data-p4="vehicle">Passing vehicle</button> </div> <svg id="p4detect" class="p4-detect" viewbox="0 0 430 220"></svg> <div class="p4-callout">Detected? <strong>YES</strong><span>Identity? <strong>still unknown</strong></span> </div> </div> <div class="card"> <h3>2. Look beyond one scalar metric</h3> <p class="muted" style="font-size:.82rem">The selected event is shown in three linked representations. These are illustrative signatures, not universal fingerprints of a particular machine, shovel, or vehicle.</p> <div class="p4-reps"> <div> <h4>Time domain</h4> <svg id="p4time" viewbox="0 0 330 220"></svg> </div> <div> <h4>Frequency domain</h4> <svg id="p4freq" viewbox="0 0 330 220"></svg> </div> <div> <h4>Spatiotemporal pattern</h4> <svg id="p4space" viewbox="0 0 330 220"></svg> </div> </div> <div class="p4-featureflow"> <div class="p4-featurebox"> <span>TIME DOMAIN → numerical feature</span> <strong>Normalized signal energy</strong> <div class="p4-featurevalue" id="p4energy">—</div> <code>E = mean[x(t)²]</code> </div> <div class="p4-featurebox"> <span>FREQUENCY DOMAIN → numerical feature</span> <strong>Peak frequency</strong> <div class="p4-featurevalue" id="p4peak">—</div> <code>fpeak = arg max P(f)</code> </div> <div class="p4-featurebox"> <span>SPATIOTEMPORAL → numerical feature</span> <strong>Spatial extent</strong> <div class="p4-featurevalue" id="p4extent">—</div> <code>L = xmax − xmin</code> </div> </div> <div class="p4-vector"> <span>FEATURE VECTOR</span> <strong id="p4vector">[ — , — , — ]</strong> <small>[ normalized energy, peak frequency, spatial extent ]</small> </div> </div> </div> <div class="card" style="margin-top:14px"> <div class="p4-decision-head"> <div> <h3>3. From a feature vector to a decision</h3> <p class="muted" style="font-size:.82rem;margin:.2rem 0">Each event is now a point in a three-feature space: normalized energy <em>E</em>, peak frequency <em>f</em><sub>peak</sub>, and spatial extent <em>L</em>. Drag the plot to rotate it.</p> </div> <div class="p4-overlap-control"> <label>Class overlap <strong id="p4overlapOut">low</strong></label> <input id="p4overlap" type="range" min="0" max="100" value="20"> <div> <span>well separated</span><span>strong overlap</span> </div> </div> </div> <div class="p4-decision-grid"> <div class="p4-space-card"> <svg id="p4decision" viewbox="0 0 900 610" aria-label="Rotatable 3D feature space"></svg> <div class="p4-rotatebar"> <span>Drag to rotate · three axes correspond to the three extracted features</span><button type="button" id="p4resetView">Reset view</button> </div> </div> <div class="p4-decision-story"> <div class="p4-modelcue"> <span>WHAT WORKS IN THIS SYNTHETIC EXAMPLE?</span> <strong id="p4modelCue">Simple boundaries</strong> <p id="p4methodHint">The classes are separated enough for simple interpretable boundaries.</p> </div> <div class="p4-flowstep"> <span>1</span><div> <strong>Feature vector</strong><p id="p4vectorCopy">[E, fpeak, L]</p> </div> </div> <div class="p4-flowarrow">↓</div> <div class="p4-flowstep"> <span>2</span><div> <strong>Place it in 3D feature space</strong><p>The selected event is compared with repeated examples of known classes.</p> </div> </div> <div class="p4-flowarrow">↓</div> <div class="p4-flowstep"> <span>3</span><div> <strong>Apply the simplest adequate boundary</strong><p id="p4boundaryText">Axis-aligned regions are enough here.</p> </div> </div> <div class="p4-flowarrow">↓</div> <div class="p4-classout"> <span>INTERPRETED EVENT</span><strong id="p4classOut">—</strong> </div> </div> </div> <div class="p4-method-strip p4-three"> <div id="p4stageRules"> <strong>Simple boundaries</strong><span>Interpretable thresholds separate the feature clouds</span> </div> <div class="p4-strip-arrow">→</div> <div id="p4stageSVM"> <strong>Linear SVM</strong><span>A weighted combination of features provides a useful separating plane</span> </div> <div class="p4-strip-arrow">→</div> <div id="p4stageRich"> <strong>Features insufficient?</strong><span>Strong overlap remains; improve features or consider richer signal models</span> </div> </div> <div class="note" style="margin-top:12px"> <strong>Core idea:</strong> model complexity should earn its place. If simple feature boundaries work, use them. If a linear combination of features is needed, a linear classifier can be useful. If the classes remain strongly mixed in this feature space, increasing classifier complexity is not automatically the right answer.</div> </div> </section> <section class="part" id="part5" style="margin-top:34px"> <div class="kicker">PART 5</div> <h2>How Much Intelligence Do We Need?</h2> <p class="question">Part 4 showed when a learned decision boundary may add value. Now suppose we want to deploy one: do we have the data, compute, and response time to make it practical?</p> <div class="p5-train card"> <h3>1. Can we train it?</h3> <div class="p5-train-grid"> <div class="p5-sliders"> <div> <label>Representative DAS data <strong id="p5rawOut">Substantial</strong></label> <input id="p5raw" type="range" min="0" max="3" step="1" value="2"> <small>Limited <span>→</span> Moderate <span>→</span> Substantial <span>→</span> Extensive</small> </div> <div> <label>Reliable event labels <strong id="p5labelsOut">Moderate</strong></label> <input id="p5labels" type="range" min="0" max="3" step="1" value="1"> <small>Sparse / expensive <span>→</span> Abundant / reliable</small> </div> </div> <div class="p5-training-result"> <span>WHAT DOES THE DATA SITUATION SUPPORT?</span> <strong id="p5trainingMode">—</strong> <p id="p5trainingWhy">—</p> </div> </div> <div class="p5-learning-options"> <div id="p5supervised"> <strong>Supervised learning</strong><span>Needs representative labeled examples.</span> </div> <div id="p5self"> <strong>Self-supervised + downstream labels</strong><span>Useful to consider when raw DAS is abundant but labels are scarce.</span> </div> <div id="p5dataFirst"> <strong>Acquire better evidence first</strong><span>Little representative data limits what a learned model can establish.</span> </div> </div> </div> <div class="p5-deploy-grid"> <div class="card"> <h3>2. Can we run it within the deployment constraints?</h3> <div class="p5-deploy-controls"> <div> <label>Candidate model inference cost <strong id="p5flopsOut">2.0 GFLOPs / inference</strong></label> <input id="p5flops" type="range" min="0" max="3" step="1" value="1"> <small>Lightweight <span>→</span> Moderate <span>→</span> Heavy <span>→</span> Very heavy</small> </div> <div> <label>Available processing capability <strong id="p5computeOut">Moderate edge compute</strong></label> <input id="p5compute" type="range" min="0" max="3" step="1" value="1"> <small>Constrained CPU <span>→</span> Moderate edge <span>→</span> Accelerator <span>→</span> High compute</small> </div> <div> <label>Required alarm-response time <strong id="p5latencyOut">100 ms</strong></label> <input id="p5latency" type="range" min="0" max="3" step="1" value="1"> <small>10 ms <span>→</span> 100 ms <span>→</span> 1 s <span>→</span> latency tolerant</small> </div> </div> <div class="p5-compute-figure"> <div class="p5-compute-head"> <span>Illustrative compute demand</span><span>Illustrative available capability</span> </div> <div class="p5-compute-track"> <i id="p5demandBar"></i> <b id="p5capacityMarker"></b> </div> <div class="p5-compute-scale"> <span>low</span><span>higher</span> </div> </div> <div class="p5-feasibility"> <div> <span>Compute fit</span><strong id="p5computeFit">—</strong> </div> <div> <span>Latency fit</span><strong id="p5latencyFit">—</strong> </div> <div> <span>Model memory</span><strong id="p5memory">—</strong> </div> </div> <p class="muted" style="font-size:.72rem"><strong>Teaching note:</strong> FLOPs approximate arithmetic workload; hardware FLOPS alone do not determine real inference latency. Memory movement, precision, implementation, preprocessing, batching, and accelerator support also matter.</p> </div> <div class="card"> <h3>3. Where should inference happen?</h3> <div class="p5-edge-diagram"> <div class="p5-node"> <strong>DAS interrogator</strong><span>continuous sensing</span> </div> <div class="p5-down">↓</div> <div class="p5-node p5-edge" id="p5edgeNode"> <strong>EDGE</strong><span>local inference / alarm</span> </div> <div class="p5-link">⇅</div> <div class="p5-node p5-central" id="p5centralNode"> <strong>CENTRAL</strong><span>heavier analysis / aggregation / retraining</span> </div> </div> <div class="p5-placement"> <span>DEPLOYMENT IMPLICATION</span> <strong id="p5placement">—</strong> <p id="p5placementWhy">—</p> </div> <div id="p5optimize" class="p5-optimize"> <strong>If a useful model is too expensive at the edge</strong> <span>Consider a smaller architecture, hardware acceleration, model compression, pruning, or lower-precision inference such as quantization. Any performance and latency gains must be validated on the actual model and hardware.</span> </div> </div> </div> <div class="card" style="margin-top:14px"> <h3>4. Deployment logic</h3> <div class="p5-decision-path"> <div> <strong>Is learned intelligence justified?</strong><span>Answered in Part 4 by the classification problem.</span> </div> <b>→</b> <div> <strong>Can we train it credibly?</strong><span>Representative data and labels determine the learning strategy.</span> </div> <b>→</b> <div> <strong>Can we run it?</strong><span>Inference workload, memory and available processing constrain deployment.</span> </div> <b>→</b> <div> <strong>Can it respond in time?</strong><span>Operational latency influences edge versus centralized processing.</span> </div> <b>→</b> <div class="p5-end"> <strong>Validate the deployed system</strong><span>Measure accuracy, latency and robustness under realistic conditions.</span> </div> </div> </div> <div class="note"> <strong>Take-home message:</strong> once intelligence is justified, deployment becomes a systems problem. Data and labels constrain how the model can be learned; compute, memory and latency constrain how and where it can run.</div> </section> </div> <script src="/assets/js/demos/das-pipeline-decision.js"></script> <link rel="stylesheet" href="/assets/css/demos/das-pipeline-decision.css"> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Huda Zain. © 2026 Huda Zain. Experimental Photonics Researcher, KFUPM. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "About",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "Publications",
+          description: "My publications in reversed chronological order. Recent work includes six journal publications in 2025–2026 for which I am both first and corresponding author, including four papers in IEEE journals and letters.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "These projects develop experimental sensing platforms that combine photonic devices, optical interrogation, and data-driven signal processing. Across energy infrastructure, health, environmental monitoring, and smart-built-environment applications, the shared aim is to produce reliable optical measurements outside tightly controlled laboratory conditions. Where work is ongoing or unpublished, the project descriptions intentionally focus on the high-level research scope and development direction.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-teaching",
+          title: "Teaching",
+          description: "Teaching statement and courses taught.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-lab-amp-tech-capabilities",
+          title: "Lab & Tech. Capabilities",
+          description: "Experimental photonics, fiber-optic sensing, nanomaterials, laboratory automation, safety practice, and research delivery capabilities.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/capabilities/";
+          },
+        },{id: "nav-undergrad-research-mentorship",
+          title: "Undergrad Research Mentorship",
+          description: "Research and prototype mentorship for undergraduate researchers in photonics, sensing systems, experimental design, laboratory safety, and technical communication at KFUPM.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/undergrad/";
+          },
+        },{id: "nav-postgrad-mentorship",
+          title: "Postgrad Mentorship",
+          description: "Postgraduate research mentorship in experimental photonics, optical-fiber fabrication, microresonators, plasmonic sensing, laboratory safety, and prototype development.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/postgrad/";
+          },
+        },{id: "nav-research-direction",
+          title: "Research Direction",
+          description: "Research direction in intelligent photonic sensing, connecting optical sensors, interrogation, signal processing, and machine learning for robust real-world measurement.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/Research_direction/";
+          },
+        },{id: "nav-photonics-teaching-demos",
+          title: "Photonics Teaching Demos",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/demos/";
+          },
+        },{id: "post-a-post-with-marimo-snippets",
+        
+          title: "a post with marimo snippets",
+        
+        description: "running Python in the browser with marimo",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/marimo/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
+        
+          title: "a post with plotly.js",
+        
+        description: "this is what included plotly.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/plotly/";
+          
+        },
+      },{id: "post-a-post-with-image-galleries",
+        
+          title: "a post with image galleries",
+        
+        description: "this is what included image galleries could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/photo-gallery/";
+          
+        },
+      },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        
+          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+          
+        },
+      },{id: "post-a-post-with-tabs",
+        
+          title: "a post with tabs",
+        
+        description: "this is what included tabs in a post could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/tabs/";
+          
+        },
+      },{id: "post-a-post-with-typograms",
+        
+          title: "a post with typograms",
+        
+        description: "this is what included typograms code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/typograms/";
+          
+        },
+      },{id: "post-a-post-that-can-be-cited",
+        
+          title: "a post that can be cited",
+        
+        description: "this is what a post that can be cited looks like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post-citation/";
+          
+        },
+      },{id: "post-a-post-with-pseudo-code",
+        
+          title: "a post with pseudo code",
+        
+        description: "this is what included pseudo code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/pseudocode/";
+          
+        },
+      },{id: "post-a-post-with-code-diff",
+        
+          title: "a post with code diff",
+        
+        description: "this is how you can display code diffs",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/code-diff/";
+          
+        },
+      },{id: "post-a-post-with-advanced-image-components",
+        
+          title: "a post with advanced image components",
+        
+        description: "this is what advanced image components could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/advanced-images/";
+          
+        },
+      },{id: "post-a-post-with-vega-lite",
+        
+          title: "a post with vega lite",
+        
+        description: "this is what included vega lite code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/vega-lite/";
+          
+        },
+      },{id: "post-a-post-with-geojson",
+        
+          title: "a post with geojson",
+        
+        description: "this is what included geojson code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/geojson-map/";
+          
+        },
+      },{id: "post-a-post-with-echarts",
+        
+          title: "a post with echarts",
+        
+        description: "this is what included echarts code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/echarts/";
+          
+        },
+      },{id: "post-a-post-with-chart-js",
+        
+          title: "a post with chart.js",
+        
+        description: "this is what included chart.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/chartjs/";
+          
+        },
+      },{id: "post-a-post-with-tikzjax",
+        
+          title: "a post with TikZJax",
+        
+        description: "this is what included TikZ code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/tikzjax/";
+          
+        },
+      },{id: "post-a-post-with-bibliography",
+        
+          title: "a post with bibliography",
+        
+        description: "an example of a blog post with bibliography",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/post-bibliography/";
+          
+        },
+      },{id: "post-a-post-with-jupyter-notebook",
+        
+          title: "a post with jupyter notebook",
+        
+        description: "an example of a blog post with jupyter notebook",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/jupyter-notebook/";
+          
+        },
+      },{id: "post-a-post-with-custom-blockquotes",
+        
+          title: "a post with custom blockquotes",
+        
+        description: "an example of a blog post with custom blockquotes",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/custom-blockquotes/";
+          
+        },
+      },{id: "post-a-post-with-table-of-contents-on-a-sidebar",
+        
+          title: "a post with table of contents on a sidebar",
+        
+        description: "an example of a blog post with table of contents on a sidebar",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/sidebar-table-of-contents/";
+          
+        },
+      },{id: "post-a-post-with-audios",
+        
+          title: "a post with audios",
+        
+        description: "this is what included audios could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/audios/";
+          
+        },
+      },{id: "post-a-post-with-videos",
+        
+          title: "a post with videos",
+        
+        description: "this is what included videos could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/videos/";
+          
+        },
+      },{id: "post-displaying-beautiful-interactive-tables",
+        
+          title: "displaying beautiful interactive tables",
+        
+        description: "an example of how to use interactive tables in al-folio",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/tables/";
+          
+        },
+      },{id: "post-a-post-with-table-of-contents",
+        
+          title: "a post with table of contents",
+        
+        description: "an example of a blog post with table of contents",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2023/table-of-contents/";
+          
+        },
+      },{id: "post-a-post-with-giscus-comments",
+        
+          title: "a post with giscus comments",
+        
+        description: "an example of a blog post with giscus comments",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/giscus-comments/";
+          
+        },
+      },{id: "post-یک-نوشتهٔ-راست-چین",
+        
+          title: "یک نوشتهٔ راست‌چین",
+        
+        description: "نمونه‌ای از پشتیبانی زبان‌های راست‌چین",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2022/rtl/";
+          
+        },
+      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+        
+          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewbox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+          
+        },
+      },{id: "post-a-post-with-redirect",
+        
+          title: "a post with redirect",
+        
+        description: "you can also redirect to assets like pdf",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/assets/pdf/example_pdf.pdf";
+          
+        },
+      },{id: "post-a-post-with-diagrams",
+        
+          title: "a post with diagrams",
+        
+        description: "an example of a blog post with diagrams",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/diagrams/";
+          
+        },
+      },{id: "post-a-distill-style-blog-post",
+        
+          title: "a distill-style blog post",
+        
+        description: "an example of a distill-style blog post and main elements",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2021/distill/";
+          
+        },
+      },{id: "post-a-post-with-twitter",
+        
+          title: "a post with twitter",
+        
+        description: "an example of a blog post with twitter",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2020/twitter/";
+          
+        },
+      },{id: "post-a-post-with-disqus-comments",
+        
+          title: "a post with disqus comments",
+        
+        description: "an example of a blog post with disqus comments",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2015/disqus-comments/";
+          
+        },
+      },{id: "post-a-post-with-math",
+        
+          title: "a post with math",
+        
+        description: "an example of a blog post with some math",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2015/math/";
+          
+        },
+      },{id: "post-a-post-with-code",
+        
+          title: "a post with code",
+        
+        description: "an example of a blog post with some code",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2015/code/";
+          
+        },
+      },{id: "post-a-post-with-images",
+        
+          title: "a post with images",
+        
+        description: "this is what included images could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2015/images/";
+          
+        },
+      },{id: "post-a-post-with-formatting-and-links",
+        
+          title: "a post with formatting and links",
+        
+        description: "march & april, looking forward to summer",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2015/formatting-and-links/";
+          
+        },
+      },{id: "demos-distributed-acoustic-sensing-das",
+          title: 'Distributed Acoustic Sensing (DAS)',
+          description: "",
+          section: "Demos",handler: () => {
+              window.location.href = "/demos/das-localization/";
+            },},{id: "demos-das-pipeline-monitoring-from-detection-to-decision",
+          title: 'DAS Pipeline Monitoring: From Detection to Decision',
+          description: "",
+          section: "Demos",handler: () => {
+              window.location.href = "/demos/das-pipeline-decision/";
+            },},{id: "demos-fiber-bragg-grating-strain-sensor",
+          title: 'Fiber Bragg Grating Strain Sensor',
+          description: "",
+          section: "Demos",handler: () => {
+              window.location.href = "/demos/fbg-strain/";
+            },},{id: "demos-surface-plasmon-resonance-spr-sensor",
+          title: 'Surface Plasmon Resonance (SPR) Sensor',
+          description: "",
+          section: "Demos",handler: () => {
+              window.location.href = "/demos/spr-sensing/";
+            },},{id: "news-a-simple-inline-announcement",
+          title: 'A simple inline announcement.',
+          description: "",
+          section: "News",},{id: "news-a-long-announcement-with-details",
+          title: 'A long announcement with details',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
+            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+          title: 'A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">',
+          description: "",
+          section: "News",},{id: "projects-distributed-acoustic-sensing-for-pipeline-monitoring",
+          title: 'Distributed Acoustic Sensing for Pipeline Monitoring',
+          description: "Fiber-optic distributed acoustic sensing and machine learning for pipeline monitoring in harsh oil-and-gas environments.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_project/";
+            },},{id: "projects-compact-fiber-bragg-grating-interrogator-for-patient-assessment",
+          title: 'Compact Fiber Bragg Grating Interrogator for Patient Assessment',
+          description: "A compact, cost-effective fiber Bragg grating interrogation prototype for patient-assessment applications, developed in collaboration with Biomedical Engineering at KFUPM.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_project/";
+            },},{id: "projects-deep-learning-enabled-multimode-fiber-specklegram-sensing",
+          title: 'Deep-Learning-Enabled Multimode-Fiber Specklegram Sensing',
+          description: "Ongoing research on multimode-fiber specklegram sensing and machine-learning-assisted optical interrogation for controlled bending monitoring.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_project/";
+            },},{id: "projects-privacy-preserving-lidar-safety-monitoring-for-cognitive-cities",
+          title: 'Privacy-Preserving LiDAR Safety Monitoring for Cognitive Cities',
+          description: "Ongoing prototype research on LiDAR-based safety monitoring for cognitive-city and smart-built-environment applications.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_project/";
+            },},{id: "teachings-digital-systems-laboratory",
+          title: 'Digital Systems Laboratory',
+          description: "A practical electrical engineering laboratory course covering basic electrical components, breadboard prototyping, digital logic circuits, circuit analysis, electronic circuits, and prototype development.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/Digital-Systems-Laboratory/";
+            },},{id: "teachings-introduction-to-research-res-100",
+          title: 'Introduction to Research (RES-100)',
+          description: "A one-credit introductory research course covering research types and databases, scientific reading and writing, research methods, literature reviews, critical thinking, time management, and research dissemination.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/Introduction-to-Research/";
+            },},{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
