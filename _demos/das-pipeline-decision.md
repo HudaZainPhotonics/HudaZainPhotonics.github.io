@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "DAS Pipeline Monitoring: From Detection to Decision"
+title: "Pipeline State Detection and Intelligent Decisions"
 permalink: /demos/das-pipeline-decision/
 ---
 
@@ -17,7 +17,7 @@ permalink: /demos/das-pipeline-decision/
 
 <section class="part" id="part1">
 <div class="kicker">PART 1</div>
-<h2>From a Physical Event to a DAS Measurement</h2>
+<h2> A Physical Event  Translates to a DAS Measurement</h2>
 <p class="question">How does one mechanical disturbance become the distance × time data displayed by a DAS system?</p>
 
 <div class="dashboard">
@@ -229,7 +229,7 @@ permalink: /demos/das-pipeline-decision/
 </section>
 <section class="part" id="part3" style="margin-top:34px">
 <div class="kicker">PART 3</div>
-<h2>From Detection to Alarm</h2>
+<h2> Detection Translates to Alarms</h2>
 <p class="question">A processed signal is available. Where should the system place the detection threshold?</p>
 
 <div class="p3-layout">
@@ -354,7 +354,7 @@ permalink: /demos/das-pipeline-decision/
 </section>
 <section class="part" id="part4" style="margin-top:34px">
 <div class="kicker">PART 4</div>
-<h2>From Detection to Interpretation</h2>
+<h2> Detection Translates to Interpretation</h2>
 <p class="question">The threshold says that something happened. What information can help us decide what happened?</p>
 
 <div class="p4-top">
