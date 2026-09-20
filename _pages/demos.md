@@ -7,10 +7,10 @@ nav_order: 12
 ---
 
 
-Interactive demonstrations for exploring concepts in fiber optics, optical sensing, plasmonics, and integrated photonics.
+Interactive demos for exploring fiber optics, optical sensing, plasmonics, and integrated photonics.
 
-These demos are designed to connect fundamental photonics concepts with their engineering and sensing applications. Each demonstration includes an interactive model together with the governing physics, model assumptions, and key parameters.
-
+I built these interactive demos to make some of the photonics and optical-sensing concepts I work with in the lab easier to explore. They are meant to be self-guided, so students can experiment with the ideas and build intuition at their own pace.
+In the lab, I use more rigorous computational models and simulations. Here, I intentionally simplify the first encounter while keeping the key physics, assumptions, and engineering trade-offs visible. Think of these demos as a starting point before diving into the full models.
 
 <div class="demo-grid">
 
